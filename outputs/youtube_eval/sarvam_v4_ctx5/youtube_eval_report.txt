@@ -1,0 +1,170 @@
+=================================================================
+  MTP-3 YOUTUBE EVALUATION
+  CCS-Based Response Selection on YouTube Ground-Truth Data
+  Linguistic-Only CCS (no acoustic features)
+=================================================================
+
+  Loaded 38 pairs from test_ctx5 split
+  Source: Gadkari-Megha Prasad ABP Interview
+  Context window: 5 turns (was 5)
+  Prompt version: V4
+  Avg ground truth response: 30 words
+  Avg words (Gadkari)      : 30
+  Avg words (Interviewer)  : 29
+  Topic: E20 ब्लेंडेड पेट्रोल को लेकर जनता की शिकायतें — माइलेज कम हो रही है, पुरानी गाड़...
+
+=================================================================
+  PHASE 1: CCS Reference Statistics (from human responses)
+=================================================================
+
+  Loading Stanza Hindi pipeline...
+  Stanza loaded
+  Loading GPT-2 Hindi for surprisal...
+  GPT-2 Hindi loaded (device: cpu)
+
+  Computing CCS for human responses...
+    20/38 responses scored | 37s
+
+  CCS Reference Statistics:
+    Mean CCS     : -0.001934
+    SD CCS       : 0.001300
+    Min CCS      : -0.004389
+    Max CCS      : 0.001820
+    Avg IC       : 1.985
+    Avg SC       : 2.070
+    Avg fwd surp : 4.068
+    Avg bwd surp : 5.519
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/ccs_reference.csv
+
+=================================================================
+  PHASE 2: Candidate Generation (model: sarvam)
+=================================================================
+
+  Sarvam AI client loaded (model: sarvam-105b-conversations)
+
+  Generating candidates...
+
+  [DEBUG] First context (1592 chars):
+    साक्षात्कारकर्ता: ज्यादा शिकार होते हुए दिखाई दे रहे हैं और उसकी वजह है E20 ब्लेंडेड पेट्रोल और उसके इस्तेमाल से हो रही दिक्कतें। आज मैं भारत के सड़कों पर अपनी कार और बाइक चलाने वाले नाराज हर वो भारती...
+    [V4] Next speaker: SPEAKER_01
+    [V4] Avg words: 29
+    [V4] System prompt: आप एक टीवी पत्रकार हैं। आप नितिन गडकरी जी का साक्षात्कार ले रही हैं।
+बोलचाल की हिंदी में जवाब दें — ...
+    5/38 pairs | 50 candidates (avg 10.0/pair) | 85s
+    10/38 pairs | 100 candidates (avg 10.0/pair) | 109s
+    15/38 pairs | 149 candidates (avg 9.9/pair) | 147s
+    20/38 pairs | 199 candidates (avg 9.9/pair) | 177s
+    25/38 pairs | 249 candidates (avg 10.0/pair) | 208s
+    30/38 pairs | 299 candidates (avg 10.0/pair) | 237s
+    35/38 pairs | 349 candidates (avg 10.0/pair) | 268s
+
+  Generation Summary:
+    Pairs processed    : 38
+    Empty pairs        : 0
+    LLM candidates     : 379
+    Human responses    : 38
+    Total rows         : 417
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v4_ctx5/candidates.csv
+
+=================================================================
+  PHASE 3: CCS Scoring + Response Selection + MRR
+=================================================================
+
+  Scoring all candidates with linguistic-only CCS...
+    Scored 50/417 | 324s
+    Scored 100/417 | 370s
+    Scored 150/417 | 415s
+    Scored 200/417 | 455s
+    Scored 250/417 | 496s
+    Scored 300/417 | 544s
+    Scored 350/417 | 587s
+    Scored 400/417 | 628s
+
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v4_ctx5/scored_candidates.csv (417 rows)
+
+  Response Selection + MRR Computation...
+
+=================================================================
+  PHASE 4: Text-Overlap Metrics
+=================================================================
+  Computing BERTScore (this may take a minute)...
+
+  Text-Overlap Metrics (selected vs human):
+    Avg BLEU           : 0.0130
+    Avg ROUGE-1 (F1)   : 0.1250
+    Avg ROUGE-L (F1)   : 0.0969
+    Avg BERTScore (F1) : 0.6629
+
+=================================================================
+  PHASE 5: TTS (Text-to-Speech for selected responses)
+=================================================================
+
+  Loading TTS model: facebook/mms-tts-hin...
+  TTS model loaded
+    10/38 audio files | 55s
+    20/38 audio files | 118s
+    30/38 audio files | 177s
+
+  TTS Summary:
+    Audio files generated: 38
+    Sample rate          : 16000 Hz
+    Output directory     : /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v4_ctx5/audio
+    Time                 : 228s
+
+=================================================================
+  YOUTUBE EVALUATION RESULTS
+=================================================================
+
+  Data source            : YouTube (Gadkari interview)
+  Total pairs            : 38
+  CCS mode               : Linguistic-only (no acoustic)
+  Features               : IC, SC, forward_surprisal, backward_surprisal
+  Generation model       : sarvam
+
+  CCS Reference (human)  : mean=-0.001934, sd=0.001300
+
+  Selection Results:
+    Pairs evaluated      : 38
+    Avg naturalness (sel): 0.9080
+    Avg naturalness (hum): 0.6339
+
+  *** MRR (Mean Reciprocal Rank) ***
+    MRR                  : 0.2932
+    Avg human rank       : 6.0
+    Human in top-1       : 4/38 (10.5%)
+    Human in top-3       : 11/38 (28.9%)
+
+  *** Text-Overlap Metrics (selected vs human) ***
+    Avg BLEU           : 0.0130
+    Avg ROUGE-1 (F1)   : 0.1250
+    Avg ROUGE-L (F1)   : 0.0969
+    Avg BERTScore (F1) : 0.6629
+
+  Rank distribution:
+    Rank  1:   4 pairs (10.5%)
+    Rank  2:   5 pairs (13.2%)
+    Rank  3:   2 pairs (5.3%)
+    Rank  4:   3 pairs (7.9%)
+    Rank  5:   6 pairs (15.8%)
+    Rank  6:   1 pairs (2.6%)
+    Rank  7:   2 pairs (5.3%)
+    Rank  8:   3 pairs (7.9%)
+    Rank  9:   4 pairs (10.5%)
+    Rank 10:   3 pairs (7.9%)
+
+  Sample (first pair):
+    Selected : देखिए, मैं किसी की निंदा नहीं कर रहा। मेरे बेटे ने कुछ गलत नहीं किया है, इसलिए अ...
+    CCS      : -0.0019 (nat: 0.9929)
+    Human    : तो ये आंकड़े गलत है। 100% गलत है। ओके। ओके। दूसरी बात मैं सेबी में कंपनी रजिस्टर...
+    H.CCS    : -0.0029 (rank: 9)
+
+  Total time: 918s (15.3min)
+
+  Outputs:
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/ccs_reference.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v4_ctx5/candidates.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v4_ctx5/scored_candidates.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v4_ctx5/selected_responses.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v4_ctx5/youtube_eval_report.txt
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v4_ctx5/audio/ (38 .wav files)
+=================================================================

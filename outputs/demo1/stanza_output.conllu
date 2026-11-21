@@ -1,0 +1,504 @@
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0000
+# text = जी मैम बताइए
+1	जी	जी	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=1
+2	मैम	मैम	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	nsubj	_	IC=1|SC=2|DepDist=1
+3	बताइए	बताना	VERB	VM	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin|Voice=Act	_	root	_	IC=1|SC=1|DepDist=0
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0001
+# text = अ वेरी गुड आफ्टरनून मैम
+1	अ	अ	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=4
+2	वेरी	वेरी	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=3|DepDist=3
+3	गुड	गुड	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=4|DepDist=2
+4	आफ्टरनून	आफ्टरनून	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=5|DepDist=1
+5	मैम	मैम	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	root	_	IC=7|SC=1|DepDist=0
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0002
+# text = जी मैम आपको जूलॉजी म्यूजियम के लिए बुकिंग हो जाएगी बताइए
+1	जी	जी	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=1
+2	मैम	मैम	PROPN	NNP	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	nsubj	_	IC=1|SC=2|DepDist=7
+3	आपको	आप	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	iobj	_	IC=1|SC=3|DepDist=6
+4	जूलॉजी	जूलॉजी	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=4|DepDist=1
+5	म्यूजियम	म्यूजियम	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=1|SC=4|DepDist=4
+6	के	का	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=4|DepDist=1
+7	लिए	लिए	ADP	PSP	AdpType=Post	_	case	_	IC=2|SC=4|DepDist=2
+8	बुकिंग	बुकिंग	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=5|DepDist=1
+9	हो	होना	VERB	VM	Number=Sing|Person=3|Voice=Act	_	root	_	IC=15|SC=1|DepDist=0
+10	जाएगी	जाना	AUX	VAUX	Gender=Fem|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	_	aux	_	IC=1|SC=1|DepDist=1
+11	बताइए	बताना	AUX	VAUX	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin	_	aux:pass	_	IC=2|SC=1|DepDist=2
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0004
+# text = जी मैम ट्वेंटी सिक्स को आप हमारे यहां जूलॉजी म्यूजियम सिक्स को मैम संडे है सो यह जूलॉजी म्यूजियम ही खुला रहेगा तब इस टाइमिंग के लिए हमारे यहाँ से टिकट को बुक कर सकती हैं
+1	जी	जी	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=3
+2	मैम	मैम	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=3|DepDist=2
+3	ट्वेंटी	ट्वेंटी	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=4|DepDist=1
+4	सिक्स	सिक्स	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	obj	_	IC=4|SC=2|DepDist=10
+5	को	को	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=2|DepDist=1
+6	आप	आप	PRON	PRP	Case=Nom|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	nsubj	_	IC=1|SC=3|DepDist=8
+7	हमारे	हम	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=4|DepDist=1
+8	यहां	यहाँ	PRON	PRP	Case=Nom|PronType=Prs	_	nmod	_	IC=1|SC=4|DepDist=6
+9	जूलॉजी	जूलॉजी	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=5|DepDist=2
+10	म्यूजियम	म्यूजियम	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=6|DepDist=1
+11	के	सिक्स	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	iobj	_	IC=2|SC=5|DepDist=3
+12	लिए	को	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=5|DepDist=1
+13	ट्वेंटी	मैम	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=6|DepDist=1
+14	सिक्स	संडे	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	acl:relcl	_	IC=24|SC=2|DepDist=9
+15	को	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Polite=Form|Tense=Pres|VerbForm=Fin|Voice=Act	_	cop	_	IC=1|SC=2|DepDist=1
+16	मैम	सोना	SCONJ	CC	_	_	mark	_	IC=2|SC=2|DepDist=2
+17	संडे	यह	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	_	det	_	IC=1|SC=3|DepDist=2
+18	है	जूलॉजी	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=4|DepDist=1
+19	सो	म्यूजियम	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	nsubj	_	IC=2|SC=3|DepDist=2
+20	ये	ही	PART	RP	_	_	dep	_	IC=1|SC=3|DepDist=1
+21	जूलॉजी	खुलना	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	_	advcl	_	IC=8|SC=2|DepDist=7
+22	म्यूजियम	रहना	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	_	aux	_	IC=1|SC=2|DepDist=1
+23	हमारा	तब	PRON	PRP	Case=Nom|PronType=Prs	_	obl	_	IC=9|SC=2|DepDist=11
+24	सुबह	यह	DET	DEM	Case=Acc|Number=Sing|Person=3|PronType=Dem	_	det	_	IC=1|SC=3|DepDist=1
+25	ग्यारह	टाइमिंग	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	_	obl	_	IC=1|SC=3|DepDist=9
+26	बजे	का	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=3|DepDist=1
+27	से	लिए	ADP	PSP	AdpType=Post	_	case	_	IC=2|SC=3|DepDist=2
+28	तीन	हम	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=4|DepDist=1
+29	बजे	यहाँ	PRON	PRP	Case=Acc|PronType=Prs	_	obl	_	IC=1|SC=4|DepDist=5
+30	तक	से	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=4|DepDist=1
+31	ही	टिकट	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	obj	_	IC=1|SC=5|DepDist=3
+32	खुला	को	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=5|DepDist=1
+33	रहेगा	बुक	X	UNK	Foreign=Yes	_	compound	_	IC=1|SC=6|DepDist=1
+34	तब	करना	VERB	VM	Gender=Fem|Number=Sing|Person=3|Polite=Form|Voice=Act	_	root	_	IC=25|SC=1|DepDist=0
+35	इस	सकना	AUX	VAUX	Aspect=Imp|Gender=Fem|Number=Sing|VerbForm=Part	_	aux	_	IC=1|SC=1|DepDist=1
+36	टाइमिंग	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=2|Polite=Form|Tense=Pres|VerbForm=Fin	_	aux:pass	_	IC=2|SC=1|DepDist=2
+37	के	के	_	_	_	_	_	_	_
+38	लिए	लिए	_	_	_	_	_	_	_
+39	हमारे	हमारे	_	_	_	_	_	_	_
+40	यहाँ	यहाँ	_	_	_	_	_	_	_
+41	से	से	_	_	_	_	_	_	_
+42	टिकट	टिकट	_	_	_	_	_	_	_
+43	को	को	_	_	_	_	_	_	_
+44	बुक	बुक	_	_	_	_	_	_	_
+45	कर	कर	_	_	_	_	_	_	_
+46	सकती	सकती	_	_	_	_	_	_	_
+47	हैं	हैं	_	_	_	_	_	_	_
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0005
+# text = जी नहीं मैम इस बीच आपको चार बजे या तीन बजे के में बाद मैम जब हमारा यह बंद हो जाता है जूलॉजी म्यूजियम टाइम नहीं दिया जा सकता है
+1	जी	जी	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=2
+2	नहीं	नहीं	PART	NEG	Polarity=Neg|PronType=Neg	_	obl	_	IC=1|SC=3|DepDist=25
+3	मैम	मैम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=2|SC=3|DepDist=24
+4	इस	यह	DET	DEM	Case=Acc|Number=Sing|Person=3|PronType=Dem	_	det	_	IC=1|SC=4|DepDist=1
+5	बीच	बीच	ADV	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=1|SC=4|DepDist=15
+6	आपको	आप	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	nmod	_	IC=1|SC=5|DepDist=2
+7	चार	चार	NUM	QC	NumType=Card	_	nummod	_	IC=1|SC=6|DepDist=1
+8	बजे	बजे	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=2|SC=5|DepDist=12
+9	या	या	CCONJ	CC	_	_	cc	_	IC=1|SC=6|DepDist=2
+10	तीन	तीन	NUM	QC	NumType=Card	_	nummod	_	IC=1|SC=7|DepDist=1
+11	बजे	बजे	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	conj	_	IC=4|SC=5|DepDist=3
+12	के	का	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=5|DepDist=1
+13	में	में	ADP	PSP	AdpType=Post	_	case	_	IC=5|SC=5|DepDist=5
+14	बाद	बाद	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	_	case	_	IC=6|SC=5|DepDist=6
+15	मैम	मैम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	conj	_	IC=7|SC=5|DepDist=7
+16	जब	जब	PRON	PRP	Case=Nom|PronType=Prs	_	obl	_	IC=1|SC=6|DepDist=4
+17	हमारा	हम	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=7|DepDist=1
+18	यह	यह	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	_	nsubj	_	IC=1|SC=7|DepDist=2
+19	बंद	बंद	ADJ	JJ	_	_	compound	_	IC=1|SC=8|DepDist=1
+20	हो	होना	VERB	VM	Gender=Masc|Number=Sing|Person=3|Voice=Act	_	acl:relcl	_	IC=30|SC=4|DepDist=3
+21	जाता	जाना	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	_	aux	_	IC=1|SC=4|DepDist=1
+22	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	_	aux:pass	_	IC=2|SC=4|DepDist=2
+23	जूलॉजी	जूलॉजी	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=3|SC=4|DepDist=4
+24	म्यूजियम	म्यूजियम	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=5|DepDist=1
+25	तो	टाइम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obj	_	IC=1|SC=5|DepDist=2
+26	इसके	नहीं	PART	NEG	Polarity=Neg|PronType=Neg	_	advmod	_	IC=1|SC=6|DepDist=1
+27	बाद	देना	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Pass	_	root	_	IC=52|SC=1|DepDist=0
+28	आपको	जाना	AUX	VAUX	_	_	aux:pass	_	IC=1|SC=1|DepDist=1
+29	बिल्कुल	सकना	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	_	aux:pass	_	IC=2|SC=1|DepDist=2
+30	भी	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	_	aux:pass	_	IC=3|SC=1|DepDist=3
+31	एैस्ट्रा	एैस्ट्रा	_	_	_	_	_	_	_
+32	टाइम	टाइम	_	_	_	_	_	_	_
+33	नहीं	नहीं	_	_	_	_	_	_	_
+34	दिया	दिया	_	_	_	_	_	_	_
+35	जा	जा	_	_	_	_	_	_	_
+36	सकता	सकता	_	_	_	_	_	_	_
+37	है	है	_	_	_	_	_	_	_
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0006
+# text = मैम आपका यह पास आपको अप्लाई करते ही चौबीस घंटे के अन्दर दे दिया जाएगा
+1	मैम	मैम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=1|SC=2|DepDist=12
+2	आपका	आप	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Sing|Person=2|Polite=Form|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=3|DepDist=1
+3	यह	यह	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	_	obl	_	IC=1|SC=3|DepDist=10
+4	पास	पास	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	_	case	_	IC=1|SC=3|DepDist=1
+5	आपको	आप	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	iobj	_	IC=1|SC=4|DepDist=8
+6	अप्लाई	अप्लाई	X	UNK	Foreign=Yes	_	compound	_	IC=1|SC=5|DepDist=1
+7	करते	करना	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	_	advcl	_	IC=1|SC=5|DepDist=6
+8	ही	ही	PART	RP	_	_	dep	_	IC=1|SC=5|DepDist=1
+9	चौबीस	चौबीस	NUM	QC	NumType=Card	_	nummod	_	IC=1|SC=6|DepDist=1
+10	घंटे	घंटा	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=1|SC=6|DepDist=3
+11	के	का	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=6|DepDist=1
+12	अन्दर	अन्दर	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	_	case	_	IC=2|SC=6|DepDist=2
+13	दे	देना	VERB	VM	Gender=Masc|Number=Sing|Person=3|Voice=Pass	_	root	_	IC=35|SC=1|DepDist=0
+14	दीया	देना	VERB	VAUX	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	_	compound	_	IC=1|SC=1|DepDist=1
+15	जाएगा	जाना	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	_	aux:pass	_	IC=2|SC=1|DepDist=2
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0008
+# text = आपको यह पास अलाउ करने के लिए मैम आपका एक आइ डी जैसे आधार कार्ड पेन कार्ड या कोई अन्य आइ डी आप दे सकती हैं मैम एवम आपको इसके साथ दो फोटो और
+1	आपको	आप	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	iobj	_	IC=1|SC=2|DepDist=23
+2	यह	यह	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	_	det	_	IC=1|SC=3|DepDist=1
+3	पास	पास	X	UNK	Foreign=Yes	_	obj	_	IC=1|SC=3|DepDist=2
+4	अलाउ	अलाउ	ADJ	JJ	_	_	compound	_	IC=1|SC=4|DepDist=1
+5	करने	करना	VERB	VM	Case=Acc|VerbForm=Inf	_	advcl	_	IC=2|SC=3|DepDist=19
+6	के	का	ADP	PSP	AdpType=Post	_	mark	_	IC=1|SC=3|DepDist=1
+7	लिए	लिए	ADP	PSP	AdpType=Post	_	mark	_	IC=2|SC=3|DepDist=2
+8	मैम	मैम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	nsubj	_	IC=1|SC=4|DepDist=16
+9	आपका	आप	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Sing|Person=2|Polite=Form|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=5|DepDist=3
+10	एक	एक	NUM	QC	NumType=Card	_	nummod	_	IC=1|SC=6|DepDist=2
+11	आइडी	आइ	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=7|DepDist=1
+12	जैसे	डी	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	nmod	_	IC=4|SC=5|DepDist=3
+13	आधार	जैसा	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	_	case	_	IC=1|SC=5|DepDist=1
+14	कार्ड	आधार	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=6|DepDist=1
+15	पेन	कार्ड	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	nmod	_	IC=3|SC=5|DepDist=2
+16	कार्ड	पेन	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=6|DepDist=1
+17	या	कार्ड	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	iobj	_	IC=2|SC=5|DepDist=7
+18	कोई	या	CCONJ	CC	_	_	cc	_	IC=1|SC=6|DepDist=5
+19	अन्य	कोई	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	_	det	_	IC=1|SC=7|DepDist=3
+20	आइडी	अन्य	ADJ	JJ	Case=Nom	_	amod	_	IC=1|SC=8|DepDist=2
+21	आप	आइ	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=9|DepDist=1
+22	दे	डी	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	nmod	_	IC=4|SC=7|DepDist=1
+23	सकती	आप	PRON	PRP	Case=Nom|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	conj	_	IC=10|SC=5|DepDist=6
+24	हैं	देना	VERB	VM	Gender=Fem|Number=Sing|Person=3|Polite=Form|Voice=Act	_	root	_	IC=62|SC=1|DepDist=0
+25	मैम	सकना	AUX	VAUX	Aspect=Imp|Gender=Fem|Number=Sing|Person=3|Polite=Form|VerbForm=Part	_	aux	_	IC=1|SC=1|DepDist=1
+26	एवम	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=2|Polite=Form|Tense=Pres|VerbForm=Fin	_	aux:pass	_	IC=2|SC=1|DepDist=2
+27	आपको	मैम	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	punct	_	IC=3|SC=1|DepDist=3
+28	इसके	एवम	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	nmod	_	IC=1|SC=2|DepDist=5
+29	साथ	आप	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	nsubj	_	IC=1|SC=3|DepDist=4
+30	दो	यह	PRON	PRP	Case=Acc,Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=4|DepDist=3
+31	फोटो	साथ	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	_	case	_	IC=1|SC=4|DepDist=1
+32	और	दो	NUM	QC	NumType=Card	_	nummod	_	IC=1|SC=5|DepDist=1
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0009
+# text = अपने पैरेंन्टस का एक फॉर्म लेकर आना पडे़गा मैम जो फॉर्म हम आपको अपने यहाँ से प्रोवाइड करेंगे आपको घर लेकर जाना है और सिग्नेचर करवा कर हमारे यहाँ वापस लाकर के आपको सबमिट करनी पडे़गी
+1	अपने	अपना	PRON	PRP	Case=Acc|Gender=Masc|PronType=Prs	_	nmod	_	IC=1|SC=2|DepDist=1
+2	पैरेंन्टस	पैरेंन्टस	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	nmod	_	IC=1|SC=2|DepDist=3
+3	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	_	case	_	IC=1|SC=2|DepDist=1
+4	एक	एक	NUM	QC	NumType=Card	_	nummod	_	IC=1|SC=3|DepDist=1
+5	फॉर्म	फॉर्म	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obj	_	IC=3|SC=2|DepDist=1
+6	लेके	लेना	VERB	VM	VerbForm=Conv	_	advcl	_	IC=1|SC=2|DepDist=1
+7	आना	आना	VERB	VM	Gender=Masc|Number=Sing|Person=3|VerbForm=Inf|Voice=Act	_	root	_	IC=1|SC=1|DepDist=0
+8	पडे़गा	पडेना	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	_	aux	_	IC=1|SC=1|DepDist=1
+9	मैम	मैम	INTJ	INJ	_	_	punct	_	IC=1|SC=2|DepDist=9
+10	जो	जो	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	_	det	_	IC=1|SC=3|DepDist=1
+11	फॉर्म	फॉर्म	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obj	_	IC=1|SC=3|DepDist=7
+12	हम	हम	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	_	nsubj	_	IC=1|SC=4|DepDist=6
+13	आपको	आप	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	iobj	_	IC=1|SC=5|DepDist=5
+14	अपने	अपना	PRON	PRPC	Case=Acc|Gender=Masc|PronType=Prs	_	nsubj	_	IC=1|SC=6|DepDist=1
+15	यहाँ	यहाँ	PRON	PRP	Case=Acc|PronType=Prs	_	obl	_	IC=1|SC=6|DepDist=3
+16	से	से	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=6|DepDist=1
+17	प्रोवाइड	प्रोवाइड	X	UNK	Foreign=Yes	_	compound	_	IC=1|SC=7|DepDist=1
+18	करेंगे	करना	VERB	VM	Gender=Masc|Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	_	advcl	_	IC=36|SC=1|DepDist=11
+19	आपको	आप	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	nsubj	_	IC=1|SC=2|DepDist=3
+20	घर	घर	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obj	_	IC=1|SC=3|DepDist=1
+21	लेके	लेना	VERB	VM	VerbForm=Conv	_	advcl	_	IC=1|SC=3|DepDist=1
+22	जाना	जाना	VERB	VM	Gender=Masc|Number=Sing|Person=3|VerbForm=Inf|Voice=Act	_	conj	_	IC=17|SC=1|DepDist=15
+23	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	_	aux	_	IC=1|SC=1|DepDist=1
+24	और	और	CCONJ	CC	_	_	cc	_	IC=1|SC=2|DepDist=11
+25	सिग्नेचर	सिग्नेचर	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=3|DepDist=1
+26	करवाके	करवाना	VERB	VM	_	_	advcl	_	IC=1|SC=3|DepDist=9
+27	हमारे	करना	AUX	VAUX	_	_	aux	_	IC=1|SC=3|DepDist=1
+28	यहाँ	हम	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=4|DepDist=1
+29	वापस	यहाँ	PRON	PRP	Case=Nom|PronType=Prs	_	obl	_	IC=1|SC=4|DepDist=2
+30	लाकर	वापस	ADJ	JJ	_	_	compound	_	IC=1|SC=5|DepDist=1
+31	के	लाना	VERB	VM	VerbForm=Conv	_	advcl	_	IC=2|SC=4|DepDist=4
+32	आपको	का	ADP	PSP	AdpType=Post	_	mark	_	IC=1|SC=4|DepDist=1
+33	सबमिट	आप	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	nsubj	_	IC=1|SC=5|DepDist=2
+34	करनी	सबमिट	X	UNK	Foreign=Yes	_	compound	_	IC=1|SC=6|DepDist=1
+35	पडे़गी	करना	VERB	VM	Gender=Fem|Number=Sing|Person=3|VerbForm=Inf|Voice=Act	_	conj	_	IC=35|SC=1|DepDist=13
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0010
+# text = नो मैम यह फॉर्म हमारे यहाँ आपको बिल्कुल ही फ्री दिया जाएगा जैसे आप इसके लिए अप्लाई करेंगे तो जो मैम आपका जूलॉजी म्यूजियम में विजेटर के लीए अप्लाई फीस है मैम उसी में यह इन्क्लूडिड है
+1	नो	नो	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=1
+2	मैम	मैम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	nmod	_	IC=1|SC=2|DepDist=2
+3	यह	यह	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	_	det	_	IC=1|SC=3|DepDist=1
+4	फॉर्म	फॉर्म	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obj	_	IC=2|SC=2|DepDist=7
+5	हमारे	हम	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=3|DepDist=1
+6	यहाँ	यहाँ	PRON	PRP	Case=Nom|PronType=Prs	_	obl	_	IC=1|SC=3|DepDist=5
+7	आपको	आप	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	iobj	_	IC=1|SC=4|DepDist=4
+8	बिल्कुल	बिल्कुल	ADV	RB	_	_	advmod	_	IC=1|SC=5|DepDist=3
+9	ही	ही	PART	RP	_	_	dep	_	IC=1|SC=5|DepDist=1
+10	फ्री	फ्री	ADJ	JJ	_	_	compound	_	IC=1|SC=6|DepDist=1
+11	दिया	देना	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	_	root	_	IC=16|SC=1|DepDist=0
+12	जाएगा	जाना	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	_	aux:pass	_	IC=1|SC=1|DepDist=1
+13	जैसे	जैसे	SCONJ	CC	_	_	mark	_	IC=1|SC=2|DepDist=5
+14	आप	आप	PRON	PRP	Case=Nom|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	nsubj	_	IC=1|SC=3|DepDist=4
+15	इसके	यह	PRON	PRP	Case=Acc,Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	_	obl	_	IC=1|SC=4|DepDist=3
+16	लिए	लिए	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=4|DepDist=1
+17	अप्लाई	अप्लाई	X	UNK	Foreign=Yes	_	compound	_	IC=1|SC=5|DepDist=1
+18	करेंगे	करना	VERB	VM	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Polite=Form|Tense=Fut|VerbForm=Fin|Voice=Act	_	advcl	_	IC=16|SC=1|DepDist=7
+19	तो	तो	SCONJ	CC	_	_	mark	_	IC=1|SC=2|DepDist=17
+20	जो	जो	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	_	det	_	IC=1|SC=3|DepDist=1
+21	मैम	मैम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	nsubj	_	IC=1|SC=3|DepDist=9
+22	आपका	आप	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Sing|Person=2|Polite=Form|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=4|DepDist=2
+23	जूलॉजी	जूलॉजी	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=5|DepDist=1
+24	म्यूजियम	म्यूजियम	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	nmod	_	IC=2|SC=4|DepDist=6
+25	में	में	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=4|DepDist=1
+26	विजेटर	विजेटर	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	nmod	_	IC=1|SC=5|DepDist=4
+27	के	का	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=5|DepDist=1
+28	लीए	लीए	ADP	PSP	AdpType=Post	_	case	_	IC=2|SC=5|DepDist=2
+29	अप्लाई	अप्लाई	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=6|DepDist=1
+30	फीस	फीस	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	acl:relcl	_	IC=17|SC=3|DepDist=3
+31	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	_	cop	_	IC=1|SC=3|DepDist=1
+32	मैम	मैम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	nsubj	_	IC=1|SC=4|DepDist=4
+33	उसी	वह	PRON	PRP	Case=Acc|Number=Sing|Person=3|PronType=Prs	_	nmod	_	IC=3|SC=4|DepDist=3
+34	में	में	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=4|DepDist=1
+35	यह	यह	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	_	det	_	IC=1|SC=5|DepDist=1
+36	इन्क्लूडिड	इन्क्लूडिड	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=39|SC=1|DepDist=18
+37	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	_	cop	_	IC=1|SC=1|DepDist=1
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0011
+# text = मैम जूलॉजी म्यूजियम आप कितने दिनों का पास लेना चाहेंगी
+1	मैम	मैम	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=2
+2	जूलॉजी	जूलॉजी	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=3|DepDist=1
+3	म्यूजियम	म्यूजियम	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	nsubj	_	IC=2|SC=2|DepDist=7
+4	आप	आप	PRON	PRP	Case=Nom|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	nsubj	_	IC=1|SC=3|DepDist=5
+5	कितने	कितना	DET	QF	Case=Acc|Gender=Masc|Number=Plur	_	det	_	IC=1|SC=4|DepDist=1
+6	दिनों	दिन	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	_	nmod	_	IC=1|SC=4|DepDist=2
+7	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	_	case	_	IC=1|SC=4|DepDist=1
+8	पास	पास	ADV	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=2|SC=4|DepDist=1
+9	लेना	लेना	VERB	VM	Case=Nom|VerbForm=Inf	_	obj	_	IC=5|SC=3|DepDist=1
+10	चाहेंगी	चाहना	VERB	VM	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Polite=Form|Tense=Fut|VerbForm=Fin|Voice=Act	_	root	_	IC=7|SC=1|DepDist=0
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0012
+# text = जी मैम तो आपको यह पास मैम तीन दिन के लिए चाहिए
+1	जी	जी	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=1
+2	मैम	मैम	PROPN	NNP	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	iobj	_	IC=1|SC=2|DepDist=10
+3	तो	तो	PART	RP	_	_	dep	_	IC=1|SC=2|DepDist=1
+4	आपको	आप	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	nsubj	_	IC=1|SC=3|DepDist=8
+5	यह	यह	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	_	det	_	IC=1|SC=4|DepDist=2
+6	पास	पास	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=5|DepDist=1
+7	मैम	मैम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obj	_	IC=2|SC=4|DepDist=5
+8	तीन	तीन	NUM	QC	NumType=Card	_	nummod	_	IC=1|SC=5|DepDist=1
+9	दिन	दिन	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=1|SC=5|DepDist=3
+10	के	का	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=5|DepDist=1
+11	लिए	लिए	ADP	PSP	AdpType=Post	_	case	_	IC=2|SC=5|DepDist=2
+12	चहिए	चाहिए	VERB	VM	Voice=Act	_	root	_	IC=23|SC=1|DepDist=0
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0013
+# text = जी मैम तो आपको जूलॉजी म्यूजियम का पास तीन दिनों के लिए मैम ग्याराह सौ नब्बे रुपये में दिया जाएगा
+1	जी	जी	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=1
+2	मैम	मैम	PROPN	NNP	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	iobj	_	IC=1|SC=2|DepDist=17
+3	तो	तो	PART	RP	_	_	dep	_	IC=1|SC=2|DepDist=1
+4	आपको	आप	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	iobj	_	IC=1|SC=3|DepDist=15
+5	जूलॉजी	जूलॉजी	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=4|DepDist=1
+6	म्यूजियम	म्यूजियम	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=1|SC=4|DepDist=13
+7	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	_	case	_	IC=1|SC=4|DepDist=1
+8	पास	पास	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	_	case	_	IC=2|SC=4|DepDist=2
+9	तीन	तीन	NUM	QC	NumType=Card	_	nummod	_	IC=1|SC=5|DepDist=1
+10	दिनों	दिन	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	_	obl	_	IC=1|SC=5|DepDist=9
+11	के	का	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=5|DepDist=1
+12	लिए	लिए	ADP	PSP	AdpType=Post	_	case	_	IC=2|SC=5|DepDist=2
+13	मैम	मैम	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=6|DepDist=1
+14	ग्याराह	ग्याराह	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obj	_	IC=1|SC=6|DepDist=5
+15	सौ	सौ	NUM	QCC	NumType=Card	_	obj	_	IC=1|SC=7|DepDist=1
+16	नब्बे	नब्बा	NUM	QC	NumType=Card	_	nummod	_	IC=1|SC=7|DepDist=1
+17	रुपये	रुपया	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=1|SC=7|DepDist=2
+18	में	में	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=7|DepDist=1
+19	दीया	देना	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Pass	_	root	_	IC=56|SC=1|DepDist=0
+20	जाएगा	जाना	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	_	aux:pass	_	IC=1|SC=1|DepDist=1
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0014
+# text = जी मैम संडे के अलावा हमारे यहाँ हफ़्ते के छः दिन मैम फुल टाइमिंग दी जाती है जिसमें आपको सुबह दस बजे
+1	जी	जी	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=2
+2	मैम	मैम	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=3|DepDist=1
+3	संडे	संडे	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=2|SC=2|DepDist=12
+4	के	का	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=2|DepDist=1
+5	अलावा	अलावा	ADP	PSP	AdpType=Post	_	case	_	IC=2|SC=2|DepDist=2
+6	हमारे	हम	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=3|DepDist=1
+7	यहाँ	यहाँ	PRON	PRP	Case=Nom|PronType=Prs	_	obl	_	IC=1|SC=3|DepDist=8
+8	हप्ते	हफ़्ता	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	nmod	_	IC=1|SC=4|DepDist=3
+9	के	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Plur	_	case	_	IC=1|SC=4|DepDist=1
+10	छे	छः	NUM	QC	NumType=Card	_	nummod	_	IC=1|SC=5|DepDist=1
+11	दिन	दिन	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	_	obl	_	IC=3|SC=4|DepDist=4
+12	मैम	मैम	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=5|DepDist=2
+13	फुल	फुल	ADJ	JJ	Case=Nom	_	amod	_	IC=1|SC=6|DepDist=1
+14	टाइमिंग	टाइमिंग	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	obj	_	IC=2|SC=5|DepDist=1
+15	दी	देना	VERB	VM	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	_	root	_	IC=22|SC=1|DepDist=0
+16	जाती	जाना	AUX	VAUX	Aspect=Imp|Gender=Fem|Number=Sing|VerbForm=Part	_	aux:pass	_	IC=1|SC=1|DepDist=1
+17	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	_	aux:pass	_	IC=2|SC=1|DepDist=2
+18	जिसमें	जो	PRON	PRP	Case=Acc,Ine|Number=Sing|Person=3|PronType=Prs	_	nmod	_	IC=1|SC=2|DepDist=4
+19	आपको	आप	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	nsubj	_	IC=1|SC=3|DepDist=3
+20	सुबह	सुबह	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	nmod	_	IC=1|SC=4|DepDist=2
+21	दस	दस	NUM	QC	NumType=Card	_	nummod	_	IC=1|SC=5|DepDist=1
+22	बजे	बजे	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	acl:relcl	_	IC=14|SC=1|DepDist=8
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0015
+# text = शाम के छः बजे तक म्यूजियम हमारा खुला रहेगा और आपको इस बीच यहां विजिट करने का मौका दिया जायेगा
+1	शाम	शाम	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	_	nmod	_	IC=1|SC=2|DepDist=3
+2	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	_	case	_	IC=1|SC=2|DepDist=1
+3	छे	छः	NUM	QC	NumType=Card	_	nummod	_	IC=1|SC=3|DepDist=1
+4	बजे	बजे	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=3|SC=2|DepDist=4
+5	तक	तक	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=2|DepDist=1
+6	म्यूजियम	म्यूजियम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	nsubj	_	IC=1|SC=3|DepDist=2
+7	हमारा	हम	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	_	obl	_	IC=1|SC=4|DepDist=1
+8	खुला	खुलना	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	_	root	_	IC=5|SC=1|DepDist=0
+9	रहेगा	रहना	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	_	aux	_	IC=1|SC=1|DepDist=1
+10	और	और	CCONJ	CC	_	_	cc	_	IC=1|SC=2|DepDist=9
+11	आपको	आप	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	iobj	_	IC=1|SC=3|DepDist=8
+12	इस	यह	DET	DEM	Case=Acc|Number=Sing|Person=3|PronType=Dem	_	det	_	IC=1|SC=4|DepDist=1
+13	बीच	बीच	ADV	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=1|SC=4|DepDist=6
+14	यहां	यहाँ	PRON	PRP	Case=Nom|PronType=Prs	_	obl	_	IC=1|SC=5|DepDist=2
+15	विजिट	विजिट	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=6|DepDist=1
+16	करने	करना	VERB	VM	Case=Acc|Number=Sing|VerbForm=Inf	_	nmod	_	IC=2|SC=5|DepDist=2
+17	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	_	mark	_	IC=1|SC=5|DepDist=1
+18	मौका	मौका	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=2|SC=5|DepDist=1
+19	दिया	देना	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Pass	_	conj	_	IC=31|SC=1|DepDist=11
+20	जायेगा	जाना	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	_	aux:pass	_	IC=1|SC=1|DepDist=1
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0016
+# text = जी मैम आप हमारे यहाँ जब तक म्यूजियम सुबह से लेकर शाम तक खुला रहेगा उस बीच आप हमारे यहाँ किसी भी टाइमिंग आकर रह सकती
+1	जी	जी	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=1
+2	मैम	मैम	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	nsubj	_	IC=1|SC=2|DepDist=12
+3	आप	आप	PRON	PRP	Case=Nom|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	nmod	_	IC=1|SC=2|DepDist=1
+4	हमारे	हम	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=3|DepDist=1
+5	यहाँ	यहाँ	PRON	PRP	Case=Nom|PronType=Prs	_	obl	_	IC=1|SC=3|DepDist=9
+6	जब	जब	PRON	PRP	Case=Acc|PronType=Prs	_	obl	_	IC=1|SC=4|DepDist=8
+7	तक	तक	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=4|DepDist=1
+8	म्यूजियम	म्यूजियम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obj	_	IC=1|SC=5|DepDist=6
+9	सुबह	सुबह	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	_	nmod	_	IC=1|SC=6|DepDist=3
+10	से	से	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=6|DepDist=1
+11	लेकर	लेकर	ADP	PSP	AdpType=Post	_	case	_	IC=2|SC=6|DepDist=2
+12	शाम	शाम	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	_	obl	_	IC=3|SC=6|DepDist=2
+13	तक	तक	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=6|DepDist=1
+14	खुला	खुलना	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	_	acl:relcl	_	IC=33|SC=2|DepDist=3
+15	रहेगा	रहना	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	_	aux	_	IC=1|SC=2|DepDist=1
+16	उस	वह	DET	DEM	Case=Acc|Number=Sing|Person=3|PronType=Dem	_	det	_	IC=1|SC=3|DepDist=1
+17	बीच	बीच	ADV	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=3|SC=2|DepDist=8
+18	आप	आप	PRON	PRP	Case=Nom|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	nsubj	_	IC=1|SC=3|DepDist=7
+19	हमारे	हम	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=4|DepDist=1
+20	यहाँ	यहाँ	PRON	PRP	Case=Nom|PronType=Prs	_	obl	_	IC=1|SC=4|DepDist=5
+21	किसी	कोई	PRON	PRP	Case=Acc|Number=Sing|Person=3|PronType=Prs	_	nmod	_	IC=1|SC=5|DepDist=2
+22	भी	भी	PART	RP	_	_	dep	_	IC=1|SC=5|DepDist=1
+23	टाइमिंग	टाइमिंग	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	obj	_	IC=2|SC=5|DepDist=1
+24	आकर	आना	VERB	VM	VerbForm=Conv	_	advcl	_	IC=1|SC=5|DepDist=1
+25	रह	रहना	VERB	VM	Number=Sing|Voice=Act	_	root	_	IC=18|SC=1|DepDist=0
+26	सकती	सकना	AUX	VAUX	Aspect=Imp|Gender=Fem|Number=Sing|VerbForm=Part	_	aux	_	IC=1|SC=1|DepDist=1
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0017
+# text = और मैम आपको एक विशेष बात और बता दूँ कि आपके एक पास के साथ आपके किसी भी एक फ़ैमिली मेंबर का हमारे यहां प्रवेश फ्री में होता है मैम
+1	और	और	CCONJ	CC	_	_	cc	_	IC=1|SC=2|DepDist=7
+2	मैम	मैम	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	nsubj	_	IC=1|SC=3|DepDist=6
+3	आपको	आप	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	nsubj	_	IC=1|SC=4|DepDist=3
+4	एक	एक	NUM	QC	NumType=Card	_	nummod	_	IC=1|SC=5|DepDist=2
+5	विशेष	विशेष	ADJ	JJ	Case=Nom	_	amod	_	IC=1|SC=6|DepDist=1
+6	बात	बात	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	root	_	IC=4|SC=3|DepDist=0
+7	और	और	CCONJ	CC	_	_	cc	_	IC=1|SC=4|DepDist=1
+8	बता	बताना	VERB	VM	Number=Sing|Person=2|Polite=Form|Voice=Act	_	conj	_	IC=13|SC=1|DepDist=2
+9	दूँ	दूना	VERB	VAUX	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin	_	compound	_	IC=1|SC=1|DepDist=1
+10	कि	कि	SCONJ	CC	_	_	mark	_	IC=1|SC=2|DepDist=18
+11	आपके	आप	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Sing|Person=2|Polite=Form|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=3|DepDist=1
+12	एक	एक	NUM	QC	NumType=Card	_	obl	_	IC=1|SC=3|DepDist=16
+13	पास	पास	ADP	NST	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing|Person=3	_	case	_	IC=1|SC=3|DepDist=1
+14	के	का	ADP	PSP	AdpType=Post	_	case	_	IC=2|SC=3|DepDist=2
+15	साथ	साथ	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	_	case	_	IC=3|SC=3|DepDist=3
+16	आपके	आप	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Sing|Person=2|Polite=Form|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=4|DepDist=5
+17	किसी	कोई	PRON	PRP	Case=Acc|Number=Sing|Person=3|PronType=Prs	_	nmod	_	IC=1|SC=5|DepDist=4
+18	भी	भी	PART	RP	_	_	dep	_	IC=1|SC=5|DepDist=1
+19	एक	एक	NUM	QC	NumType=Card	_	nummod	_	IC=1|SC=6|DepDist=2
+20	फ़ैमिली	फ़ैमिली	ADJ	JJ	Case=Acc	_	amod	_	IC=1|SC=7|DepDist=1
+21	मेंबर	मेंबर	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	nmod	_	IC=9|SC=4|DepDist=4
+22	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	_	case	_	IC=1|SC=4|DepDist=1
+23	हमारे	हम	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=5|DepDist=1
+24	यहां	यहाँ	PRON	PRP	Case=Nom|PronType=Prs	_	obl	_	IC=1|SC=5|DepDist=4
+25	प्रवेश	प्रवेश	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	nsubj	_	IC=4|SC=5|DepDist=3
+26	फ्री	फ्री	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=1|SC=6|DepDist=2
+27	में	में	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=6|DepDist=1
+28	होता	होना	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	_	obj	_	IC=58|SC=1|DepDist=20
+29	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	_	aux	_	IC=1|SC=1|DepDist=1
+30	मैम	मैम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	punct	_	IC=2|SC=1|DepDist=2
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0018
+# text = जी मैम आप ऑनलाइन भी यह डिटेल्स हमारे साथ शेअर कर सकती हैं और ऑफलाइन भी मैम
+1	जी	जी	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=1
+2	मैम	मैम	PROPN	NNP	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	nsubj	_	IC=1|SC=2|DepDist=9
+3	आप	आप	PRON	PRP	Case=Nom|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	nmod	_	IC=1|SC=2|DepDist=1
+4	ऑनलाइन	ऑनलाइन	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	obl	_	IC=1|SC=3|DepDist=7
+5	भी	भी	PART	RP	_	_	dep	_	IC=1|SC=3|DepDist=1
+6	ये	यह	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	_	det	_	IC=1|SC=4|DepDist=1
+7	डिटेल्स	डिटेल्स	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur|Person=3	_	obj	_	IC=1|SC=4|DepDist=4
+8	हमारे	हम	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	_	obl	_	IC=1|SC=5|DepDist=3
+9	साथ	साथ	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	_	case	_	IC=1|SC=5|DepDist=1
+10	शेअर	शेअर	X	UNK	Foreign=Yes	_	compound	_	IC=1|SC=6|DepDist=1
+11	कर	करना	VERB	VM	Gender=Fem|Number=Sing|Person=3|Polite=Form|Voice=Act	_	root	_	IC=20|SC=1|DepDist=0
+12	सकती	सकना	AUX	VAUX	Aspect=Imp|Gender=Fem|Number=Sing|Person=3|Polite=Form|VerbForm=Part	_	aux	_	IC=1|SC=1|DepDist=1
+13	हैं	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=2|Polite=Form|Tense=Pres|VerbForm=Fin	_	aux:pass	_	IC=2|SC=1|DepDist=2
+14	और	और	CCONJ	CC	_	_	cc	_	IC=1|SC=2|DepDist=1
+15	ऑफलाइन	ऑफलाइन	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	conj	_	IC=4|SC=1|DepDist=4
+16	भी	भी	PART	RP	_	_	dep	_	IC=1|SC=1|DepDist=1
+17	मैम	मैम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	conj	_	IC=6|SC=1|DepDist=6
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0019
+# text = जी मैम आप हमारे यहां ये सारी डीटेल्स हमारे ईमेल पर शेअर कर दीजीए मैम
+1	जी	जी	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=1
+2	मैम	मैम	PROPN	NNP	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	nsubj	_	IC=1|SC=2|DepDist=11
+3	आप	आप	PRON	PRP	Case=Nom|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	dep	_	IC=1|SC=2|DepDist=1
+4	हमारे	हम	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=3|DepDist=1
+5	यहां	यहाँ	PRON	PRP	Case=Nom|PronType=Prs	_	obl	_	IC=1|SC=3|DepDist=8
+6	ये	यह	DET	DEM	Case=Nom|Number=Plur|Person=3|PronType=Dem	_	det	_	IC=1|SC=4|DepDist=2
+7	सारी	सारा	DET	QF	Case=Nom|Gender=Fem|Number=Plur	_	det	_	IC=1|SC=5|DepDist=1
+8	डीटेल्स	डीटेल	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur|Person=3	_	obj	_	IC=2|SC=4|DepDist=5
+9	हमारे	हम	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	_	nmod	_	IC=1|SC=5|DepDist=1
+10	ईमेल	ईमेल	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	_	obl	_	IC=1|SC=5|DepDist=3
+11	पे	पर	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=5|DepDist=1
+12	शेअर	शेअर	X	UNK	Foreign=Yes	_	compound	_	IC=1|SC=6|DepDist=1
+13	कर	करना	VERB	VM	Number=Sing|Person=2|Polite=Form|Voice=Act	_	root	_	IC=24|SC=1|DepDist=0
+14	दीजीए	दीजना	VERB	VAUX	Mood=Sub|Number=Sing|Person=2|Polite=Form|VerbForm=Fin	_	compound	_	IC=1|SC=1|DepDist=1
+15	मैम	मैम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	punct	_	IC=2|SC=1|DepDist=2
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0020
+# text = जी मैम हम मैम आपको इसी नंबर पर एक लिंक शेअर कर देंगे मैम आप वहां जाकर अपना यू पी आई आई डी डाल करके पेमेंट कर दीजिएगा
+1	जी	जी	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=1
+2	मैम	मैम	PROPN	NNP	Case=Nom|Number=Sing|Person=3	_	nsubj	_	IC=1|SC=2|DepDist=10
+3	हम	हम	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	_	nmod	_	IC=1|SC=2|DepDist=1
+4	मैम	मैम	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	_	obl	_	IC=1|SC=3|DepDist=8
+5	आपको	आप	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	iobj	_	IC=1|SC=4|DepDist=7
+6	इसी	यह	DET	DEM	Case=Acc|Number=Sing|Person=3|PronType=Dem	_	det	_	IC=1|SC=5|DepDist=1
+7	नंबर	नंबर	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	_	obl	_	IC=1|SC=5|DepDist=5
+8	पे	पर	ADP	PSP	AdpType=Post	_	case	_	IC=1|SC=5|DepDist=1
+9	एक	एक	NUM	QC	NumType=Card	_	nummod	_	IC=1|SC=6|DepDist=1
+10	लिंक	लिंक	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obj	_	IC=1|SC=6|DepDist=2
+11	शेअर	शेअर	X	UNK	Foreign=Yes	_	compound	_	IC=1|SC=7|DepDist=1
+12	कर	करना	VERB	VM	Number=Sing|Person=2|Polite=Form|Voice=Act	_	root	_	IC=28|SC=1|DepDist=0
+13	देंगे	देना	VERB	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Person=2|Polite=Form|Tense=Fut|VerbForm=Fin	_	compound	_	IC=1|SC=1|DepDist=1
+14	मैम	मैम	SCONJ	CC	_	_	mark	_	IC=2|SC=1|DepDist=2
+15	आप	आप	PRON	PRP	Case=Nom|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	nsubj	_	IC=1|SC=2|DepDist=12
+16	वहां	वहाँ	PRON	PRP	Case=Nom|PronType=Prs	_	obl	_	IC=1|SC=3|DepDist=1
+17	जाके	जाना	VERB	VM	VerbForm=Conv	_	advcl	_	IC=1|SC=3|DepDist=10
+18	अपना	अपना	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	_	nmod	_	IC=1|SC=4|DepDist=5
+19	यूपीआई	यू	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=5|DepDist=4
+20	आईडी	पी	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=6|DepDist=3
+21	डाल	आना	NOUN	NNC	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=7|DepDist=2
+22	करके	आना	NOUN	NNC	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=8|DepDist=1
+23	पेमेंट	डी	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obj	_	IC=11|SC=4|DepDist=1
+24	कर	डालना	VERB	VM	_	_	compound	_	IC=1|SC=4|DepDist=1
+25	दीजीयेगा	करना	VERB	VM	VerbForm=Conv	_	advcl	_	IC=1|SC=4|DepDist=2
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0021
+# text = इलेवन हंडरेड नाइन्टी मैम ग्यारह सौ नब्बे रुपये
+1	इलेवन	इलेवन	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=3
+2	हंडरेड	हंडरेड	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=3|DepDist=2
+3	नाइन्टी	नाइन्टी	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	compound	_	IC=1|SC=4|DepDist=1
+4	मैम	मैम	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	nsubj	_	IC=4|SC=2|DepDist=4
+5	ग्यारह	ग्यारह	NUM	QCC	NumType=Card	_	compound	_	IC=1|SC=3|DepDist=2
+6	सौ	सौ	NUM	QCC	NumType=Card	_	compound	_	IC=1|SC=4|DepDist=1
+7	नब्बे	नब्बा	NUM	QC	NumType=Card	_	nummod	_	IC=2|SC=3|DepDist=1
+8	रुपये	रुपया	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	_	root	_	IC=4|SC=1|DepDist=0
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0022
+# text = जी मैम यह आपको पूरा टोटल देना होगा
+1	जी	जी	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=1
+2	मैम	मैम	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	nsubj	_	IC=1|SC=2|DepDist=5
+3	यह	यह	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	_	iobj	_	IC=1|SC=3|DepDist=4
+4	आपको	आप	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	_	iobj	_	IC=1|SC=4|DepDist=3
+5	पूरा	पूरा	ADJ	JJ	Case=Nom|Gender=Masc|Number=Sing	_	amod	_	IC=1|SC=5|DepDist=1
+6	टोटल	टोटल	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	obj	_	IC=1|SC=5|DepDist=1
+7	देना	देना	VERB	VM	Gender=Masc|Number=Sing|Person=3|VerbForm=Inf|Voice=Act	_	root	_	IC=10|SC=1|DepDist=0
+8	होगा	होना	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	_	aux	_	IC=1|SC=1|DepDist=1
+
+# segment_id = f3cc7e1a-35a7-4c82-a104-b285698f3706_1_s0023
+# text = जी मैम धन्यवाद
+1	जी	जी	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	_	compound	_	IC=1|SC=2|DepDist=1
+2	मैम	मैम	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	nmod	_	IC=1|SC=2|DepDist=1
+3	धन्यवाद	धन्यवाद	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	_	root	_	IC=1|SC=1|DepDist=0
+

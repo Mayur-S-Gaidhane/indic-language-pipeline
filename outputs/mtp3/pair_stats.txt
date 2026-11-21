@@ -1,0 +1,6 @@
+Context-Response Pair Extraction Statistics
+==================================================
+Total pairs: 7998
+Unique files: 426
+Context turns mean: 11.2
+Response words mean: 18.7

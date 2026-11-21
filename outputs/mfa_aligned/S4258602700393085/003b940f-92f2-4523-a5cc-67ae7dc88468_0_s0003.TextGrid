@@ -1,0 +1,108 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 1.439 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 1.439 
+        intervals: size = 11 
+        intervals [1]:
+            xmin = 0.0 
+            xmax = 0.05 
+            text = "" 
+        intervals [2]:
+            xmin = 0.05 
+            xmax = 0.15 
+            text = "पेट" 
+        intervals [3]:
+            xmin = 0.15 
+            xmax = 0.2 
+            text = "में" 
+        intervals [4]:
+            xmin = 0.2 
+            xmax = 0.29 
+            text = "दर्द" 
+        intervals [5]:
+            xmin = 0.29 
+            xmax = 0.3 
+            text = "है" 
+        intervals [6]:
+            xmin = 0.3 
+            xmax = 0.55 
+            text = "सर" 
+        intervals [7]:
+            xmin = 0.55 
+            xmax = 0.68 
+            text = "में" 
+        intervals [8]:
+            xmin = 0.68 
+            xmax = 0.8 
+            text = "" 
+        intervals [9]:
+            xmin = 0.8 
+            xmax = 1.28 
+            text = "दर्द" 
+        intervals [10]:
+            xmin = 1.28 
+            xmax = 1.29 
+            text = "है" 
+        intervals [11]:
+            xmin = 1.29 
+            xmax = 1.439 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 1.439 
+        intervals: size = 11 
+        intervals [1]:
+            xmin = 0.0 
+            xmax = 0.05 
+            text = "" 
+        intervals [2]:
+            xmin = 0.05 
+            xmax = 0.15 
+            text = "spn" 
+        intervals [3]:
+            xmin = 0.15 
+            xmax = 0.2 
+            text = "spn" 
+        intervals [4]:
+            xmin = 0.2 
+            xmax = 0.29 
+            text = "spn" 
+        intervals [5]:
+            xmin = 0.29 
+            xmax = 0.3 
+            text = "है" 
+        intervals [6]:
+            xmin = 0.3 
+            xmax = 0.55 
+            text = "spn" 
+        intervals [7]:
+            xmin = 0.55 
+            xmax = 0.68 
+            text = "spn" 
+        intervals [8]:
+            xmin = 0.68 
+            xmax = 0.8 
+            text = "" 
+        intervals [9]:
+            xmin = 0.8 
+            xmax = 1.28 
+            text = "spn" 
+        intervals [10]:
+            xmin = 1.28 
+            xmax = 1.29 
+            text = "है" 
+        intervals [11]:
+            xmin = 1.29 
+            xmax = 1.439 
+            text = "" 

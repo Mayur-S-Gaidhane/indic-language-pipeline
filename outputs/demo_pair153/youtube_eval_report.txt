@@ -1,0 +1,259 @@
+=================================================================
+  DEMO: CCS Pipeline — Pair 153
+=================================================================
+
+  Pair ID: Nitin Gadkari Interv_153
+  Next speaker: SPEAKER_00 (गडकरी जी)
+  Human response (18 words): देश का प्रदूषण कम नहीं करना चाहिए 20% डालने से प्रदूषण कम होता है वो नहीं करना चाहिए
+  Prompt version: V5
+
+  Loading Stanza Hindi...
+  Stanza Hindi loaded
+
+─────────────────────────────────────────────────────────────────
+  STEP 1: Build V5 Prompt (5 context turns)
+─────────────────────────────────────────────────────────────────
+
+  V5 Semantic Hints:
+    Keywords : देश, प्रदूषण, करना, 20%, डालने, होता
+    Theme    : खंडन/असहमति (करना — प्रदूषण)
+    Structure: 1 वाक्य, 18 शब्द
+
+  System prompt:
+    आप नितिन गडकरी हैं — भारत के केंद्रीय मंत्री। आप एक टीवी साक्षात्कार दे रहे हैं।
+आपको अगले उत्तर का अर्थ (semantic meani...
+
+  User prompt:
+साक्षात्कारकर्ता: नहीं था। हां। ठीक है।
+गडकरी जी: हां। ठीक है। धीरे-धीरे बनने लगा। हां। हां। अब बनने लगा इंपोर्ट कम हुआ। हां। हां। तब इथेनॉल उतना ऐड होते गया। तो अवेलेबिलिटी ऑफ़ इथेनॉल तो अभी हुआ है ना। इसके पहले शब्द
+साक्षात्कारकर्ता: इसके पहले शब्द तो हमें हम क्या हम आराम से यह नहीं कर सकते थे सर
+गडकरी जी: सकते थे सर क्या आप मुझे बताइए देश का इंपोर्ट जो है वो जल्दी कम नहीं करना चाहिए
+साक्षात्कारकर्ता: वो जल्दी कम नहीं करना चाहिए देश का प्रदूषण कम नहीं देश का प्रदूषण कम
+
+अगले उत्तर में ये तत्व होने चाहिए:
+मुख्य शब्द (keywords): देश, प्रदूषण, करना, 20%, डालने, होता
+भाव/विषय (theme): खंडन/असहमति (करना — प्रदूषण)
+वाक्य संरचना (structure hint): 1 वाक्य, 18 शब्द
+
+इन तत्वों के आधार पर लगभग 18 शब्दों में स्वाभाविक उत्तर दीजिए।
+कोई अंग्रेजी नहीं। कोई व्याख्या नहीं। सिर्फ उत्तर दें।
+
+गडकरी जी:
+
+─────────────────────────────────────────────────────────────────
+  STEP 2: Generate Candidates (Sarvam 105B + Gemini)
+─────────────────────────────────────────────────────────────────
+  Sarvam AI client loaded
+  Generating 10 Sarvam candidates (temp 0.3-1.2)...
+    S00 (temp=0.30): देश का प्रदूषण कम करने के लिए हमें 20% पेट्रोल में इथेनॉल डालने का काम तुरंत करन...
+    S01 (temp=0.40): देश का प्रदूषण कम करने के लिए हमें 20% पेट्रोल में इथेनॉल डालने का काम करना होता...
+    S02 (temp=0.50): हम देश का प्रदूषण कम करना चाहते हैं, इसलिए पेट्रोल में 20% इथेनॉल डालने का लक्ष्...
+    S03 (temp=0.60): देश का प्रदूषण कम करना हमारा लक्ष्य है, इसलिए पेट्रोल में 20% इथेनॉल डालने से जो...
+    S04 (temp=0.70): देश का प्रदूषण कम करने के लिए हमें 20% इथेनॉल डालने का काम अभी नहीं करना होता है...
+    S05 (temp=0.80): देश का प्रदूषण कम करना हमारा काम है, इसलिए हमने पेट्रोल में 20% इथेनॉल डालने का ...
+    S06 (temp=0.90): देश का प्रदूषण कम करना मेरा लक्ष्य है, इसलिए हम पेट्रोल में 20% इथेनॉल डालने पर ...
+    S07 (temp=1.00): देश का प्रदूषण कम करना जरूरी है, इसलिए पेट्रोल में 20% इथेनॉल डालने से ऐसा होता ...
+    S08 (temp=1.10): देश का प्रदूषण कम करना हमारा मुद्दा है, इसलिए 20% डालने पर जो होता है वो हम देख ...
+    S09 (temp=1.20): नहीं, देश का प्रदूषण कम करने के लिए अभी 20% ईंधन में इथेनॉल डालना शुरू ही होता ह...
+  Trying gemini-2.5-flash-lite...
+    ✗ 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-
+  Trying gemini-2.0-flash...
+    ✗ 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-
+  Trying gemini-3.5-flash-lite...
+  Gemini client loaded (model: gemini-3.5-flash-lite)
+  Generating 10 Gemini candidates (temp 0.4-1.2)...
+    G00 (temp=0.40): देश का प्रदूषण कम करना है और पेट्रोल में बीस प्रतिशत इथेनॉल डालना बहुत आवश्यक हो...
+    G01 (temp=0.49): देश का प्रदूषण कम करना है तो पेट्रोल में बीस प्रतिशत इथेनॉल डालना ही होता है।...
+    G02 (temp=0.58): देश का प्रदूषण कम करना है और पेट्रोल में बीस प्रतिशत इथेनॉल डालना होता है।...
+    G03 (temp=0.67): देश का प्रदूषण कम करना है तो पेट्रोल में बीस प्रतिशत इथेनॉल डालना ही होता है।...
+    G04 (temp=0.76): देश का प्रदूषण कम करना है तो पेट्रोल में बीस प्रतिशत इथेनॉल डालना ही होता है।...
+    G05 (temp=0.84): देश में प्रदूषण कम करना है तो पेट्रोल में बीस प्रतिशत इथेनॉल डालना ही होता है।...
+    G06 (temp=0.93): अरे भाई, देश का प्रदूषण कम करना है तो पेट्रोल में बीस प्रतिशत इथेनॉल डालना ही हो...
+    G07 (temp=1.02): देश का प्रदूषण कम करना है तो पेट्रोल में बीस प्रतिशत इथेनॉल डालना ही होता है।...
+    G08 (temp=1.11): देश का प्रदूषण कम करना है तो पेट्रोल में बीस प्रतिशत इथेनॉल डालना ही होता है।...
+    G09 (temp=1.20): अरे भाई, देश में प्रदूषण कम करने के लिए ही तो पेट्रोल में बीस प्रतिशत इथेनॉल डाल...
+
+  Generated 16 unique candidates (Sarvam: 10, Gemini: 6)
+
+─────────────────────────────────────────────────────────────────
+  STEP 3: Load GPT-2 Hindi for CCS Scoring
+─────────────────────────────────────────────────────────────────
+  Loading GPT-2 Hindi (surajp/gpt2-hindi)...
+  GPT-2 Hindi loaded (device: cpu)
+
+─────────────────────────────────────────────────────────────────
+  STEP 4: CCS Reference (precomputed from 110 train pairs)
+─────────────────────────────────────────────────────────────────
+  CCS Reference Statistics (precomputed):
+    Mean CCS     : -0.001722
+    SD CCS       : 0.001495
+    Source        : 110 human responses from train split
+
+─────────────────────────────────────────────────────────────────
+  STEP 5: Build candidates.csv
+─────────────────────────────────────────────────────────────────
+
+  Generation Summary:
+    Pairs processed    : 1
+    LLM candidates     : 16 (Sarvam: 10, Gemini: 6)
+    Human responses    : 1
+    Total rows         : 17
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/demo_pair153/candidates.csv
+
+─────────────────────────────────────────────────────────────────
+  STEP 6: CCS Scoring + Response Selection + MRR
+─────────────────────────────────────────────────────────────────
+
+  Scoring all candidates with linguistic-only CCS...
+    Scored 1/17 | Nitin Gadkari Interv_153_c00: CCS=-0.000696  Nat=0.5930
+    Scored 2/17 | Nitin Gadkari Interv_153_c01: CCS=-0.000959  Nat=0.6622
+    Scored 3/17 | Nitin Gadkari Interv_153_c02: CCS=-0.001315  Nat=0.7862
+    Scored 4/17 | Nitin Gadkari Interv_153_c03: CCS=-0.001541  Nat=0.8920
+    Scored 5/17 | Nitin Gadkari Interv_153_c04: CCS=-0.000742  Nat=0.6041
+    Scored 6/17 | Nitin Gadkari Interv_153_c05: CCS=-0.000663  Nat=0.5854
+    Scored 7/17 | Nitin Gadkari Interv_153_c06: CCS=-0.000992  Nat=0.6719
+    Scored 8/17 | Nitin Gadkari Interv_153_c07: CCS=-0.001575  Nat=0.9107
+    Scored 9/17 | Nitin Gadkari Interv_153_c08: CCS=-0.002076  Nat=0.8086
+    Scored 10/17 | Nitin Gadkari Interv_153_c09: CCS=0.002247  Nat=0.2736
+    Scored 11/17 | Nitin Gadkari Interv_153_c10: CCS=-0.001174  Nat=0.7318
+    Scored 12/17 | Nitin Gadkari Interv_153_c11: CCS=-0.001066  Nat=0.6951
+    Scored 13/17 | Nitin Gadkari Interv_153_c12: CCS=-0.001840  Nat=0.9269
+    Scored 14/17 | Nitin Gadkari Interv_153_c13: CCS=-0.000830  Nat=0.6262
+    Scored 15/17 | Nitin Gadkari Interv_153_c14: CCS=-0.000514  Nat=0.5530
+    Scored 16/17 | Nitin Gadkari Interv_153_c15: CCS=0.001813  Nat=0.2972
+    Scored 17/17 | Nitin Gadkari Interv_153_human: CCS=-0.001716  Nat=0.9962
+
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/demo_pair153/scored_candidates.csv (17 rows)
+
+  Response Selection + MRR Computation...
+
+  FULL RANKING:
+  Rank   ID                                         CCS      Nat Text
+  ──────────────────────────────────────────────────────────────────────────────────────────
+  1      Nitin Gadkari Interv_153_human       -0.001716   0.9962 देश का प्रदूषण कम नहीं करना चाहिए 20% डा... ◄── HUMAN
+  2      Nitin Gadkari Interv_153_c12         -0.001840   0.9269 देश का प्रदूषण कम करना है और पेट्रोल में...
+  3      Nitin Gadkari Interv_153_c07         -0.001575   0.9107 देश का प्रदूषण कम करना जरूरी है, इसलिए प...
+  4      Nitin Gadkari Interv_153_c03         -0.001541   0.8920 देश का प्रदूषण कम करना हमारा लक्ष्य है, ...
+  5      Nitin Gadkari Interv_153_c08         -0.002076   0.8086 देश का प्रदूषण कम करना हमारा मुद्दा है, ...
+  6      Nitin Gadkari Interv_153_c02         -0.001315   0.7862 हम देश का प्रदूषण कम करना चाहते हैं, इसल...
+  7      Nitin Gadkari Interv_153_c10         -0.001174   0.7318 देश का प्रदूषण कम करना है और पेट्रोल में...
+  8      Nitin Gadkari Interv_153_c11         -0.001066   0.6951 देश का प्रदूषण कम करना है तो पेट्रोल में...
+  9      Nitin Gadkari Interv_153_c06         -0.000992   0.6719 देश का प्रदूषण कम करना मेरा लक्ष्य है, इ...
+  10     Nitin Gadkari Interv_153_c01         -0.000959   0.6622 देश का प्रदूषण कम करने के लिए हमें 20% प...
+  11     Nitin Gadkari Interv_153_c13         -0.000830   0.6262 देश में प्रदूषण कम करना है तो पेट्रोल मे...
+  12     Nitin Gadkari Interv_153_c04         -0.000742   0.6041 देश का प्रदूषण कम करने के लिए हमें 20% इ...
+  13     Nitin Gadkari Interv_153_c00         -0.000696   0.5930 देश का प्रदूषण कम करने के लिए हमें 20% प...
+  14     Nitin Gadkari Interv_153_c05         -0.000663   0.5854 देश का प्रदूषण कम करना हमारा काम है, इसल...
+  15     Nitin Gadkari Interv_153_c14         -0.000514   0.5530 अरे भाई, देश का प्रदूषण कम करना है तो पे...
+  16     Nitin Gadkari Interv_153_c15          0.001813   0.2972 अरे भाई, देश में प्रदूषण कम करने के लिए ...
+  17     Nitin Gadkari Interv_153_c09          0.002247   0.2736 नहीं, देश का प्रदूषण कम करने के लिए अभी ...
+
+  ★ SELECTED RESPONSE:
+    Text: देश का प्रदूषण कम करना है और पेट्रोल में बीस प्रतिशत इथेनॉल डालना होता है।
+    CCS: -0.001840
+    Naturalness: 0.9269
+
+  ★ HUMAN RESPONSE:
+    Text: देश का प्रदूषण कम नहीं करना चाहिए 20% डालने से प्रदूषण कम होता है वो नहीं करना चाहिए
+    CCS: -0.001716
+    Naturalness: 0.9962
+    Rank: 1 out of 17
+
+─────────────────────────────────────────────────────────────────
+  STEP 7: Text-Overlap Metrics (ENHANCED)
+  + Scaled BERTScore F1  + Embedding Cosine Similarity
+─────────────────────────────────────────────────────────────────
+  Computing BERTScore F1 (raw) for all candidates...
+    Raw BERTScore F1 avg: 0.7793
+  Using precomputed BERTScore baseline: 0.6499
+    (from full 38-pair eval, bert-base-multilingual-cased, Hindi)
+    Scaled BERTScore F1 avg: 0.3696
+    (raw avg: 0.7793, baseline: 0.6499)
+
+  ── Embedding Cosine Similarity ──
+  Loading embedding model: ai4bharat/IndicBERTv2-MLM-only...
+    ✗ Failed to load ai4bharat/IndicBERTv2-MLM-only: Due to a serious vulnerability issue in `torch.load`, even with `weights_only=Tr
+  Loading embedding model: xlm-roberta-base...
+  Embedding model loaded: xlm-roberta-base (device: cpu)
+  Computing embedding similarities for all 17 candidates...
+    Avg embedding cosine similarity: 0.9985
+
+  Updated: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/demo_pair153/scored_candidates.csv (added bertscore + embedding columns)
+
+  Text-Overlap Metrics (selected vs human):
+    Avg BLEU                    : 0.1549
+    Avg ROUGE-1 (F1)            : 0.4242
+    Avg ROUGE-L (F1)            : 0.3636
+    Avg BERTScore F1 (raw)      : 0.7682
+    Avg BERTScore F1 (SCALED)   : 0.3379
+    Avg Embedding Cosine Sim    : 0.9982
+
+  All Candidates vs Human (avg across 17 candidates):
+    Avg BERTScore F1 (raw)      : 0.7793
+    Avg BERTScore F1 (SCALED)   : 0.3696
+    Avg Embedding Cosine Sim    : 0.9985
+
+─────────────────────────────────────────────────────────────────
+  STEP 8: TTS (Text-to-Speech for selected response)
+─────────────────────────────────────────────────────────────────
+
+  Loading TTS model: facebook/mms-tts-hin...
+  TTS model loaded
+
+  TTS Summary:
+    Audio files generated: 1
+    Sample rate          : 16000 Hz
+    Output directory     : /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/demo_pair153/audio
+    Time                 : 4s
+
+=================================================================
+  DEMO PAIR 153 — EVALUATION RESULTS (V5 ENHANCED)
+=================================================================
+
+  Data source            : YouTube (Gadkari interview)
+  Total pairs            : 1 (Pair 153 demo)
+  Prompt version         : V5
+  CCS mode               : Linguistic-only (no acoustic)
+  Features               : IC, SC, forward_surprisal, backward_surprisal
+  Generation model(s)    : gemini, sarvam
+  Context window         : 5 turns
+
+  CCS Reference (human)  : mean=-0.001722, sd=0.001495
+
+  Selection Results:
+    Pairs evaluated      : 1
+    Avg naturalness (sel): 0.9269
+    Avg naturalness (hum): 0.9962
+
+  *** MRR (Mean Reciprocal Rank) ***
+    MRR                  : 1.0000
+    Avg human rank       : 1.0
+    Human in top-1       : 1/1 (100.0%)
+    Human in top-3       : 1/1 (100.0%)
+
+  *** Text-Overlap Metrics (selected vs human) ***
+    Avg BLEU                    : 0.1549
+    Avg ROUGE-1 (F1)            : 0.4242
+    Avg ROUGE-L (F1)            : 0.3636
+    Avg BERTScore F1 (raw)      : 0.7682
+    Avg BERTScore F1 (SCALED)   : 0.3379
+    Avg Embedding Cosine Sim    : 0.9982
+
+  Rank distribution:
+    Rank  1:   1 pairs (100.0%)
+
+  Sample (Pair 153):
+    Selected : देश का प्रदूषण कम करना है और पेट्रोल में बीस प्रतिशत इथेनॉल डालना होता है।...
+    CCS      : -0.0018 (nat: 0.9269)
+    Human    : देश का प्रदूषण कम नहीं करना चाहिए 20% डालने से प्रदूषण कम होता है वो नहीं करना च...
+    H.CCS    : -0.0017 (rank: 1)
+
+  Total time: 76s (1.3min)
+
+  Outputs:
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/demo_pair153/candidates.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/demo_pair153/scored_candidates.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/demo_pair153/selected_responses.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/demo_pair153/youtube_eval_report.txt
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/demo_pair153/audio/ (1 .wav files)
+=================================================================

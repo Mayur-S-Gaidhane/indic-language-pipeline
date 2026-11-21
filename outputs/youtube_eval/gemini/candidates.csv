@@ -1,0 +1,33 @@
+﻿pair_id,candidate_id,candidate_text,candidate_words,is_human,source_model
+Nitin Gadkari Interv_73,Nitin Gadkari Interv_73_c00,"ऐसी क्या बात है, जल्दी बताओ।",6,0,gemini
+Nitin Gadkari Interv_73,Nitin Gadkari Interv_73_c01,"बताइए, ऐसी कौन सी बात है?",6,0,gemini
+Nitin Gadkari Interv_73,Nitin Gadkari Interv_73_c02,"तो फिर जल्दी से बता दीजिए, मैं सुनने के लिए तैयार हूँ।",12,0,gemini
+Nitin Gadkari Interv_73,Nitin Gadkari Interv_73_c03,"बताइए, ऐसी क्या बात है जो आप मुझसे शेयर करना चाहते हैं?",12,0,gemini
+Nitin Gadkari Interv_73,Nitin Gadkari Interv_73_c04,ऐसी कौन सी बात है जो आप मुझे बताना चाहते हैं?,11,0,gemini
+Nitin Gadkari Interv_73,Nitin Gadkari Interv_73_c05,"ऐसी क्या बात है, जल्दी से बताओ।",7,0,gemini
+Nitin Gadkari Interv_73,Nitin Gadkari Interv_73_human,हम ये कोई भी मशीन यंत्र होता है उसकी सर्विसिंग होती है हां हां सर्विसिंग में उसके स्पेयर पार्ट्स में कभी बहुत कम ज्यादा होता है। ठीक है। मैं ये नहीं दावा करता हूं कि हमारे यहां कोई गड्ढे नहीं पड़े। हमारे यहां यहां डेराडून के ऊपर एक गड्ढा पड़ा।,50,1,human
+Nitin Gadkari Interv_41,Nitin Gadkari Interv_41_c00,कि उन्होंने इस मामले पर क्या प्रतिक्रिया दी है?,9,0,gemini
+Nitin Gadkari Interv_41,Nitin Gadkari Interv_41_c01,उन्होंने इस बारे में और क्या जानकारी दी?,8,0,gemini
+Nitin Gadkari Interv_41,Nitin Gadkari Interv_41_c02,क्या कहा उन्होंने?,3,0,gemini
+Nitin Gadkari Interv_41,Nitin Gadkari Interv_41_c03,उन्होंने इस बारे में और क्या जानकारी दी है?,9,0,gemini
+Nitin Gadkari Interv_41,Nitin Gadkari Interv_41_c04,फिर क्या हुआ आगे?,4,0,gemini
+Nitin Gadkari Interv_41,Nitin Gadkari Interv_41_human,हम कि हमारे पास इथेनॉल एज अ फ्यूल के कारण एक भी तकरार नहीं है। ठीक है। आप एक काम करिए। कभी-कभी गलतफहमी के कारण कुछ भी तकलीफ हुई तो एक आता है। जैसे मैं आपको एक बात बताता हूं। आप नाम बताता हूं। इंडियन एक्सप्रेस ग्रुप के नागपुर में लोकसत्ता पेपर है। उसके मुख्य संपादक है देवेंद्र गावडे। ठीक है। उन्होंने मुझे एक दिन फोन किया कि मेरी गाड़ी बिगड़ी हुई है और मैकेनिक कह रहा है इथेनॉल के कारण बिगड़ी है। अब मैं नाम बता रहा हूं आपको। फिर मैंने पूछा आपकी गाड़ी कौन से कंपनी क्या? बोले जीप। तो बोला जीप कंपनी की डीजल की है कि पेट्रोल की है? बोले डीजल की है। तो बोला गवंडे साहब डीजल में इथेनॉल ही नहीं डाला जाता तो बिगड़े कैसे इथेनॉल क्या करें? तब उनके समझ में आया कि उनको गुमराह किया गया। हां।,145,1,human
+Nitin Gadkari Interv_109,Nitin Gadkari Interv_109_c00,तो फिर सही आंकड़े क्या हैं?,6,0,gemini
+Nitin Gadkari Interv_109,Nitin Gadkari Interv_109_human,तो ये आंकड़े गलत है। 100% गलत है। ओके। ओके। दूसरी बात मैं सेबी में कंपनी रजिस्टर है।,18,1,human
+Nitin Gadkari Interv_119,Nitin Gadkari Interv_119_c00,"ठीक है, इस बात को यहीं पक्का समझ लेते हैं।",10,0,gemini
+Nitin Gadkari Interv_119,Nitin Gadkari Interv_119_c01,"हाँ, बिल्कुल स्पष्ट है।",4,0,gemini
+Nitin Gadkari Interv_119,Nitin Gadkari Interv_119_c02,"ठीक है, फिर इस विषय को यहीं समाप्त करते हैं।",10,0,gemini
+Nitin Gadkari Interv_119,Nitin Gadkari Interv_119_c03,तो फिर इस मामले में इथेनॉल की कोई बात नहीं है।,11,0,gemini
+Nitin Gadkari Interv_119,Nitin Gadkari Interv_119_c04,तो इस मामले में इथेनॉल की कोई बात नहीं हुई है।,11,0,gemini
+Nitin Gadkari Interv_119,Nitin Gadkari Interv_119_human,ठीक है हमारी शुगर फैक्ट्री हां इथेनॉल शुरू होने के पहले शुरू हुई थी। ये गलत है।,17,1,human
+Nitin Gadkari Interv_39,Nitin Gadkari Interv_39_c00,तो फिर डीज़ल और सीएनजी गाड़ियों में उनका हिस्सा कितना है?,11,0,gemini
+Nitin Gadkari Interv_39,Nitin Gadkari Interv_39_c01,तो फिर बाकी का शेयर दूसरी कंपनियों के पास है।,10,0,gemini
+Nitin Gadkari Interv_39,Nitin Gadkari Interv_39_c02,"हाँ, यह बहुत बड़ा हिस्सा है।",6,0,gemini
+Nitin Gadkari Interv_39,Nitin Gadkari Interv_39_c03,तो क्या अब उनका मुकाबला करने के लिए नई गाड़ियाँ आ रही हैं?,13,0,gemini
+Nitin Gadkari Interv_39,Nitin Gadkari Interv_39_c04,"हाँ, बिल्कुल सही बात है।",5,0,gemini
+Nitin Gadkari Interv_39,Nitin Gadkari Interv_39_c05,तो फिर बाकी कंपनियों का हिस्सा कितना है?,8,0,gemini
+Nitin Gadkari Interv_39,Nitin Gadkari Interv_39_c06,तो फिर बाकी कंपनियों के पास कितना बचता है?,9,0,gemini
+Nitin Gadkari Interv_39,Nitin Gadkari Interv_39_c07,तो क्या पेट्रोल सेगमेंट में उनका मुकाबला करने के लिए कोई और कंपनी मजबूत है?,15,0,gemini
+Nitin Gadkari Interv_39,Nitin Gadkari Interv_39_c08,"हाँ, और बाकी हिस्से पर दूसरी कंपनियों का कब्जा है।",10,0,gemini
+Nitin Gadkari Interv_39,Nitin Gadkari Interv_39_c09,तो क्या बाकी कंपनियों का हिस्सा ६०% है?,8,0,gemini
+Nitin Gadkari Interv_39,Nitin Gadkari Interv_39_human,हम्म। उन्होंने उनके एग्जीक्यूटिव डायरेक्टर ने ऑफिशियली कहा,8,1,human

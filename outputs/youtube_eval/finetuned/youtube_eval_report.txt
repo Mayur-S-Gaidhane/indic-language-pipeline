@@ -1,0 +1,146 @@
+=================================================================
+  MTP-3 YOUTUBE EVALUATION
+  CCS-Based Response Selection on YouTube Ground-Truth Data
+  Linguistic-Only CCS (no acoustic features)
+=================================================================
+
+  Loaded 38 pairs from test split
+  Source: Gadkari-Megha Prasad ABP Interview
+  Context window: 5 turns (was 3)
+  Avg ground truth response: 30 words
+
+=================================================================
+  PHASE 1: CCS Reference Statistics (from human responses)
+=================================================================
+
+  Loading Stanza Hindi pipeline...
+  Stanza loaded
+  Loading GPT-2 Hindi for surprisal...
+  GPT-2 Hindi loaded (device: cpu)
+
+  Computing CCS for human responses...
+    20/38 responses scored | 172s
+
+  CCS Reference Statistics:
+    Mean CCS     : -0.001883
+    SD CCS       : 0.001315
+    Min CCS      : -0.004342
+    Max CCS      : 0.001892
+    Avg IC       : 1.985
+    Avg SC       : 2.070
+    Avg fwd surp : 3.540
+    Avg bwd surp : 4.835
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/ccs_reference.csv
+
+=================================================================
+  PHASE 2: Candidate Generation (model: finetuned)
+=================================================================
+
+  Loading base model: surajp/gpt2-hindi
+  Fine-tuned model loaded (adapter: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/finetuned/surajp_gpt2-hindi_lora/final_adapter)
+
+  Generating candidates...
+
+  [DEBUG] First context (631 chars):
+    SPEAKER_01: ज्यादा शिकार होते हुए दिखाई दे रहे हैं और उसकी वजह है E20 ब्लेंडेड पेट्रोल और उसके इस्तेमाल से हो रही दिक्कतें। आज मैं भारत के सड़कों पर अपनी कार और बाइक चलाने वाले नाराज हर वो भारतीय के स...
+    5/38 pairs | 50 candidates (avg 10.0/pair) | 347s
+    10/38 pairs | 100 candidates (avg 10.0/pair) | 541s
+    15/38 pairs | 150 candidates (avg 10.0/pair) | 699s
+    20/38 pairs | 200 candidates (avg 10.0/pair) | 879s
+    25/38 pairs | 250 candidates (avg 10.0/pair) | 1039s
+    30/38 pairs | 300 candidates (avg 10.0/pair) | 1197s
+    35/38 pairs | 350 candidates (avg 10.0/pair) | 1386s
+
+  Generation Summary:
+    Pairs processed    : 38
+    Empty pairs        : 0
+    LLM candidates     : 380
+    Human responses    : 38
+    Total rows         : 418
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/finetuned/candidates.csv
+
+=================================================================
+  PHASE 3: CCS Scoring + Response Selection + MRR
+=================================================================
+
+  Scoring all candidates with linguistic-only CCS...
+    Scored 50/418 | 1541s
+    Scored 100/418 | 1597s
+    Scored 150/418 | 1648s
+    Scored 200/418 | 1697s
+    Scored 250/418 | 1740s
+    Scored 300/418 | 1790s
+    Scored 350/418 | 1839s
+    Scored 400/418 | 1880s
+
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/finetuned/scored_candidates.csv (418 rows)
+
+  Response Selection + MRR Computation...
+
+=================================================================
+  PHASE 4: Text-Overlap Metrics
+=================================================================
+  Computing BERTScore (this may take a minute)...
+
+  Text-Overlap Metrics (selected vs human):
+    Avg BLEU           : 0.0055
+    Avg ROUGE-1 (F1)   : 0.0922
+    Avg ROUGE-L (F1)   : 0.0666
+    Avg BERTScore (F1) : 0.6466
+
+=================================================================
+  YOUTUBE EVALUATION RESULTS
+=================================================================
+
+  Data source            : YouTube (Gadkari interview)
+  Total pairs            : 38
+  CCS mode               : Linguistic-only (no acoustic)
+  Features               : IC, SC, forward_surprisal, backward_surprisal
+  Generation model       : finetuned
+
+  CCS Reference (human)  : mean=-0.001883, sd=0.001315
+
+  Selection Results:
+    Pairs evaluated      : 38
+    Avg naturalness (sel): 0.9450
+    Avg naturalness (hum): 0.6273
+
+  *** MRR (Mean Reciprocal Rank) ***
+    MRR                  : 0.1970
+    Avg human rank       : 7.0
+    Human in top-1       : 1/38 (2.6%)
+    Human in top-3       : 8/38 (21.1%)
+
+  *** Text-Overlap Metrics (selected vs human) ***
+    Avg BLEU           : 0.0055
+    Avg ROUGE-1 (F1)   : 0.0922
+    Avg ROUGE-L (F1)   : 0.0666
+    Avg BERTScore (F1) : 0.6466
+
+  Rank distribution:
+    Rank  1:   1 pairs (2.6%)
+    Rank  2:   1 pairs (2.6%)
+    Rank  3:   6 pairs (15.8%)
+    Rank  4:   2 pairs (5.3%)
+    Rank  5:   2 pairs (5.3%)
+    Rank  6:   3 pairs (7.9%)
+    Rank  7:   3 pairs (7.9%)
+    Rank  8:   7 pairs (18.4%)
+    Rank  9:   4 pairs (10.5%)
+    Rank 10:   2 pairs (5.3%)
+
+  Sample (first pair):
+    Selected : कोई अंग्रेजी नहीं। कोई अंग्रेजी नहीं। ये सर आप जो बोलते हैं वह है हिंदी बोलते है...
+    CCS      : -0.0019 (nat: 0.9840)
+    Human    : तो ये आंकड़े गलत है। 100% गलत है। ओके। ओके। दूसरी बात मैं सेबी में कंपनी रजिस्टर...
+    H.CCS    : -0.0028 (rank: 8)
+
+  Total time: 1950s (32.5min)
+
+  Outputs:
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/ccs_reference.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/finetuned/candidates.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/finetuned/scored_candidates.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/finetuned/selected_responses.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/finetuned/youtube_eval_report.txt
+=================================================================

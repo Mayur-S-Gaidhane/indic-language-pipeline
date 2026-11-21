@@ -1,0 +1,572 @@
+{
+    "language": "Hindi",
+    "audio_raw_duration": 243.0,
+    "scenario": "Conversation",
+    "task_name": "Conversation",
+    "gender": "Male",
+    "age_group": "18-30",
+    "job_type": "Student",
+    "qualification": "Upto 12th",
+    "area": "Urban",
+    "district": "Jodhpur",
+    "state": "Rajasthan",
+    "occupation": "Student",
+    "verbatim": [
+        {
+            "end": 1.374,
+            "text": "नमस्ते डॉक्टर ",
+            "start": 0.83,
+            "speaker_id": 0
+        },
+        {
+            "end": 8.092,
+            "text": "जी सर मैं ना [unintelligible] बोल रहा हूँ ",
+            "start": 5.341,
+            "speaker_id": 0
+        },
+        {
+            "end": 15.868,
+            "text": "जी है ना मुझे डेंगू मलेरिया जैसा सर बुखार सा हुआ रखा है क्या उसकी कोई दवा मिल सकती है ",
+            "start": 10.718,
+            "speaker_id": 0
+        },
+        {
+            "end": 23.838,
+            "text": "हाँ सर वो र चार दिन से",
+            "start": 21.277,
+            "speaker_id": 0
+        },
+        {
+            "end": 34.972,
+            "text": "[unintelligible] यहाँ पर सर [unintelligible] अस्पताल में हमारा चल रहा था इलाज सर वहाँ से दवाई लिया यहाँ पर कोई इलाज हुआ नहीं तो सर चार दिन से सर लगातार बुखार चल रहा है मेरे",
+            "start": 25.501,
+            "speaker_id": 0
+        },
+        {
+            "end": 42.27,
+            "text": "हाँ सर वहाँ से ले रहे हैं डॉक्टर साहब [uhh] वो दवाई अभी ख़तम हो चुकी है ",
+            "start": 38.654,
+            "speaker_id": 0
+        },
+        {
+            "end": 49.374,
+            "text": "हाँ सर ",
+            "start": 48.637,
+            "speaker_id": 0
+        },
+        {
+            "end": 54.173,
+            "text": "हाँ हाँ ",
+            "start": 53.63,
+            "speaker_id": 0
+        },
+        {
+            "end": 56.286,
+            "text": "बिल्कुल ",
+            "start": 55.548,
+            "speaker_id": 0
+        },
+        {
+            "end": 59.262,
+            "text": "हो री है",
+            "start": 58.526,
+            "speaker_id": 0
+        },
+        {
+            "end": 66.941,
+            "text": "अभी खाने में मैंने दो रोटी खाई है थोड़ी सी सब्ज़ी खाई है ",
+            "start": 64.286,
+            "speaker_id": 0
+        },
+        {
+            "end": 73.566,
+            "text": "हाँ हाँ ",
+            "start": 72.158,
+            "speaker_id": 0
+        },
+        {
+            "end": 77.406,
+            "text": "हाँ",
+            "start": 76.861,
+            "speaker_id": 0
+        },
+        {
+            "end": 79.805,
+            "text": "हाँ",
+            "start": 79.358,
+            "speaker_id": 0
+        },
+        {
+            "end": 82.396,
+            "text": "ओके सर",
+            "start": 81.757,
+            "speaker_id": 0
+        },
+        {
+            "end": 86.43,
+            "text": "आपके पास आना है क्या दवाई लेने के लिए ",
+            "start": 84.349,
+            "speaker_id": 0
+        },
+        {
+            "end": 92.093,
+            "text": "हाँ ",
+            "start": 91.742,
+            "speaker_id": 0
+        },
+        {
+            "end": 96.60300000000001,
+            "text": "कितने बजे आना है आपके पास ",
+            "start": 95.19800000000001,
+            "speaker_id": 0
+        },
+        {
+            "end": 105.628,
+            "text": "हाँ सर",
+            "start": 105.182,
+            "speaker_id": 0
+        },
+        {
+            "end": 117.438,
+            "text": "ओके सर",
+            "start": 115.837,
+            "speaker_id": 0
+        },
+        {
+            "end": 122.334,
+            "text": "हाँ हाँ",
+            "start": 120.926,
+            "speaker_id": 0
+        },
+        {
+            "end": 129.437,
+            "text": "हाँ",
+            "start": 129.086,
+            "speaker_id": 0
+        },
+        {
+            "end": 141.341,
+            "text": "नहीं सर",
+            "start": 140.894,
+            "speaker_id": 0
+        },
+        {
+            "end": 144.894,
+            "text": "अभी कन्फर्म नहीं है ",
+            "start": 143.87,
+            "speaker_id": 0
+        },
+        {
+            "end": 151.228,
+            "text": "हाँ हाँ ",
+            "start": 149.918,
+            "speaker_id": 0
+        },
+        {
+            "end": 160.317,
+            "text": "ओके ओके हाँ ",
+            "start": 154.139,
+            "speaker_id": 0
+        },
+        {
+            "end": 167.836,
+            "text": "ओके वो जो डॉक्टर",
+            "start": 165.18200000000002,
+            "speaker_id": 0
+        },
+        {
+            "end": 170.716,
+            "text": "येस सर ",
+            "start": 170.27,
+            "speaker_id": 0
+        },
+        {
+            "end": 179.645,
+            "text": "[unintelligible] इसमें डेंगू आया नहीं पर पर मुझे लग रहा है सर डेंगू जैसा अंदर से ",
+            "start": 174.39600000000002,
+            "speaker_id": 0
+        },
+        {
+            "end": 183.198,
+            "text": "आपके पास कब आऊँ अब ",
+            "start": 182.174,
+            "speaker_id": 0
+        },
+        {
+            "end": 186.942,
+            "text": "हाँ ",
+            "start": 186.59,
+            "speaker_id": 0
+        },
+        {
+            "end": 191.74,
+            "text": "हाँ ",
+            "start": 191.294,
+            "speaker_id": 0
+        },
+        {
+            "end": 194.43,
+            "text": "हाँ ",
+            "start": 194.078,
+            "speaker_id": 0
+        },
+        {
+            "end": 197.115,
+            "text": "हाँ हाँ करवाया ",
+            "start": 196.286,
+            "speaker_id": 0
+        },
+        {
+            "end": 200.86,
+            "text": "हाँ ",
+            "start": 200.50900000000001,
+            "speaker_id": 0
+        },
+        {
+            "end": 204.603,
+            "text": "हाँ ",
+            "start": 204.15800000000002,
+            "speaker_id": 0
+        },
+        {
+            "end": 208.734,
+            "text": "क्या ",
+            "start": 208.382,
+            "speaker_id": 0
+        },
+        {
+            "end": 216.413,
+            "text": "हार्मोन तो पता नहीं पर मुझे ऐसा चक्कर जैसा लग रहा है इसके लिए क्या करूँ ",
+            "start": 212.222,
+            "speaker_id": 0
+        },
+        {
+            "end": 218.139,
+            "text": "अभी के लिए ",
+            "start": 217.598,
+            "speaker_id": 0
+        },
+        {
+            "end": 229.46800000000002,
+            "text": "हाँ ",
+            "start": 229.115,
+            "speaker_id": 0
+        },
+        {
+            "end": 233.502,
+            "text": "हाँ ",
+            "start": 233.15,
+            "speaker_id": 0
+        },
+        {
+            "end": 235.805,
+            "text": "हाँ ",
+            "start": 235.454,
+            "speaker_id": 0
+        },
+        {
+            "end": 238.39600000000002,
+            "text": "हाँ हाँ ",
+            "start": 237.662,
+            "speaker_id": 0
+        },
+        {
+            "end": 241.854,
+            "text": "धन्यवाद ",
+            "start": 241.502,
+            "speaker_id": 0
+        }
+    ],
+    "normalized": [
+        {
+            "end": 1.374,
+            "text": "नमस्ते डॉक्टर [Doctor]",
+            "start": 0.83,
+            "speaker_id": 0
+        },
+        {
+            "end": 8.092,
+            "text": "जी सर [Sir] मैं ना [unintelligible] बोल रहा हूँ ",
+            "start": 5.341,
+            "speaker_id": 0
+        },
+        {
+            "end": 15.868,
+            "text": "जी है न मुझे डेंगू [Dengue] मलेरिया [Malaria] जैसा सर [Sir] बुखार सा हुआ रखा है क्या उसकी कोई दवा मिल सकती है ",
+            "start": 10.718,
+            "speaker_id": 0
+        },
+        {
+            "end": 23.838,
+            "text": "हाँ सर [Sir] वो र चार दिन से",
+            "start": 21.277,
+            "speaker_id": 0
+        },
+        {
+            "end": 34.972,
+            "text": "[unintelligible] यहाँ पर सर [Sir] [unintelligible] अस्पताल में हमारा चल रहा था इलाज सर वहाँ से दवाई लिया यहाँ पर कोई इलाज हुआ नहीं तो सर [Sir] चार दिन से सर [Sir] लगातार बुखार चल रहा है मेरे",
+            "start": 25.501,
+            "speaker_id": 0
+        },
+        {
+            "end": 42.27,
+            "text": "हाँ सर वहाँ से ले रहे हैं डॉक्टर साहब [uhh] वो दवाई अभी ख़त्म हो चुकी है ",
+            "start": 38.654,
+            "speaker_id": 0
+        },
+        {
+            "end": 49.374,
+            "text": "हाँ सर [Sir]",
+            "start": 48.637,
+            "speaker_id": 0
+        },
+        {
+            "end": 54.173,
+            "text": "हाँ हाँ ",
+            "start": 53.63,
+            "speaker_id": 0
+        },
+        {
+            "end": 56.286,
+            "text": "बिल्कुल ",
+            "start": 55.548,
+            "speaker_id": 0
+        },
+        {
+            "end": 59.262,
+            "text": "हो रही है",
+            "start": 58.526,
+            "speaker_id": 0
+        },
+        {
+            "end": 66.941,
+            "text": "अभी खाने में मैंने दो रोटी खाई है थोड़ी सी सब्ज़ी खाई है ",
+            "start": 64.286,
+            "speaker_id": 0
+        },
+        {
+            "end": 73.566,
+            "text": "हाँ हाँ ",
+            "start": 72.158,
+            "speaker_id": 0
+        },
+        {
+            "end": 77.406,
+            "text": "हाँ",
+            "start": 76.861,
+            "speaker_id": 0
+        },
+        {
+            "end": 79.805,
+            "text": "हाँ",
+            "start": 79.358,
+            "speaker_id": 0
+        },
+        {
+            "end": 82.396,
+            "text": "ओके [Okay] सर [Sir]",
+            "start": 81.757,
+            "speaker_id": 0
+        },
+        {
+            "end": 86.43,
+            "text": "आपके पास आना है क्या दवाई लेने के लिए ",
+            "start": 84.349,
+            "speaker_id": 0
+        },
+        {
+            "end": 92.093,
+            "text": "हाँ ",
+            "start": 91.742,
+            "speaker_id": 0
+        },
+        {
+            "end": 96.60300000000001,
+            "text": "कितने बजे आना है आपके पास ",
+            "start": 95.19800000000001,
+            "speaker_id": 0
+        },
+        {
+            "end": 105.628,
+            "text": "हाँ सर",
+            "start": 105.182,
+            "speaker_id": 0
+        },
+        {
+            "end": 117.438,
+            "text": "ओके [Okay] सर [Sir]",
+            "start": 115.837,
+            "speaker_id": 0
+        },
+        {
+            "end": 122.334,
+            "text": "हाँ हाँ",
+            "start": 120.926,
+            "speaker_id": 0
+        },
+        {
+            "end": 129.437,
+            "text": "हाँ",
+            "start": 129.086,
+            "speaker_id": 0
+        },
+        {
+            "end": 141.341,
+            "text": "नहीं सर [Sir]",
+            "start": 140.894,
+            "speaker_id": 0
+        },
+        {
+            "end": 144.894,
+            "text": "अभी कन्फर्म [Confirm] नहीं है ",
+            "start": 143.87,
+            "speaker_id": 0
+        },
+        {
+            "end": 151.228,
+            "text": "हाँ हाँ ",
+            "start": 149.918,
+            "speaker_id": 0
+        },
+        {
+            "end": 160.317,
+            "text": "ओके [Okay] ओके [Okay] हाँ ",
+            "start": 154.139,
+            "speaker_id": 0
+        },
+        {
+            "end": 167.836,
+            "text": "ओके [Okay] वो जो डॉक्टर [Doctor]",
+            "start": 165.18200000000002,
+            "speaker_id": 0
+        },
+        {
+            "end": 170.716,
+            "text": "येस [Yes] सर [Sir]",
+            "start": 170.27,
+            "speaker_id": 0
+        },
+        {
+            "end": 179.645,
+            "text": "[unintelligible] इसमें डेंगू [Dengue] आया नहीं पर पर मुझे लग रहा है सर [Sir] डेंगू [Dengue] जैसा अंदर से ",
+            "start": 174.39600000000002,
+            "speaker_id": 0
+        },
+        {
+            "end": 183.198,
+            "text": "आपके पास कब आऊँ अब ",
+            "start": 182.174,
+            "speaker_id": 0
+        },
+        {
+            "end": 186.942,
+            "text": "हाँ ",
+            "start": 186.59,
+            "speaker_id": 0
+        },
+        {
+            "end": 191.74,
+            "text": "हाँ ",
+            "start": 191.294,
+            "speaker_id": 0
+        },
+        {
+            "end": 194.43,
+            "text": "हाँ ",
+            "start": 194.078,
+            "speaker_id": 0
+        },
+        {
+            "end": 197.115,
+            "text": "हाँ हाँ करवाया ",
+            "start": 196.286,
+            "speaker_id": 0
+        },
+        {
+            "end": 200.86,
+            "text": "हाँ ",
+            "start": 200.50900000000001,
+            "speaker_id": 0
+        },
+        {
+            "end": 204.603,
+            "text": "हाँ ",
+            "start": 204.15800000000002,
+            "speaker_id": 0
+        },
+        {
+            "end": 208.734,
+            "text": "क्या ",
+            "start": 208.382,
+            "speaker_id": 0
+        },
+        {
+            "end": 216.413,
+            "text": "हार्मोन [hormone] तो पता नहीं पर मुझे ऐसा चक्कर जैसा लग रहा है इसके लिए क्या करूँ ",
+            "start": 212.222,
+            "speaker_id": 0
+        },
+        {
+            "end": 218.139,
+            "text": "अभी के लिए ",
+            "start": 217.598,
+            "speaker_id": 0
+        },
+        {
+            "end": 229.46800000000002,
+            "text": "हाँ ",
+            "start": 229.115,
+            "speaker_id": 0
+        },
+        {
+            "end": 233.502,
+            "text": "हाँ ",
+            "start": 233.15,
+            "speaker_id": 0
+        },
+        {
+            "end": 235.805,
+            "text": "हाँ ",
+            "start": 235.454,
+            "speaker_id": 0
+        },
+        {
+            "end": 238.39600000000002,
+            "text": "हाँ हाँ ",
+            "start": 237.662,
+            "speaker_id": 0
+        },
+        {
+            "end": 241.854,
+            "text": "धन्यवाद ",
+            "start": 241.502,
+            "speaker_id": 0
+        }
+    ],
+    "audio_segmented_duration": 68.51700000000002,
+    "speaker_id": "S4256709200337394",
+    "verification_report": {
+        "sst": false,
+        "comments": "voice is breaking ",
+        "decision": "excellent",
+        "book_read": false,
+        "off_topic": false,
+        "low_volume": false,
+        "stretching": false,
+        "long_pauses": false,
+        "unclear_audio": false,
+        "reading_prompt": false,
+        "skipping_words": false,
+        "mispronunciation": false,
+        "noise_persistent": true,
+        "repeating_content": false,
+        "chatter_persistent": false,
+        "factual_inaccuracy": false,
+        "noise_intermittent": false,
+        "chatter_intermittent": false,
+        "bad_extempore_quality": false,
+        "incorrect_text_prompt": false,
+        "objectionable_content": false
+    },
+    "prompt": "Doctor|Patient|Discussing a medical condition"
+}

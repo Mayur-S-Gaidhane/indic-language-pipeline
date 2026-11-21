@@ -1,0 +1,24 @@
+CCS Reference Distribution Statistics
+==================================================
+CCS Weights (from LMM M4):
+  IC: +0.0146
+  SC: -0.0172
+  dep_distance: +0.0105
+  forward_surprisal: -0.0143
+  backward_surprisal: -0.0159
+
+Lexical Weights (from LMM M4):
+  word_length_chars: +0.1426
+  log_word_freq: -0.1217
+
+All: n=19774, mean=0.0016, sd=0.0106, min=-0.0932, max=0.0467
+Conversation: n=7905, mean=0.0030, sd=0.0108, min=-0.0747, max=0.0467
+Extempore: n=10412, mean=0.0011, sd=0.0098, min=-0.0932, max=0.0467
+Read: n=1457, mean=-0.0020, sd=0.0128, min=-0.0703, max=0.0467
+P5: -0.0152
+P10: -0.0104
+P25: -0.0037
+P50: 0.0023
+P75: 0.0077
+P90: 0.0127
+P95: 0.0162

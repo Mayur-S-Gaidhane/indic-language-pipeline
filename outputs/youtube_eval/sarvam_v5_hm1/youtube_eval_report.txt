@@ -1,0 +1,120 @@
+=================================================================
+  MTP-3 YOUTUBE EVALUATION (ENHANCED)
+  + Scaled BERTScore F1  + Embedding Cosine Similarity
+  Hint Mode 1: Structure Only
+=================================================================
+  Output dir: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v5_hm1
+
+  Loaded 38 pairs from test split
+  Context window: 5 turns
+  Prompt version: V5
+  Avg ground truth response: 30 words
+  Avg words (Gadkari)      : 30
+  Avg words (Interviewer)  : 29
+
+=================================================================
+  PHASE 1: CCS Reference Statistics (from human responses)
+=================================================================
+
+  Loading Stanza Hindi pipeline...
+  Stanza loaded
+  Loading GPT-2 Hindi for surprisal...
+  GPT-2 Hindi loaded (device: cpu)
+
+  Computing CCS for human responses...
+    20/38 responses scored | 330s
+
+  CCS Reference: mean=-0.001934, sd=0.001300
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/ccs_reference.csv
+
+=================================================================
+  PHASE 2: Candidate Generation (model: sarvam)
+=================================================================
+
+  Sarvam AI client loaded (model: sarvam-105b-conversations)
+
+  Generating candidates...
+    5/38 pairs | 50 candidates | 370s
+    10/38 pairs | 100 candidates | 406s
+    15/38 pairs | 150 candidates | 438s
+    20/38 pairs | 200 candidates | 469s
+    25/38 pairs | 249 candidates | 500s
+    30/38 pairs | 298 candidates | 528s
+    35/38 pairs | 348 candidates | 560s
+
+  LLM: 378, Human: 38
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v5_hm1/candidates.csv
+
+=================================================================
+  PHASE 3: CCS Scoring + Response Selection + MRR
+=================================================================
+
+  Scoring all candidates...
+    Scored 50/416 | 626s
+    Scored 100/416 | 718s
+    Scored 150/416 | 796s
+    Scored 200/416 | 837s
+    Scored 250/416 | 886s
+    Scored 300/416 | 930s
+    Scored 350/416 | 992s
+    Scored 400/416 | 1046s
+
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v5_hm1/scored_candidates.csv (416 rows)
+
+  Response Selection + MRR Computation...
+
+=================================================================
+  PHASE 4: Text-Overlap Metrics (ENHANCED)
+  + Scaled BERTScore F1  + Embedding Cosine Similarity
+=================================================================
+  Computing BERTScore F1 (raw)...
+  Computing Scaled BERTScore F1 (manual baseline from random pairs)...
+    Baseline (random pairs): 0.6499
+    Scaled BERTScore F1 avg: 0.0850
+    (raw avg was 0.6797, baseline 0.6499)
+
+  ── Embedding Cosine Similarity ──
+  Loading embedding model: ai4bharat/IndicBERTv2-MLM-only...
+    ✗ Failed to load ai4bharat/IndicBERTv2-MLM-only: Due to a serious vulnerability issue in `torch.load`, even with `weights_only=Tr
+  Loading embedding model: xlm-roberta-base...
+  Embedding model loaded: xlm-roberta-base (device: cpu)
+  Computing embedding similarities...
+    20/38 pairs computed
+    Avg embedding cosine similarity: 0.9973
+
+=================================================================
+  PHASE 5: TTS (Text-to-Speech)
+=================================================================
+
+  Loading TTS model: facebook/mms-tts-hin...
+  TTS model loaded
+
+  TTS: 38 audio files generated in /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v5_hm1/audio
+
+=================================================================
+  YOUTUBE EVALUATION RESULTS (ENHANCED)
+=================================================================
+
+  Pairs: 38 | Model: sarvam | CCS: linguistic-only
+  CCS Reference: mean=-0.001934, sd=0.001300
+
+  *** MRR: 0.3375 ***
+  Avg human rank: 5.7
+  Top-1: 5/38 (13.2%)
+  Top-3: 17/38 (44.7%)
+
+  *** Text-Overlap Metrics (selected vs human) ***
+    Avg BLEU                    : 0.0190
+    Avg ROUGE-1 (F1)            : 0.1592
+    Avg ROUGE-L (F1)            : 0.1192
+    Avg BERTScore F1 (raw)      : 0.6797
+    Avg BERTScore F1 (SCALED)   : 0.0850
+    Avg Embedding Cosine Sim    : 0.9973
+
+  Total time: 1517s (25.3min)
+
+  Outputs:
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v5_hm1/selected_responses.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v5_hm1/scored_candidates.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v5_hm1/youtube_eval_report.txt
+=================================================================

@@ -1,0 +1,898 @@
+=================================================================
+  LMM ANALYSIS V7 (updated) — MTP-3 (lme4, Prof's Sept 29 feedback: dep_distance/depth_test removed)
+  Acoustic-Linguistic Modelling of Hindi Speech
+  Student : Mayur Shriram Gaidhane (M22AIE248)
+  Lab     : SAIDE Lab, IIT Jodhpur
+  p-values: normal approximation (lmerTest not used)
+=================================================================
+
+  Loading /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/results/word_features_full.csv ...
+  Rows loaded: 614,351
+
+=================================================================
+  DATA EXCLUSION CRITERIA
+=================================================================
+  Total words (raw)          : 614,351
+  After tier >= 2 filter     : 429,791
+  After duration 20-2000ms   : 406,354
+  After ±2.5 SD outlier trim : 406,164
+  Unique speakers            : 289
+  Unique words               : 19890
+  Modalities (scenario)      : 3
+
+  Scenario/modality distribution:
+    Extempore     : 262,974 (64.7%)
+    Conversation  : 122,023 (30%)
+    Read          :  21,167 (5.2%)
+
+── Z-scoring continuous predictors ──────────────────────
+  (missing values are replaced by the column median BEFORE z-scoring)
+  IC                     missing, filled with median: 3,677 (0.91%)
+  IC                     → IC_z  (M=2.995, SD=7.215)
+  SC                     missing, filled with median: 3,677 (0.91%)
+  SC                     → SC_z  (M=2.888, SD=1.778)
+  forward_surprisal      missing, filled with median: 0 (0.00%)
+  forward_surprisal      → fwd_surp_z  (M=12.408, SD=8.796)
+  backward_surprisal     missing, filled with median: 0 (0.00%)
+  backward_surprisal     → bwd_surp_z  (M=8.675, SD=8.585)
+  word_length_chars      missing, filled with median: 0 (0.00%)
+  word_length_chars      → wlen_z  (M=3.685, SD=1.666)
+  log_word_freq          missing, filled with median: 0 (0.00%)
+  log_word_freq          → log_freq_z  (M=2.771, SD=1.088)
+  f0_mean_hz             missing, filled with median: 57,353 (14.12%)
+  f0_mean_hz             → f0_z  (M=179.186, SD=63.955)
+  rms_energy             missing, filled with median: 7,893 (1.94%)
+  rms_energy             → rms_z  (M=0.093, SD=0.064)
+  speech_rate            missing, filled with median: 0 (0.00%)
+  speech_rate            → sr_z  (M=2.966, SD=0.710)
+  pause_before_ms        missing, filled with median: 0 (0.00%)
+  pause_before_ms        → pause_z  (M=134.162, SD=251.833)
+  Words with >=1 imputed IC/SC/surprisal value: 3,677 (0.91%)
+
+=================================================================
+  DESCRIPTIVE STATISTICS
+=================================================================
+  N words    : 406,164
+  N speakers : 289
+  N unique word forms : 19890
+
+  Variable                           Mean         SD        Min        Max
+   ────────────────────────────────────────────────────────────────────
+  Duration (ms)                   221.518    208.836     20.000   1750.000
+  IC                                2.995      7.215      0.000    529.000
+  SC                                2.888      1.778      0.000     35.000
+  Fwd Surprisal                    12.408      8.796      0.000    113.336
+  Bwd Surprisal                     8.675      8.585      0.000    107.126
+  Word Length                       3.685      1.666      1.000     17.000
+  log Word Freq                     2.771      1.088      0.000      4.462
+  F0 mean (Hz)                    179.186     63.955      0.000    499.990
+  RMS Energy                        0.093      0.064      0.000      0.716
+  Speech Rate                       2.966      0.710      0.392      7.395
+  Pause Before (ms)               134.162    251.833      0.000   9140.000
+
+=================================================================
+  COLLINEARITY DIAGNOSTICS
+=================================================================
+
+── Variance Inflation Factor (VIF) ──────────────────────
+  Predictor                         VIF  Status
+   ───────────────────────────────────────────────────────
+  VIF computation requires 'car' package. Install with: install.packages('car')
+
+── Predictor Correlation Matrix ─────────────────────────
+                       IC_z     SC_z fwd_surp bwd_surp   wlen_z log_freq
+            IC_z   1.000   -0.231    0.076   -0.083    0.038   -0.085 
+            SC_z  -0.231    1.000    0.015    0.117    0.057   -0.087 
+      fwd_surp_z   0.076    0.015    1.000    0.549*   0.275   -0.270 
+      bwd_surp_z  -0.083    0.117    0.549*   1.000    0.243   -0.243 
+          wlen_z   0.038    0.057    0.275    0.243    1.000   -0.669*
+      log_freq_z  -0.085   -0.087   -0.270   -0.243   -0.669*   1.000 
+
+── Zero-order correlations with log_duration ────────────
+  Predictor                           r  Direction
+   ──────────────────────────────────────────────────
+  IC_z                           0.0295  +
+  SC_z                           0.0559  +
+  fwd_surp_z                     0.0476  +
+  bwd_surp_z                     0.0242  +
+  wlen_z                         0.2385  +
+  log_freq_z                    -0.2288  -
+  f0_z                           0.0958  +
+  rms_z                          0.1999  +
+  sr_z                          -0.2605  -
+  pause_z                        0.0093  +
+
+  Linguistic dataset: 406,164 rows
+  Acoustic dataset : 329,450 rows (acoustic_status == 'ok' only)
+  Full dataset     : 329,450 rows
+
+── Extra data checks ────────────────────────────────────
+  word_is_resolved = 1 words: linguistic 27 | acoustic 8 | full 8
+    Conversation   resolved words in linguistic set: 23
+    Extempore      resolved words in linguistic set: 4
+    Read           resolved words in linguistic set: 0
+  Acoustic-set words with F0 = 0 Hz (no voiced frames): 6,596 (2.00%)
+  acoustic_status counts in the filtered data:
+    ok           329,450
+    ok_short     68,831
+    too_short    7,883
+
+  NOTE: scenario REMOVED from fixed effects.
+  Modality is now a RANDOM effect (1|modality).
+  Per Prof Ranjan's specification:
+    (1|speaker) + (1|word) + (1|modality)
+
+=================================================================
+  M0: NULL MODEL
+=================================================================
+
+   ─────────────────────────────────────────────────────────────────
+   M0: Null
+  Formula: log_duration ~ 1
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 406,164
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+
+  Log-likelihood (ML)  : -471460.463
+  AIC                  : 942930.925
+  BIC                  : 942985.498
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.046410
+    (1|speaker) var : 0.242033
+    (1|modality) var : 0.360002
+    (1|Residual) var : 0.583929
+    ICC (all RE)      : 0.5262
+  Marginal R²   (fixed)       : 0.0000
+  Conditional R² (fixed+rand) : 0.5262
+
+=================================================================
+  M1: CONTROLS ONLY
+=================================================================
+
+   ─────────────────────────────────────────────────────────────────
+   M1: Controls
+  Formula: log_duration ~ wlen_z + log_freq_z + word_is_resolved + has_dysfluency_seg + 
+  Formula:     (1 | speaker_id_file) + (1 | word_resolved) + (1 | scenario)
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 406,164
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  wlen_z                         0.0339   0.0029  11.510   [0.0281, 0.0396]    0.0000   ***
+  log_freq_z                    -0.0488   0.0046 -10.663 [-0.0577, -0.0398]    0.0000   ***
+  word_is_resolved              -0.4039   0.1476  -2.736 [-0.6932, -0.1145]    0.0062    **
+  has_dysfluency_seg             0.0465   0.0035  13.165   [0.0396, 0.0535]    0.0000   ***
+
+  Log-likelihood (ML)  : -471186.427
+  AIC                  : 942390.854
+  BIC                  : 942489.084
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.041888
+    (1|speaker) var : 0.241822
+    (1|modality) var : 0.359668
+    (1|Residual) var : 0.583774
+    ICC (all RE)      : 0.5243
+  Marginal R²   (fixed)       : 0.0049
+  Conditional R² (fixed+rand) : 0.5266
+
+=================================================================
+  M2: DLT ONLY — IC + SC (Gibson 2000, per Prof's feedback: dep_distance removed)
+=================================================================
+
+   ─────────────────────────────────────────────────────────────────
+   M2: DLT only
+  Formula: log_duration ~ IC_z + SC_z + wlen_z + log_freq_z + word_is_resolved + 
+  Formula:     has_dysfluency_seg + (1 | speaker_id_file) + (1 | word_resolved) + 
+  Formula:     (1 | scenario)
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 406,164
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  IC_z                           0.0019   0.0013   1.433  [-0.0007, 0.0045]    0.1518    ns
+  SC_z                           0.0033   0.0014   2.285   [0.0005, 0.0060]    0.0223     *
+  wlen_z                         0.0339   0.0029  11.504   [0.0281, 0.0396]    0.0000   ***
+  log_freq_z                    -0.0486   0.0046 -10.637 [-0.0576, -0.0397]    0.0000   ***
+  word_is_resolved              -0.4026   0.1476  -2.727 [-0.6919, -0.1132]    0.0064    **
+  has_dysfluency_seg             0.0464   0.0035  13.128   [0.0395, 0.0534]    0.0000   ***
+
+  Log-likelihood (ML)  : -471183.333
+  AIC                  : 942388.665
+  BIC                  : 942508.725
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.041905
+    (1|speaker) var : 0.241858
+    (1|modality) var : 0.359129
+    (1|Residual) var : 0.583763
+    ICC (all RE)      : 0.5241
+  Marginal R²   (fixed)       : 0.0049
+  Conditional R² (fixed+rand) : 0.5264
+
+=================================================================
+  M3: SURPRISAL ONLY (Hale 2001; Ranjan SCiL 2022)
+=================================================================
+
+   ─────────────────────────────────────────────────────────────────
+   M3: Surprisal only
+  Formula: log_duration ~ fwd_surp_z + bwd_surp_z + wlen_z + log_freq_z + 
+  Formula:     word_is_resolved + has_dysfluency_seg + (1 | speaker_id_file) + 
+  Formula:     (1 | word_resolved) + (1 | scenario)
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 406,164
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  fwd_surp_z                     0.0008   0.0016   0.481  [-0.0024, 0.0039]    0.6302    ns
+  bwd_surp_z                    -0.0011   0.0016  -0.689  [-0.0043, 0.0021]    0.4906    ns
+  wlen_z                         0.0339   0.0030  11.478   [0.0281, 0.0397]    0.0000   ***
+  log_freq_z                    -0.0489   0.0046 -10.635 [-0.0579, -0.0399]    0.0000   ***
+  word_is_resolved              -0.4029   0.1476  -2.729 [-0.6923, -0.1136]    0.0063    **
+  has_dysfluency_seg             0.0466   0.0035  13.167   [0.0396, 0.0535]    0.0000   ***
+
+  Log-likelihood (ML)  : -471186.170
+  AIC                  : 942394.341
+  BIC                  : 942514.401
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.041884
+    (1|speaker) var : 0.241821
+    (1|modality) var : 0.359786
+    (1|Residual) var : 0.583774
+    ICC (all RE)      : 0.5243
+  Marginal R²   (fixed)       : 0.0049
+  Conditional R² (fixed+rand) : 0.5267
+
+=================================================================
+  M4: FULL LINGUISTIC — DLT + Surprisal
+=================================================================
+
+   ─────────────────────────────────────────────────────────────────
+   M4: Full Linguistic
+  Formula: log_duration ~ IC_z + SC_z + fwd_surp_z + bwd_surp_z + wlen_z + 
+  Formula:     log_freq_z + word_is_resolved + has_dysfluency_seg + (1 | 
+  Formula:     speaker_id_file) + (1 | word_resolved) + (1 | scenario)
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 406,164
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  IC_z                           0.0018   0.0013   1.351  [-0.0008, 0.0044]    0.1766    ns
+  SC_z                           0.0033   0.0014   2.310   [0.0005, 0.0061]    0.0209     *
+  fwd_surp_z                     0.0006   0.0016   0.393  [-0.0025, 0.0038]    0.6944    ns
+  bwd_surp_z                    -0.0011   0.0016  -0.686  [-0.0043, 0.0021]    0.4927    ns
+  wlen_z                         0.0339   0.0030  11.480   [0.0281, 0.0397]    0.0000   ***
+  log_freq_z                    -0.0489   0.0046 -10.618 [-0.0579, -0.0398]    0.0000   ***
+  word_is_resolved              -0.4018   0.1476  -2.721 [-0.6912, -0.1124]    0.0065    **
+  has_dysfluency_seg             0.0464   0.0035  13.130   [0.0395, 0.0534]    0.0000   ***
+
+  Log-likelihood (ML)  : -471183.093
+  AIC                  : 942392.186
+  BIC                  : 942534.075
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.041900
+    (1|speaker) var : 0.241861
+    (1|modality) var : 0.359155
+    (1|Residual) var : 0.583763
+    ICC (all RE)      : 0.5241
+  Marginal R²   (fixed)       : 0.0049
+  Conditional R² (fixed+rand) : 0.5265
+
+=================================================================
+  M5: ACOUSTIC ONLY
+=================================================================
+
+   ─────────────────────────────────────────────────────────────────
+   M5: Acoustic only
+  Formula: log_duration ~ f0_z + rms_z + sr_z + pause_z + wlen_z + log_freq_z + 
+  Formula:     word_is_resolved + has_dysfluency_seg + (1 | speaker_id_file) + 
+  Formula:     (1 | word_resolved) + (1 | scenario)
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 329,450
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  f0_z                           0.0753   0.0016  48.008   [0.0722, 0.0784]    0.0000   ***
+  rms_z                          0.0595   0.0016  37.370   [0.0564, 0.0626]    0.0000   ***
+  sr_z                          -0.1011   0.0016 -62.995 [-0.1043, -0.0980]    0.0000   ***
+  pause_z                       -0.0143   0.0012 -11.737 [-0.0167, -0.0119]    0.0000   ***
+  wlen_z                         0.0118   0.0023   5.063   [0.0072, 0.0164]    0.0000   ***
+  log_freq_z                    -0.0256   0.0035  -7.391 [-0.0324, -0.0188]    0.0000   ***
+  word_is_resolved              -0.3061   0.2211  -1.385  [-0.7394, 0.1272]    0.1661    ns
+  has_dysfluency_seg             0.0139   0.0032   4.322   [0.0076, 0.0202]    0.0000   ***
+
+  Log-likelihood (ML)  : -314964.959
+  AIC                  : 629955.917
+  BIC                  : 630095.085
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.018407
+    (1|speaker) var : 0.052150
+    (1|modality) var : 0.060967
+    (1|Residual) var : 0.389099
+    ICC (all RE)      : 0.2526
+  Marginal R²   (fixed)       : 0.0414
+  Conditional R² (fixed+rand) : 0.2835
+
+=================================================================
+  M6: FULL MODEL — DLT + Surprisal + Acoustic
+=================================================================
+
+   ─────────────────────────────────────────────────────────────────
+   M6: Full
+  Formula: log_duration ~ IC_z + SC_z + fwd_surp_z + bwd_surp_z + f0_z + 
+  Formula:     rms_z + sr_z + pause_z + wlen_z + log_freq_z + word_is_resolved + 
+  Formula:     has_dysfluency_seg + (1 | speaker_id_file) + (1 | word_resolved) + 
+  Formula:     (1 | scenario)
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 329,450
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  IC_z                           0.0011   0.0012   0.967  [-0.0012, 0.0034]    0.3337    ns
+  SC_z                          -0.0098   0.0013  -7.739 [-0.0123, -0.0073]    0.0000   ***
+  fwd_surp_z                    -0.0008   0.0014  -0.568  [-0.0036, 0.0020]    0.5698    ns
+  bwd_surp_z                    -0.0045   0.0015  -3.069 [-0.0073, -0.0016]    0.0021    **
+  f0_z                           0.0754   0.0016  48.107   [0.0724, 0.0785]    0.0000   ***
+  rms_z                          0.0597   0.0016  37.508   [0.0566, 0.0628]    0.0000   ***
+  sr_z                          -0.1012   0.0016 -63.004 [-0.1043, -0.0980]    0.0000   ***
+  pause_z                       -0.0142   0.0012 -11.648 [-0.0166, -0.0118]    0.0000   ***
+  wlen_z                         0.0128   0.0023   5.472   [0.0082, 0.0174]    0.0000   ***
+  log_freq_z                    -0.0275   0.0035  -7.885 [-0.0343, -0.0206]    0.0000   ***
+  word_is_resolved              -0.3097   0.2210  -1.401  [-0.7429, 0.1235]    0.1612    ns
+  has_dysfluency_seg             0.0140   0.0032   4.356   [0.0077, 0.0203]    0.0000   ***
+
+  Log-likelihood (ML)  : -314921.904
+  AIC                  : 629877.808
+  BIC                  : 630059.796
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.018271
+    (1|speaker) var : 0.052072
+    (1|modality) var : 0.061320
+    (1|Residual) var : 0.389023
+    ICC (all RE)      : 0.2529
+  Marginal R²   (fixed)       : 0.0415
+  Conditional R² (fixed+rand) : 0.2839
+
+=================================================================
+  M4 ON THE ACOUSTIC SUBSET (same words as M5/M6)
+=================================================================
+
+   ─────────────────────────────────────────────────────────────────
+   M4 (acoustic subset)
+  Formula: log_duration ~ IC_z + SC_z + fwd_surp_z + bwd_surp_z + wlen_z + 
+  Formula:     log_freq_z + word_is_resolved + has_dysfluency_seg + (1 | 
+  Formula:     speaker_id_file) + (1 | word_resolved) + (1 | scenario)
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 329,450
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  IC_z                           0.0001   0.0012   0.050  [-0.0023, 0.0024]    0.9599    ns
+  SC_z                          -0.0097   0.0013  -7.572 [-0.0122, -0.0072]    0.0000   ***
+  fwd_surp_z                    -0.0038   0.0015  -2.606 [-0.0067, -0.0009]    0.0092    **
+  bwd_surp_z                     0.0004   0.0015   0.287  [-0.0025, 0.0033]    0.7737    ns
+  wlen_z                         0.0197   0.0024   8.064   [0.0149, 0.0244]    0.0000   ***
+  log_freq_z                    -0.0354   0.0037  -9.611 [-0.0426, -0.0282]    0.0000   ***
+  word_is_resolved              -0.0951   0.2237  -0.425  [-0.5336, 0.3434]    0.6707    ns
+  has_dysfluency_seg             0.0380   0.0032  11.743   [0.0317, 0.0444]    0.0000   ***
+
+  Log-likelihood (ML)  : -319190.732
+  AIC                  : 638407.463
+  BIC                  : 638546.631
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.022462
+    (1|speaker) var : 0.049418
+    (1|modality) var : 0.088627
+    (1|Residual) var : 0.398551
+    ICC (all RE)      : 0.2871
+  Marginal R²   (fixed)       : 0.0048
+  Conditional R² (fixed+rand) : 0.2905
+
+=================================================================
+  M7: SUPPRESSION TEST (no log_freq)
+=================================================================
+
+   ─────────────────────────────────────────────────────────────────
+   M7: No log_freq
+  Formula: log_duration ~ IC_z + SC_z + fwd_surp_z + bwd_surp_z + wlen_z + 
+  Formula:     word_is_resolved + has_dysfluency_seg + (1 | speaker_id_file) + 
+  Formula:     (1 | word_resolved) + (1 | scenario)
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 406,164
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  IC_z                           0.0019   0.0013   1.436  [-0.0007, 0.0045]    0.1511    ns
+  SC_z                           0.0034   0.0014   2.354   [0.0006, 0.0062]    0.0186     *
+  fwd_surp_z                     0.0012   0.0016   0.777  [-0.0019, 0.0044]    0.4373    ns
+  bwd_surp_z                     0.0002   0.0016   0.145  [-0.0030, 0.0034]    0.8845    ns
+  wlen_z                         0.0444   0.0028  15.888   [0.0389, 0.0499]    0.0000   ***
+  word_is_resolved              -0.4002   0.1476  -2.711 [-0.6896, -0.1108]    0.0067    **
+  has_dysfluency_seg             0.0465   0.0035  13.150   [0.0396, 0.0534]    0.0000   ***
+
+  Log-likelihood (ML)  : -471238.837
+  AIC                  : 942501.674
+  BIC                  : 942632.648
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.043235
+    (1|speaker) var : 0.241871
+    (1|modality) var : 0.360184
+    (1|Residual) var : 0.583732
+    ICC (all RE)      : 0.5250
+  Marginal R²   (fixed)       : 0.0019
+  Conditional R² (fixed+rand) : 0.5259
+
+=================================================================
+  M8: SC ALONE (without IC) — Prof's SC sign check
+=================================================================
+
+   ─────────────────────────────────────────────────────────────────
+   M8: SC alone (no IC)
+  Formula: log_duration ~ SC_z + fwd_surp_z + bwd_surp_z + wlen_z + log_freq_z + 
+  Formula:     word_is_resolved + has_dysfluency_seg + (1 | speaker_id_file) + 
+  Formula:     (1 | word_resolved) + (1 | scenario)
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 406,164
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  SC_z                           0.0029   0.0014   2.081   [0.0002, 0.0056]    0.0375     *
+  fwd_surp_z                     0.0008   0.0016   0.518  [-0.0023, 0.0040]    0.6045    ns
+  bwd_surp_z                    -0.0013   0.0016  -0.824  [-0.0045, 0.0019]    0.4098    ns
+  wlen_z                         0.0339   0.0030  11.464   [0.0281, 0.0397]    0.0000   ***
+  log_freq_z                    -0.0489   0.0046 -10.629 [-0.0579, -0.0399]    0.0000   ***
+  word_is_resolved              -0.4019   0.1476  -2.722 [-0.6913, -0.1125]    0.0065    **
+  has_dysfluency_seg             0.0465   0.0035  13.145   [0.0395, 0.0534]    0.0000   ***
+
+  Log-likelihood (ML)  : -471184.006
+  AIC                  : 942392.012
+  BIC                  : 942522.987
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.041900
+    (1|speaker) var : 0.241848
+    (1|modality) var : 0.359328
+    (1|Residual) var : 0.583766
+    ICC (all RE)      : 0.5242
+  Marginal R²   (fixed)       : 0.0049
+  Conditional R² (fixed+rand) : 0.5265
+
+=================================================================
+  M9: IC ALONE (without SC)
+=================================================================
+
+   ─────────────────────────────────────────────────────────────────
+   M9: IC alone (no SC)
+  Formula: log_duration ~ IC_z + fwd_surp_z + bwd_surp_z + wlen_z + log_freq_z + 
+  Formula:     word_is_resolved + has_dysfluency_seg + (1 | speaker_id_file) + 
+  Formula:     (1 | word_resolved) + (1 | scenario)
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 406,164
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  IC_z                           0.0012   0.0013   0.906  [-0.0014, 0.0037]    0.3651    ns
+  fwd_surp_z                     0.0006   0.0016   0.396  [-0.0025, 0.0038]    0.6924    ns
+  bwd_surp_z                    -0.0010   0.0016  -0.585  [-0.0042, 0.0022]    0.5584    ns
+  wlen_z                         0.0339   0.0030  11.489   [0.0282, 0.0397]    0.0000   ***
+  log_freq_z                    -0.0489   0.0046 -10.628 [-0.0579, -0.0399]    0.0000   ***
+  word_is_resolved              -0.4029   0.1476  -2.729 [-0.6923, -0.1136]    0.0063    **
+  has_dysfluency_seg             0.0465   0.0035  13.158   [0.0396, 0.0535]    0.0000   ***
+
+  Log-likelihood (ML)  : -471185.760
+  AIC                  : 942395.521
+  BIC                  : 942526.495
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.041883
+    (1|speaker) var : 0.241830
+    (1|modality) var : 0.360045
+    (1|Residual) var : 0.583773
+    ICC (all RE)      : 0.5244
+  Marginal R²   (fixed)       : 0.0049
+  Conditional R² (fixed+rand) : 0.5268
+
+=================================================================
+  SC SIGN DIAGNOSTIC — Prof's request
+=================================================================
+  Zero-order corr(SC, duration)     : r = +0.0559
+  SC in M2 (with IC)                : beta = +0.0033
+  SC in M4 (with IC + surprisal)    : beta = +0.0033
+  SC in M8 (WITHOUT IC)             : beta = +0.0029
+  IC in M2                          : beta = +0.0019
+
+  >>> SC is positive in M2 (this check covers M2/M4/M8 only; see the SC SUMMARY below for M6 and the register splits).
+
+=================================================================
+  SCENARIO-SPLIT MODELS (M4 formula per scenario)
+=================================================================
+
+  Conversation: 122,023 words, 200 speakers
+
+   ─────────────────────────────────────────────────────────────────
+   M4: Conversation
+  Formula: log_duration ~ IC_z + SC_z + fwd_surp_z + bwd_surp_z + wlen_z + 
+  Formula:     log_freq_z + word_is_resolved + has_dysfluency_seg + (1 | 
+  Formula:     speaker_id_file) + (1 | word_resolved)
+  Random: (1|speaker) + (1|word)
+  n = 122,023
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  IC_z                           0.0014   0.0031   0.434  [-0.0048, 0.0075]    0.6644    ns
+  SC_z                          -0.0014   0.0031  -0.458  [-0.0074, 0.0046]    0.6470    ns
+  fwd_surp_z                    -0.0048   0.0028  -1.693  [-0.0103, 0.0008]    0.0905    ns
+  bwd_surp_z                     0.0041   0.0028   1.423  [-0.0015, 0.0096]    0.1547    ns
+  wlen_z                         0.0112   0.0049   2.284   [0.0016, 0.0207]    0.0224     *
+  log_freq_z                    -0.0344   0.0062  -5.517 [-0.0466, -0.0222]    0.0000   ***
+  word_is_resolved              -0.1946   0.1571  -1.239  [-0.5025, 0.1133]    0.2154    ns
+  has_dysfluency_seg             0.0645   0.0067   9.594   [0.0514, 0.0777]    0.0000   ***
+
+  Log-likelihood (ML)  : -139285.830
+  AIC                  : 278595.660
+  BIC                  : 278712.203
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.023394
+    (1|speaker) var : 0.401581
+    (1|Residual) var : 0.560616
+    ICC (all RE)      : 0.4312
+  Marginal R²   (fixed)       : 0.0021
+  Conditional R² (fixed+rand) : 0.4324
+
+  Extempore: 262,974 words, 214 speakers
+
+   ─────────────────────────────────────────────────────────────────
+   M4: Extempore
+  Formula: log_duration ~ IC_z + SC_z + fwd_surp_z + bwd_surp_z + wlen_z + 
+  Formula:     log_freq_z + word_is_resolved + has_dysfluency_seg + (1 | 
+  Formula:     speaker_id_file) + (1 | word_resolved)
+  Random: (1|speaker) + (1|word)
+  n = 262,974
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  IC_z                          -0.0019   0.0014  -1.331  [-0.0048, 0.0009]    0.1832    ns
+  SC_z                          -0.0056   0.0016  -3.429 [-0.0088, -0.0024]    0.0006   ***
+  fwd_surp_z                     0.0071   0.0019   3.654   [0.0033, 0.0109]    0.0003   ***
+  bwd_surp_z                     0.0001   0.0020   0.063  [-0.0038, 0.0040]    0.9501    ns
+  wlen_z                         0.0391   0.0035  11.118   [0.0322, 0.0460]    0.0000   ***
+  log_freq_z                    -0.0492   0.0054  -9.178 [-0.0597, -0.0387]    0.0000   ***
+  word_is_resolved              -0.3078   0.3625  -0.849  [-1.0182, 0.4027]    0.3959    ns
+  has_dysfluency_seg             0.0292   0.0040   7.298   [0.0213, 0.0370]    0.0000   ***
+
+  Log-likelihood (ML)  : -291708.129
+  AIC                  : 583440.257
+  BIC                  : 583566.015
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.053693
+    (1|speaker) var : 0.018429
+    (1|Residual) var : 0.524604
+    ICC (all RE)      : 0.1209
+  Marginal R²   (fixed)       : 0.0118
+  Conditional R² (fixed+rand) : 0.1312
+
+  Read: 21,167 words, 127 speakers
+
+   ─────────────────────────────────────────────────────────────────
+   M4: Read
+  Formula: log_duration ~ IC_z + SC_z + fwd_surp_z + bwd_surp_z + wlen_z + 
+  Formula:     log_freq_z + word_is_resolved + has_dysfluency_seg + (1 | 
+  Formula:     speaker_id_file) + (1 | word_resolved)
+  Random: (1|speaker) + (1|word)
+  n = 21,167
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  IC_z                           0.0093   0.0052   1.780  [-0.0009, 0.0196]    0.0750    ns
+  SC_z                          -0.0175   0.0053  -3.279 [-0.0280, -0.0070]    0.0010    **
+  fwd_surp_z                    -0.0102   0.0063  -1.638  [-0.0225, 0.0020]    0.1014    ns
+  bwd_surp_z                    -0.0040   0.0065  -0.621  [-0.0167, 0.0087]    0.5343    ns
+  wlen_z                         0.0505   0.0085   5.913   [0.0338, 0.0673]    0.0000   ***
+  log_freq_z                    -0.0707   0.0121  -5.841 [-0.0944, -0.0470]    0.0000   ***
+  has_dysfluency_seg             0.0375   0.0667   0.562  [-0.0932, 0.1683]    0.5738    ns
+
+  Log-likelihood (ML)  : -23913.828
+  AIC                  : 47849.655
+  BIC                  : 47937.218
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.104982
+    (1|speaker) var : 0.051721
+    (1|Residual) var : 0.507443
+    ICC (all RE)      : 0.2359
+  Marginal R²   (fixed)       : 0.0227
+  Conditional R² (fixed+rand) : 0.2533
+
+=================================================================
+  SENSITIVITY MODELS (new; compare with M4)
+=================================================================
+
+=================================================================
+  S1: M4 without median-imputed IC/SC/surprisal words
+=================================================================
+
+   ─────────────────────────────────────────────────────────────────
+   S1: M4 without median-imputed IC/SC/surprisal words
+  Formula: log_duration ~ IC_z + SC_z + fwd_surp_z + bwd_surp_z + wlen_z + 
+  Formula:     log_freq_z + word_is_resolved + has_dysfluency_seg + (1 | 
+  Formula:     speaker_id_file) + (1 | word_resolved) + (1 | scenario)
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 402,487
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  IC_z                           0.0019   0.0013   1.429  [-0.0007, 0.0045]    0.1530    ns
+  SC_z                           0.0032   0.0014   2.222   [0.0004, 0.0060]    0.0263     *
+  fwd_surp_z                     0.0007   0.0016   0.441  [-0.0025, 0.0039]    0.6590    ns
+  bwd_surp_z                    -0.0012   0.0016  -0.731  [-0.0044, 0.0020]    0.4649    ns
+  wlen_z                         0.0340   0.0030  11.480   [0.0282, 0.0398]    0.0000   ***
+  log_freq_z                    -0.0491   0.0046 -10.650 [-0.0581, -0.0400]    0.0000   ***
+  word_is_resolved              -0.4035   0.1474  -2.737 [-0.6924, -0.1146]    0.0062    **
+  has_dysfluency_seg             0.0464   0.0035  13.094   [0.0395, 0.0534]    0.0000   ***
+
+  Log-likelihood (ML)  : -466319.957
+  AIC                  : 932665.914
+  BIC                  : 932807.684
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.041962
+    (1|speaker) var : 0.241013
+    (1|modality) var : 0.357686
+    (1|Residual) var : 0.581942
+    ICC (all RE)      : 0.5240
+  Marginal R²   (fixed)       : 0.0050
+  Conditional R² (fixed+rand) : 0.5264
+
+=================================================================
+  S2: M4 without word_is_resolved
+=================================================================
+
+   ─────────────────────────────────────────────────────────────────
+   S2: M4 without word_is_resolved
+  Formula: log_duration ~ IC_z + SC_z + fwd_surp_z + bwd_surp_z + wlen_z + 
+  Formula:     log_freq_z + has_dysfluency_seg + (1 | speaker_id_file) + 
+  Formula:     (1 | word_resolved) + (1 | scenario)
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 406,164
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  IC_z                           0.0018   0.0013   1.353  [-0.0008, 0.0044]    0.1760    ns
+  SC_z                           0.0033   0.0014   2.319   [0.0005, 0.0061]    0.0204     *
+  fwd_surp_z                     0.0007   0.0016   0.421  [-0.0025, 0.0038]    0.6736    ns
+  bwd_surp_z                    -0.0012   0.0016  -0.705  [-0.0044, 0.0021]    0.4810    ns
+  wlen_z                         0.0339   0.0030  11.483   [0.0281, 0.0397]    0.0000   ***
+  log_freq_z                    -0.0488   0.0046 -10.615 [-0.0579, -0.0398]    0.0000   ***
+  has_dysfluency_seg             0.0464   0.0035  13.128   [0.0395, 0.0534]    0.0000   ***
+
+  Log-likelihood (ML)  : -471186.796
+  AIC                  : 942397.591
+  BIC                  : 942528.566
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.041899
+    (1|speaker) var : 0.241931
+    (1|modality) var : 0.359263
+    (1|Residual) var : 0.583774
+    ICC (all RE)      : 0.5242
+  Marginal R²   (fixed)       : 0.0049
+  Conditional R² (fixed+rand) : 0.5265
+
+=================================================================
+  S3: M4 with register (scenario) as a fixed effect
+=================================================================
+
+   ─────────────────────────────────────────────────────────────────
+   S3: M4 with register (scenario) as a fixed effect
+  Formula: log_duration ~ IC_z + SC_z + fwd_surp_z + bwd_surp_z + wlen_z + 
+  Formula:     log_freq_z + word_is_resolved + has_dysfluency_seg + scenario + 
+  Formula:     (1 | speaker_id_file) + (1 | word_resolved)
+  Random: (1|speaker) + (1|word); scenario is a FIXED effect
+  n = 406,164
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  IC_z                           0.0018   0.0013   1.351  [-0.0008, 0.0044]    0.1767    ns
+  SC_z                           0.0033   0.0014   2.309   [0.0005, 0.0061]    0.0209     *
+  fwd_surp_z                     0.0006   0.0016   0.393  [-0.0025, 0.0038]    0.6943    ns
+  bwd_surp_z                    -0.0011   0.0016  -0.686  [-0.0043, 0.0021]    0.4928    ns
+  wlen_z                         0.0339   0.0030  11.480   [0.0281, 0.0397]    0.0000   ***
+  log_freq_z                    -0.0489   0.0046 -10.617 [-0.0579, -0.0398]    0.0000   ***
+  word_is_resolved              -0.4018   0.1476  -2.721 [-0.6911, -0.1124]    0.0065    **
+  has_dysfluency_seg             0.0464   0.0035  13.131   [0.0395, 0.0534]    0.0000   ***
+  scenarioExtempore              1.1924   0.0039 309.672   [1.1848, 1.1999]    0.0000   ***
+  scenarioRead                   1.3351   0.0067 198.792   [1.3219, 1.3482]    0.0000   ***
+
+  Log-likelihood (ML)  : -471168.916
+  AIC                  : 942365.831
+  BIC                  : 942518.634
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.041898
+    (1|speaker) var : 0.241035
+    (1|Residual) var : 0.583760
+    ICC (all RE)      : 0.3265
+  Marginal R²   (fixed)       : 0.2673
+  Conditional R² (fixed+rand) : 0.5065
+
+=================================================================
+  S4: M4 with MTP-2-style caps (IC<=20, SC<=10, surprisal<=50)
+=================================================================
+
+   ─────────────────────────────────────────────────────────────────
+   S4: M4 with MTP-2-style caps (IC<=20, SC<=10, surprisal<=50)
+  Formula: log_duration ~ IC_z + SC_z + fwd_surp_z + bwd_surp_z + wlen_z + 
+  Formula:     log_freq_z + word_is_resolved + has_dysfluency_seg + (1 | 
+  Formula:     speaker_id_file) + (1 | word_resolved) + (1 | scenario)
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 383,573
+   ─────────────────────────────────────────────────────────────────
+
+  Predictor                          β       SE       t              95%CI         p   sig
+   ─────────────────────────────────────────────────────────────────────────────────────
+  IC_z                           0.0019   0.0034   0.569  [-0.0048, 0.0087]    0.5694    ns
+  SC_z                           0.0006   0.0018   0.325  [-0.0029, 0.0040]    0.7450    ns
+  fwd_surp_z                     0.0011   0.0018   0.617  [-0.0025, 0.0048]    0.5375    ns
+  bwd_surp_z                     0.0010   0.0019   0.503  [-0.0028, 0.0048]    0.6147    ns
+  wlen_z                         0.0343   0.0030  11.261   [0.0284, 0.0403]    0.0000   ***
+  log_freq_z                    -0.0507   0.0047 -10.728 [-0.0600, -0.0415]    0.0000   ***
+  word_is_resolved              -0.4110   0.1477  -2.782 [-0.7006, -0.1214]    0.0054    **
+  has_dysfluency_seg             0.0472   0.0036  12.949   [0.0400, 0.0543]    0.0000   ***
+
+  Log-likelihood (ML)  : -445263.163
+  AIC                  : 890552.326
+  BIC                  : 890693.471
+  Singular fit         : FALSE
+  Optimizer code       : 0 (0 = OK)
+  Random effects:
+    (1|word) var : 0.042355
+    (1|speaker) var : 0.237422
+    (1|modality) var : 0.354259
+    (1|Residual) var : 0.584429
+    ICC (all RE)      : 0.5204
+  Marginal R²   (fixed)       : 0.0052
+  Conditional R² (fixed+rand) : 0.5229
+
+=================================================================
+  SC SUMMARY — SC_z coefficient in every model that contains it
+=================================================================
+  Model                                                    beta       SE       t         p
+  M2: DLT only (n = all)                                +0.0033   0.0014    2.28    0.0223
+  M4: Full linguistic (n = all)                         +0.0033   0.0014    2.31    0.0209
+  M6: Full (acoustic subset)                            -0.0098   0.0013   -7.74    0.0000
+  M4 on acoustic subset                                 -0.0097   0.0013   -7.57    0.0000
+  M8: SC alone (n = all)                                +0.0029   0.0014    2.08    0.0375
+  S1: no imputed values                                 +0.0032   0.0014    2.22    0.0263
+  S3: register fixed effect                             +0.0033   0.0014    2.31    0.0209
+  S4: MTP-2 caps                                        +0.0006   0.0018    0.33    0.7450
+  M4: Conversation                                      -0.0014   0.0031   -0.46    0.6470
+  M4: Extempore                                         -0.0056   0.0016   -3.43    0.0006
+  M4: Read                                              -0.0175   0.0053   -3.28    0.0010
+
+=================================================================
+  LIKELIHOOD RATIO TESTS
+=================================================================
+
+  Q: Controls add value?
+  LRT M0 vs M1:
+    chi2(4) = 548.07, p = 0.0000 ***
+
+  Q: DLT beyond controls?
+  LRT M1 vs M2:
+    chi2(2) = 6.19, p = 0.0453 *
+
+  Q: Surprisal beyond controls?
+  LRT M1 vs M3:
+    chi2(2) = 0.51, p = 0.7739 ns
+
+  Q: Surprisal beyond DLT?
+  LRT M2 vs M4:
+    chi2(2) = 0.48, p = 0.7870 ns
+
+  Q: DLT beyond surprisal?
+  LRT M3 vs M4:
+    chi2(2) = 6.15, p = 0.0461 *
+
+  Q: Acoustic beyond controls?
+  LRT M1(acou) vs M5:
+    chi2(4) = 8520.22, p = 0.0000 ***
+
+  Q: Acoustic beyond ling?
+  LRT M4(full) vs M6:
+    chi2(4) = 8537.66, p = 0.0000 ***
+
+  Q: log_freq adds to model?
+  LRT M7 vs M4:
+    chi2(1) = 111.49, p = 0.0000 ***
+
+=================================================================
+  SURPRISAL SUPPRESSION ANALYSIS
+=================================================================
+
+  Fwd Surprisal:
+    With log_freq (M4)    : β = +0.0006 (t = 0.39)
+    Without log_freq (M7) : β = +0.0012 (t = 0.78)
+    → Not significant in either model: no suppression conclusion
+
+  Bwd Surprisal:
+    With log_freq (M4)    : β = -0.0011 (t = -0.69)
+    Without log_freq (M7) : β = +0.0002 (t = 0.15)
+    → Not significant in either model: no suppression conclusion
+
+=================================================================
+  MODEL COMPARISON (AIC / BIC / R²)
+  AIC and BIC are comparable only between models with the same n.
+=================================================================
+
+  Model                                     n           LL          AIC          BIC   R²m   R²c
+   ──────────────────────────────────────────────────────────────────────────────────────────
+  M0: Null                            406,164   -471460.46    942930.93    942985.50 0.0000 0.5262
+  M1: Controls                        406,164   -471186.43    942390.85    942489.08 0.0049 0.5266
+  M2: DLT only                        406,164   -471183.33    942388.67    942508.72 0.0049 0.5264
+  M3: Surprisal                       406,164   -471186.17    942394.34    942514.40 0.0049 0.5267
+  M4: Full Ling.                      406,164   -471183.09    942392.19    942534.07 0.0049 0.5265
+  M5: Acoustic                        329,450   -314964.96    629955.92    630095.08 0.0414 0.2835
+  M6: Full                            329,450   -314921.90    629877.81    630059.80 0.0415 0.2839
+  M7: No log_freq                     406,164   -471238.84    942501.67    942632.65 0.0019 0.5259
+  M8: SC alone                        406,164   -471184.01    942392.01    942522.99 0.0049 0.5265
+  M9: IC alone                        406,164   -471185.76    942395.52    942526.49 0.0049 0.5268
+  M4 (acoustic subset)                329,450   -319190.73    638407.46    638546.63 0.0048 0.2905
+  S1: no imputed values               402,487   -466319.96    932665.91    932807.68 0.0050 0.5264
+  S2: no word_is_resolved             406,164   -471186.80    942397.59    942528.57 0.0049 0.5265
+  S3: register fixed                  406,164   -471168.92    942365.83    942518.63 0.2673 0.5065
+  S4: MTP-2 caps                      383,573   -445263.16    890552.33    890693.47 0.0052 0.5229
+
+  Journal table saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/results/lmm_table_v7_updated.csv
+  Fit table saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/results/lmm_fit_v7_updated.csv
+
+── Residual plots ───────────────────────────────────────
+  Residual plot saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/figures/lmm_v7_residuals_m4.png
+  Residual plot saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/figures/lmm_v7_residuals_m6.png
+
+  Total time : 1360.9 s (22.7 min)
+=================================================================

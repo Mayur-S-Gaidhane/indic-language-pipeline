@@ -1,0 +1,88 @@
+nohup: ignoring input
+============================================================
+  PHASE B: Stanza Dependency Features
+  IC/SC per SCiL 2021 + Prof's dlt.py (FIXED v2)
+  IC = 1 + intervening non-PUNCT, assigned to later token
+  SC = 1 + incomplete deps (d <= i < h)
+  PUNCT zeroed out for both IC and SC
+============================================================
+
+  Loading segment metadata ...
+  Segments loaded: 32,823
+
+  Loading word_features_v4.csv ...
+  Words loaded : 614,351
+  Segments     : 28,302
+
+  Loading Stanza Hindi pipeline ...
+  Stanza loaded
+
+  Processing 28,302 segments ...
+  [500/28,302] 1.8% | elapsed=218s ETA=12122s | errors=0
+  [1,000/28,302] 3.5% | elapsed=551s ETA=15043s | errors=0
+  [1,500/28,302] 5.3% | elapsed=813s ETA=14527s | errors=0
+  [2,000/28,302] 7.1% | elapsed=1147s ETA=15084s | errors=0
+  [2,500/28,302] 8.8% | elapsed=1463s ETA=15099s | errors=0
+  [3,000/28,302] 10.6% | elapsed=1754s ETA=14793s | errors=0
+  [3,500/28,302] 12.4% | elapsed=2028s ETA=14371s | errors=0
+  [4,000/28,302] 14.1% | elapsed=2330s ETA=14156s | errors=0
+  [4,500/28,302] 15.9% | elapsed=2664s ETA=14091s | errors=0
+  [5,000/28,302] 17.7% | elapsed=3104s ETA=14466s | errors=0
+  [5,500/28,302] 19.4% | elapsed=3460s ETA=14345s | errors=0
+  [6,000/28,302] 21.2% | elapsed=3827s ETA=14225s | errors=0
+  [6,500/28,302] 23.0% | elapsed=4114s ETA=13799s | errors=0
+  [7,000/28,302] 24.7% | elapsed=4525s ETA=13770s | errors=0
+  [7,500/28,302] 26.5% | elapsed=4792s ETA=13291s | errors=0
+  [8,000/28,302] 28.3% | elapsed=5072s ETA=12871s | errors=0
+  [8,500/28,302] 30.0% | elapsed=5399s ETA=12578s | errors=0
+  [9,000/28,302] 31.8% | elapsed=5686s ETA=12195s | errors=0
+  [9,500/28,302] 33.6% | elapsed=5964s ETA=11804s | errors=0
+  [10,000/28,302] 35.3% | elapsed=6215s ETA=11375s | errors=0
+  [10,500/28,302] 37.1% | elapsed=6422s ETA=10888s | errors=0
+  [11,000/28,302] 38.9% | elapsed=6679s ETA=10505s | errors=0
+  [11,500/28,302] 40.6% | elapsed=6917s ETA=10106s | errors=0
+  [12,000/28,302] 42.4% | elapsed=7261s ETA=9864s | errors=0
+  [12,500/28,302] 44.2% | elapsed=7539s ETA=9531s | errors=0
+  [13,000/28,302] 45.9% | elapsed=7811s ETA=9194s | errors=0
+  [13,500/28,302] 47.7% | elapsed=8034s ETA=8809s | errors=0
+  [14,000/28,302] 49.5% | elapsed=8320s ETA=8499s | errors=0
+  [14,500/28,302] 51.2% | elapsed=8618s ETA=8203s | errors=0
+  [15,000/28,302] 53.0% | elapsed=9001s ETA=7982s | errors=0
+  [15,500/28,302] 54.8% | elapsed=9272s ETA=7658s | errors=0
+  [16,000/28,302] 56.5% | elapsed=9541s ETA=7336s | errors=0
+  [16,500/28,302] 58.3% | elapsed=9822s ETA=7025s | errors=0
+  [17,000/28,302] 60.1% | elapsed=10149s ETA=6747s | errors=0
+  [17,500/28,302] 61.8% | elapsed=10592s ETA=6538s | errors=0
+  [18,000/28,302] 63.6% | elapsed=10979s ETA=6284s | errors=0
+  [18,500/28,302] 65.4% | elapsed=11295s ETA=5985s | errors=0
+  [19,000/28,302] 67.1% | elapsed=11585s ETA=5672s | errors=0
+  [19,500/28,302] 68.9% | elapsed=12225s ETA=5518s | errors=0
+  [20,000/28,302] 70.7% | elapsed=15266s ETA=6337s | errors=0
+  [20,500/28,302] 72.4% | elapsed=15522s ETA=5907s | errors=0
+  [21,000/28,302] 74.2% | elapsed=15822s ETA=5502s | errors=0
+  [21,500/28,302] 76.0% | elapsed=16051s ETA=5078s | errors=0
+  [22,000/28,302] 77.7% | elapsed=16314s ETA=4673s | errors=0
+  [22,500/28,302] 79.5% | elapsed=16770s ETA=4324s | errors=0
+  [23,000/28,302] 81.3% | elapsed=17251s ETA=3977s | errors=0
+  [23,500/28,302] 83.0% | elapsed=17612s ETA=3599s | errors=0
+  [24,000/28,302] 84.8% | elapsed=17887s ETA=3206s | errors=0
+  [24,500/28,302] 86.6% | elapsed=18192s ETA=2823s | errors=0
+  [25,000/28,302] 88.3% | elapsed=18439s ETA=2435s | errors=0
+  [25,500/28,302] 90.1% | elapsed=18694s ETA=2054s | errors=0
+  [26,000/28,302] 91.9% | elapsed=18967s ETA=1679s | errors=0
+  [26,500/28,302] 93.6% | elapsed=19256s ETA=1309s | errors=0
+  [27,000/28,302] 95.4% | elapsed=19634s ETA=947s | errors=0
+  [27,500/28,302] 97.2% | elapsed=20011s ETA=584s | errors=0
+  [28,000/28,302] 98.9% | elapsed=20329s ETA=219s | errors=0
+
+============================================================
+  PHASE B COMPLETE (IC/SC FIXED v2 — matches dlt.py)
+============================================================
+  Words processed: 614,351
+  Segs processed : 28,302
+  Errors         : 0
+  Columns        : 14
+  Size           : 75.5 MB
+  Time           : 20515.7s (5.7h)
+  Output         : /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/results/features_B_stanza.csv
+============================================================

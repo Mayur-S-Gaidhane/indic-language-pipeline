@@ -1,0 +1,119 @@
+=================================================================
+  MTP-3 YOUTUBE EVALUATION (ENHANCED)
+  + Scaled BERTScore F1  + Embedding Cosine Similarity
+  Hint Mode 4: Structure + Theme
+=================================================================
+  Output dir: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/gemini_v5_hm4
+
+  Loaded 38 pairs from test split
+  Context window: 5 turns
+  Prompt version: V5
+  Avg ground truth response: 30 words
+  Avg words (Gadkari)      : 30
+  Avg words (Interviewer)  : 29
+
+=================================================================
+  PHASE 1: CCS Reference Statistics (from human responses)
+=================================================================
+
+  Loading Stanza Hindi pipeline...
+  Stanza loaded
+  Loading GPT-2 Hindi for surprisal...
+  GPT-2 Hindi loaded (device: cpu)
+
+  Computing CCS for human responses...
+    20/38 responses scored | 31s
+
+  CCS Reference: mean=-0.001934, sd=0.001300
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/ccs_reference.csv
+
+=================================================================
+  PHASE 2: Candidate Generation (model: gemini)
+=================================================================
+
+  Trying gemini-2.5-flash-lite...
+    ✗ 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-
+  Trying gemini-2.0-flash...
+    ✗ 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-
+  Trying gemini-3.5-flash-lite...
+  Gemini client loaded (model: gemini-3.5-flash-lite)
+
+  Generating candidates...
+    5/38 pairs | 39 candidates | 236s
+    10/38 pairs | 82 candidates | 520s
+    15/38 pairs | 127 candidates | 792s
+    20/38 pairs | 149 candidates | 1211s
+    25/38 pairs | 149 candidates | 1793s
+    30/38 pairs | 149 candidates | 2377s
+    35/38 pairs | 149 candidates | 2957s
+
+  LLM: 149, Human: 38
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/gemini_v5_hm4/candidates.csv
+
+=================================================================
+  PHASE 3: CCS Scoring + Response Selection + MRR
+=================================================================
+
+  Scoring all candidates...
+    Scored 50/187 | 3342s
+    Scored 100/187 | 3387s
+    Scored 150/187 | 3424s
+
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/gemini_v5_hm4/scored_candidates.csv (187 rows)
+
+  Response Selection + MRR Computation...
+
+=================================================================
+  PHASE 4: Text-Overlap Metrics (ENHANCED)
+  + Scaled BERTScore F1  + Embedding Cosine Similarity
+=================================================================
+  Computing BERTScore F1 (raw)...
+  Computing Scaled BERTScore F1 (manual baseline from random pairs)...
+    Baseline (random pairs): 0.6524
+    Scaled BERTScore F1 avg: 0.1905
+    (raw avg was 0.7186, baseline 0.6524)
+
+  ── Embedding Cosine Similarity ──
+  Loading embedding model: ai4bharat/IndicBERTv2-MLM-only...
+    ✗ Failed to load ai4bharat/IndicBERTv2-MLM-only: Due to a serious vulnerability issue in `torch.load`, even with `weights_only=Tr
+  Loading embedding model: xlm-roberta-base...
+  Embedding model loaded: xlm-roberta-base (device: cpu)
+  Computing embedding similarities...
+    Avg embedding cosine similarity: 0.9974
+
+=================================================================
+  PHASE 5: TTS (Text-to-Speech)
+=================================================================
+
+  Loading TTS model: facebook/mms-tts-hin...
+  TTS model loaded
+
+  TTS: 19 audio files generated in /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/gemini_v5_hm4/audio
+
+=================================================================
+  YOUTUBE EVALUATION RESULTS (ENHANCED)
+=================================================================
+
+  Pairs: 38 | Model: gemini | CCS: linguistic-only
+  CCS Reference: mean=-0.001934, sd=0.001300
+
+  *** MRR: 0.3526 ***
+  Avg human rank: 5.2
+  Top-1: 4/19 (21.1%)
+  Top-3: 5/19 (26.3%)
+
+  *** Text-Overlap Metrics (selected vs human) ***
+    Avg BLEU                    : 0.0273
+    Avg ROUGE-1 (F1)            : 0.2289
+    Avg ROUGE-L (F1)            : 0.1758
+    Avg BERTScore F1 (raw)      : 0.7186
+    Avg BERTScore F1 (SCALED)   : 0.1905
+    Avg Embedding Cosine Sim    : 0.9974
+
+  Total time: 3595s (59.9min)
+
+  Outputs:
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/gemini_v5_hm4/selected_responses.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/gemini_v5_hm4/scored_candidates.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/gemini_v5_hm4/youtube_eval_report.txt
+=================================================================

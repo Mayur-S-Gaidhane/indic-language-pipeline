@@ -1,0 +1,114 @@
+=================================================================
+  MTP-3 YOUTUBE EVALUATION
+  CCS-Based Response Selection on YouTube Ground-Truth Data
+  Linguistic-Only CCS (no acoustic features)
+=================================================================
+
+  Loaded 184 ground-truth pairs
+  Source: ['Nitin Gadkari Interview - Megha Prasad']
+  Context window: 3 turns
+  Sorted by context length (shortest first)
+  Limited to first 5 pairs
+
+=================================================================
+  PHASE 1: CCS Reference Statistics (from human responses)
+=================================================================
+
+  Loading Stanza Hindi pipeline...
+  Stanza loaded
+  Loading GPT-2 Hindi for surprisal...
+  GPT-2 Hindi loaded (device: cpu)
+
+  Computing CCS for human responses...
+
+  CCS Reference Statistics:
+    Mean CCS     : -0.001525
+    SD CCS       : 0.000964
+    Min CCS      : -0.002803
+    Max CCS      : -0.000332
+    Avg IC       : 2.042
+    Avg SC       : 2.258
+    Avg fwd surp : 3.304
+    Avg bwd surp : 4.746
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/ccs_reference.csv
+
+=================================================================
+  PHASE 2: Candidate Generation (model: gemini)
+=================================================================
+
+  Trying gemini-2.5-flash-lite...
+    ✗ 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-
+  Trying gemini-2.0-flash...
+    ✗ 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-
+  Trying gemini-3.5-flash-lite...
+  Gemini client loaded (model: gemini-3.5-flash-lite)
+
+  Generating candidates...
+
+  [DEBUG] First context (99 chars):
+    SPEAKER_01: आप बहुत नेशनल हो आपको एक बात बता दूं बोलो
+SPEAKER_00: बोलो कोई भी
+SPEAKER_01: कोई भी हम...
+    5/5 pairs | 27 candidates (avg 5.4/pair) | 123s
+
+  Generation Summary:
+    Pairs processed    : 5
+    Empty pairs        : 0
+    LLM candidates     : 27
+    Human responses    : 5
+    Total rows         : 32
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/candidates.csv
+
+=================================================================
+  PHASE 3: CCS Scoring + Response Selection + MRR
+=================================================================
+
+  Scoring all candidates with linguistic-only CCS...
+
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/scored_candidates.csv (32 rows)
+
+  Response Selection + MRR Computation...
+
+=================================================================
+  YOUTUBE EVALUATION RESULTS
+=================================================================
+
+  Data source            : YouTube (Gadkari interview)
+  Total pairs            : 5
+  CCS mode               : Linguistic-only (no acoustic)
+  Features               : IC, SC, forward_surprisal, backward_surprisal
+  Generation model       : gemini
+
+  CCS Reference (human)  : mean=-0.001525, sd=0.000964
+
+  Selection Results:
+    Pairs evaluated      : 5
+    Avg naturalness (sel): 0.7657
+    Avg naturalness (hum): 0.5993
+
+  *** MRR (Mean Reciprocal Rank) ***
+    MRR                  : 0.5500
+    Avg human rank       : 2.2
+    Human in top-1       : 1/5 (20.0%)
+    Human in top-3       : 4/5 (80.0%)
+
+  Rank distribution:
+    Rank  1:   1 pairs (20.0%)
+    Rank  2:   3 pairs (60.0%)
+    Rank  4:   1 pairs (20.0%)
+
+  Sample (first pair):
+    Selected : तो फिर सही आंकड़े क्या हैं?...
+    CCS      : -0.0019 (nat: 0.7449)
+    Human    : तो ये आंकड़े गलत है। 100% गलत है। ओके। ओके। दूसरी बात मैं सेबी में कंपनी रजिस्टर...
+    H.CCS    : -0.0028 (rank: 2)
+
+  Total time: 133s (2.2min)
+
+  Outputs:
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/ccs_reference.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/candidates.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/scored_candidates.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/selected_responses.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/youtube_eval_report.txt
+=================================================================

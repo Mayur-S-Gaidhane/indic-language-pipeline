@@ -1,0 +1,321 @@
+nohup: ignoring input
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Model config: pad_token_id must be `None` or an integer within the vocabulary (between 0 and 50256), got 50257. This may result in unexpected behavior.
+============================================================
+  PHASE C: Surprisal Features (GPT-2 Hindi)
+  Method: MTP-2 approach — 1 pass per segment
+  forward_surprisal, backward_surprisal
+============================================================
+
+  Loading segment metadata ...
+  Segments loaded: 32,823
+
+  Loading word_features_v4.csv ...
+  Words loaded    : 614,351
+  Segments        : 28,302
+
+  Loading GPT-2 Hindi (surajp/gpt2-hindi) ...
+Loading weights:   0%|          | 0/76 [00:00<?, ?it/s]Loading weights: 100%|██████████| 76/76 [00:00<00:00, 1219.41it/s]
+[transformers] [1mGPT2LMHeadModel LOAD REPORT[0m from: surajp/gpt2-hindi
+Key                                               | Status     |  | 
+--------------------------------------------------+------------+--+-
+transformer.h.{0, 1, 2, 3, 4, 5}.attn.masked_bias | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  GPT-2 loaded on cuda ✅
+  [100/28,302] 0.4% | elapsed=141s ETA=39765s | errors=0 | resume: --resume_seg 100
+  [200/28,302] 0.7% | elapsed=164s ETA=23044s | errors=0 | resume: --resume_seg 200
+  [300/28,302] 1.1% | elapsed=212s ETA=19788s | errors=0 | resume: --resume_seg 300
+  [400/28,302] 1.4% | elapsed=275s ETA=19183s | errors=0 | resume: --resume_seg 400
+  [500/28,302] 1.8% | elapsed=347s ETA=19295s | errors=0 | resume: --resume_seg 500
+  [600/28,302] 2.1% | elapsed=417s ETA=19253s | errors=0 | resume: --resume_seg 600
+  [700/28,302] 2.5% | elapsed=488s ETA=19243s | errors=0 | resume: --resume_seg 700
+  [800/28,302] 2.8% | elapsed=568s ETA=19526s | errors=0 | resume: --resume_seg 800
+  [900/28,302] 3.2% | elapsed=618s ETA=18816s | errors=0 | resume: --resume_seg 900
+  [1,000/28,302] 3.5% | elapsed=667s ETA=18210s | errors=0 | resume: --resume_seg 1000
+  [1,100/28,302] 3.9% | elapsed=726s ETA=17953s | errors=0 | resume: --resume_seg 1100
+  [1,200/28,302] 4.2% | elapsed=808s ETA=18249s | errors=0 | resume: --resume_seg 1200
+  [1,300/28,302] 4.6% | elapsed=864s ETA=17946s | errors=0 | resume: --resume_seg 1300
+  [1,400/28,302] 4.9% | elapsed=931s ETA=17890s | errors=0 | resume: --resume_seg 1400
+  [1,500/28,302] 5.3% | elapsed=1006s ETA=17975s | errors=0 | resume: --resume_seg 1500
+  [1,600/28,302] 5.7% | elapsed=1086s ETA=18124s | errors=0 | resume: --resume_seg 1600
+  [1,700/28,302] 6.0% | elapsed=1162s ETA=18183s | errors=0 | resume: --resume_seg 1700
+  [1,800/28,302] 6.4% | elapsed=1259s ETA=18537s | errors=0 | resume: --resume_seg 1800
+  [1,900/28,302] 6.7% | elapsed=1353s ETA=18801s | errors=0 | resume: --resume_seg 1900
+  [2,000/28,302] 7.1% | elapsed=1432s ETA=18832s | errors=0 | resume: --resume_seg 2000
+  [2,100/28,302] 7.4% | elapsed=1511s ETA=18853s | errors=0 | resume: --resume_seg 2100
+  [2,200/28,302] 7.8% | elapsed=1578s ETA=18722s | errors=0 | resume: --resume_seg 2200
+  [2,300/28,302] 8.1% | elapsed=1658s ETA=18744s | errors=0 | resume: --resume_seg 2300
+  [2,400/28,302] 8.5% | elapsed=1722s ETA=18585s | errors=0 | resume: --resume_seg 2400
+  [2,500/28,302] 8.8% | elapsed=1793s ETA=18505s | errors=0 | resume: --resume_seg 2500
+  [2,600/28,302] 9.2% | elapsed=1860s ETA=18387s | errors=0 | resume: --resume_seg 2600
+  [2,700/28,302] 9.5% | elapsed=1941s ETA=18405s | errors=0 | resume: --resume_seg 2700
+  [2,800/28,302] 9.9% | elapsed=2006s ETA=18270s | errors=0 | resume: --resume_seg 2800
+  [2,900/28,302] 10.2% | elapsed=2063s ETA=18070s | errors=0 | resume: --resume_seg 2900
+  [3,000/28,302] 10.6% | elapsed=2133s ETA=17990s | errors=0 | resume: --resume_seg 3000
+  [3,100/28,302] 11.0% | elapsed=2212s ETA=17983s | errors=0 | resume: --resume_seg 3100
+  [3,200/28,302] 11.3% | elapsed=2287s ETA=17940s | errors=0 | resume: --resume_seg 3200
+  [3,300/28,302] 11.7% | elapsed=2364s ETA=17911s | errors=0 | resume: --resume_seg 3300
+  [3,400/28,302] 12.0% | elapsed=2433s ETA=17820s | errors=0 | resume: --resume_seg 3400
+  [3,500/28,302] 12.4% | elapsed=2497s ETA=17694s | errors=0 | resume: --resume_seg 3500
+  [3,600/28,302] 12.7% | elapsed=2565s ETA=17600s | errors=0 | resume: --resume_seg 3600
+  [3,700/28,302] 13.1% | elapsed=2655s ETA=17654s | errors=0 | resume: --resume_seg 3700
+  [3,800/28,302] 13.4% | elapsed=2730s ETA=17603s | errors=0 | resume: --resume_seg 3800
+  [3,900/28,302] 13.8% | elapsed=2801s ETA=17526s | errors=0 | resume: --resume_seg 3900
+  [4,000/28,302] 14.1% | elapsed=2869s ETA=17431s | errors=0 | resume: --resume_seg 4000
+  [4,100/28,302] 14.5% | elapsed=2943s ETA=17372s | errors=0 | resume: --resume_seg 4100
+  [4,200/28,302] 14.8% | elapsed=3026s ETA=17365s | errors=0 | resume: --resume_seg 4200
+  [4,300/28,302] 15.2% | elapsed=3096s ETA=17281s | errors=0 | resume: --resume_seg 4300
+  [4,400/28,302] 15.5% | elapsed=3165s ETA=17193s | errors=0 | resume: --resume_seg 4400
+  [4,500/28,302] 15.9% | elapsed=3251s ETA=17196s | errors=0 | resume: --resume_seg 4500
+  [4,600/28,302] 16.3% | elapsed=3314s ETA=17076s | errors=0 | resume: --resume_seg 4600
+  [4,700/28,302] 16.6% | elapsed=3387s ETA=17009s | errors=0 | resume: --resume_seg 4700
+  [4,800/28,302] 17.0% | elapsed=3444s ETA=16863s | errors=0 | resume: --resume_seg 4800
+  [4,900/28,302] 17.3% | elapsed=3502s ETA=16725s | errors=0 | resume: --resume_seg 4900
+  [5,000/28,302] 17.7% | elapsed=3566s ETA=16619s | errors=0 | resume: --resume_seg 5000
+  [5,100/28,302] 18.0% | elapsed=3636s ETA=16542s | errors=0 | resume: --resume_seg 5100
+  [5,200/28,302] 18.4% | elapsed=3704s ETA=16456s | errors=0 | resume: --resume_seg 5200
+  [5,300/28,302] 18.7% | elapsed=3796s ETA=16475s | errors=0 | resume: --resume_seg 5300
+  [5,400/28,302] 19.1% | elapsed=3891s ETA=16502s | errors=0 | resume: --resume_seg 5400
+  [5,500/28,302] 19.4% | elapsed=3975s ETA=16480s | errors=0 | resume: --resume_seg 5500
+  [5,600/28,302] 19.8% | elapsed=4047s ETA=16406s | errors=0 | resume: --resume_seg 5600
+  [5,700/28,302] 20.1% | elapsed=4126s ETA=16361s | errors=0 | resume: --resume_seg 5700
+  [5,800/28,302] 20.5% | elapsed=4170s ETA=16178s | errors=0 | resume: --resume_seg 5800
+  [5,900/28,302] 20.8% | elapsed=4239s ETA=16095s | errors=0 | resume: --resume_seg 5900
+  [6,000/28,302] 21.2% | elapsed=4285s ETA=15927s | errors=0 | resume: --resume_seg 6000
+  [6,100/28,302] 21.6% | elapsed=4343s ETA=15807s | errors=0 | resume: --resume_seg 6100
+  [6,200/28,302] 21.9% | elapsed=4411s ETA=15725s | errors=0 | resume: --resume_seg 6200
+  [6,300/28,302] 22.3% | elapsed=4501s ETA=15719s | errors=0 | resume: --resume_seg 6300
+  [6,400/28,302] 22.6% | elapsed=4575s ETA=15657s | errors=0 | resume: --resume_seg 6400
+  [6,500/28,302] 23.0% | elapsed=4646s ETA=15583s | errors=0 | resume: --resume_seg 6500
+  [6,600/28,302] 23.3% | elapsed=4715s ETA=15504s | errors=0 | resume: --resume_seg 6600
+  [6,700/28,302] 23.7% | elapsed=4798s ETA=15470s | errors=0 | resume: --resume_seg 6700
+  [6,800/28,302] 24.0% | elapsed=4864s ETA=15380s | errors=0 | resume: --resume_seg 6800
+  [6,900/28,302] 24.4% | elapsed=4936s ETA=15310s | errors=0 | resume: --resume_seg 6900
+  [7,000/28,302] 24.7% | elapsed=4977s ETA=15146s | errors=0 | resume: --resume_seg 7000
+  [7,100/28,302] 25.1% | elapsed=5032s ETA=15027s | errors=0 | resume: --resume_seg 7100
+  [7,200/28,302] 25.4% | elapsed=5118s ETA=15000s | errors=0 | resume: --resume_seg 7200
+  [7,300/28,302] 25.8% | elapsed=5193s ETA=14940s | errors=0 | resume: --resume_seg 7300
+  [7,400/28,302] 26.1% | elapsed=5292s ETA=14948s | errors=0 | resume: --resume_seg 7400
+  [7,500/28,302] 26.5% | elapsed=5370s ETA=14894s | errors=0 | resume: --resume_seg 7500
+  [7,600/28,302] 26.9% | elapsed=5455s ETA=14859s | errors=0 | resume: --resume_seg 7600
+  [7,700/28,302] 27.2% | elapsed=5524s ETA=14780s | errors=0 | resume: --resume_seg 7700
+  [7,800/28,302] 27.6% | elapsed=5583s ETA=14675s | errors=0 | resume: --resume_seg 7800
+  [7,900/28,302] 27.9% | elapsed=5653s ETA=14599s | errors=0 | resume: --resume_seg 7900
+  [8,000/28,302] 28.3% | elapsed=5740s ETA=14567s | errors=0 | resume: --resume_seg 8000
+  [8,100/28,302] 28.6% | elapsed=5808s ETA=14486s | errors=0 | resume: --resume_seg 8100
+  [8,200/28,302] 29.0% | elapsed=5886s ETA=14429s | errors=0 | resume: --resume_seg 8200
+  [8,300/28,302] 29.3% | elapsed=5955s ETA=14351s | errors=0 | resume: --resume_seg 8300
+  [8,400/28,302] 29.7% | elapsed=6036s ETA=14301s | errors=0 | resume: --resume_seg 8400
+  [8,500/28,302] 30.0% | elapsed=6123s ETA=14264s | errors=0 | resume: --resume_seg 8500
+  [8,600/28,302] 30.4% | elapsed=6184s ETA=14167s | errors=0 | resume: --resume_seg 8600
+  [8,700/28,302] 30.7% | elapsed=6263s ETA=14111s | errors=0 | resume: --resume_seg 8700
+  [8,800/28,302] 31.1% | elapsed=6347s ETA=14066s | errors=0 | resume: --resume_seg 8800
+  [8,900/28,302] 31.4% | elapsed=6427s ETA=14011s | errors=0 | resume: --resume_seg 8900
+  [9,000/28,302] 31.8% | elapsed=6512s ETA=13966s | errors=0 | resume: --resume_seg 9000
+  [9,100/28,302] 32.2% | elapsed=6587s ETA=13899s | errors=0 | resume: --resume_seg 9100
+  [9,200/28,302] 32.5% | elapsed=6671s ETA=13851s | errors=0 | resume: --resume_seg 9200
+  [9,300/28,302] 32.9% | elapsed=6745s ETA=13782s | errors=0 | resume: --resume_seg 9300
+  [9,400/28,302] 33.2% | elapsed=6820s ETA=13714s | errors=0 | resume: --resume_seg 9400
+  [9,500/28,302] 33.6% | elapsed=6903s ETA=13662s | errors=0 | resume: --resume_seg 9500
+  [9,600/28,302] 33.9% | elapsed=6991s ETA=13619s | errors=0 | resume: --resume_seg 9600
+  [9,700/28,302] 34.3% | elapsed=7075s ETA=13568s | errors=0 | resume: --resume_seg 9700
+  [9,800/28,302] 34.6% | elapsed=7143s ETA=13486s | errors=0 | resume: --resume_seg 9800
+  [9,900/28,302] 35.0% | elapsed=7226s ETA=13432s | errors=0 | resume: --resume_seg 9900
+  [10,000/28,302] 35.3% | elapsed=7299s ETA=13359s | errors=0 | resume: --resume_seg 10000
+  [10,100/28,302] 35.7% | elapsed=7366s ETA=13275s | errors=0 | resume: --resume_seg 10100
+  [10,200/28,302] 36.0% | elapsed=7436s ETA=13197s | errors=0 | resume: --resume_seg 10200
+  [10,300/28,302] 36.4% | elapsed=7510s ETA=13126s | errors=0 | resume: --resume_seg 10300
+  [10,400/28,302] 36.7% | elapsed=7561s ETA=13015s | errors=0 | resume: --resume_seg 10400
+  [10,500/28,302] 37.1% | elapsed=7620s ETA=12919s | errors=0 | resume: --resume_seg 10500
+  [10,600/28,302] 37.5% | elapsed=7703s ETA=12864s | errors=0 | resume: --resume_seg 10600
+  [10,700/28,302] 37.8% | elapsed=7759s ETA=12764s | errors=0 | resume: --resume_seg 10700
+  [10,800/28,302] 38.2% | elapsed=7811s ETA=12658s | errors=0 | resume: --resume_seg 10800
+  [10,900/28,302] 38.5% | elapsed=7885s ETA=12589s | errors=0 | resume: --resume_seg 10900
+  [11,000/28,302] 38.9% | elapsed=7958s ETA=12517s | errors=0 | resume: --resume_seg 11000
+  [11,100/28,302] 39.2% | elapsed=8018s ETA=12426s | errors=0 | resume: --resume_seg 11100
+  [11,200/28,302] 39.6% | elapsed=8082s ETA=12341s | errors=0 | resume: --resume_seg 11200
+  [11,300/28,302] 39.9% | elapsed=8155s ETA=12270s | errors=0 | resume: --resume_seg 11300
+  [11,400/28,302] 40.3% | elapsed=8219s ETA=12186s | errors=0 | resume: --resume_seg 11400
+  [11,500/28,302] 40.6% | elapsed=8290s ETA=12112s | errors=0 | resume: --resume_seg 11500
+  [11,600/28,302] 41.0% | elapsed=8368s ETA=12048s | errors=0 | resume: --resume_seg 11600
+  [11,700/28,302] 41.3% | elapsed=8432s ETA=11965s | errors=0 | resume: --resume_seg 11700
+  [11,800/28,302] 41.7% | elapsed=8515s ETA=11908s | errors=0 | resume: --resume_seg 11800
+  [11,900/28,302] 42.0% | elapsed=8557s ETA=11794s | errors=0 | resume: --resume_seg 11900
+  [12,000/28,302] 42.4% | elapsed=8637s ETA=11733s | errors=0 | resume: --resume_seg 12000
+  [12,100/28,302] 42.8% | elapsed=8703s ETA=11653s | errors=0 | resume: --resume_seg 12100
+  [12,200/28,302] 43.1% | elapsed=8775s ETA=11582s | errors=0 | resume: --resume_seg 12200
+  [12,300/28,302] 43.5% | elapsed=8845s ETA=11507s | errors=0 | resume: --resume_seg 12300
+  [12,400/28,302] 43.8% | elapsed=8916s ETA=11434s | errors=0 | resume: --resume_seg 12400
+  [12,500/28,302] 44.2% | elapsed=8979s ETA=11351s | errors=0 | resume: --resume_seg 12500
+  [12,600/28,302] 44.5% | elapsed=9060s ETA=11290s | errors=0 | resume: --resume_seg 12600
+  [12,700/28,302] 44.9% | elapsed=9134s ETA=11221s | errors=0 | resume: --resume_seg 12700
+  [12,800/28,302] 45.2% | elapsed=9214s ETA=11159s | errors=0 | resume: --resume_seg 12800
+  [12,900/28,302] 45.6% | elapsed=9272s ETA=11070s | errors=0 | resume: --resume_seg 12900
+  [13,000/28,302] 45.9% | elapsed=9345s ETA=11000s | errors=0 | resume: --resume_seg 13000
+  [13,100/28,302] 46.3% | elapsed=9382s ETA=10887s | errors=0 | resume: --resume_seg 13100
+  [13,200/28,302] 46.6% | elapsed=9443s ETA=10804s | errors=0 | resume: --resume_seg 13200
+  [13,300/28,302] 47.0% | elapsed=9523s ETA=10742s | errors=0 | resume: --resume_seg 13300
+  [13,400/28,302] 47.3% | elapsed=9590s ETA=10665s | errors=0 | resume: --resume_seg 13400
+  [13,500/28,302] 47.7% | elapsed=9634s ETA=10563s | errors=0 | resume: --resume_seg 13500
+  [13,600/28,302] 48.1% | elapsed=9674s ETA=10458s | errors=0 | resume: --resume_seg 13600
+  [13,700/28,302] 48.4% | elapsed=9735s ETA=10376s | errors=0 | resume: --resume_seg 13700
+  [13,800/28,302] 48.8% | elapsed=9781s ETA=10279s | errors=0 | resume: --resume_seg 13800
+  [13,900/28,302] 49.1% | elapsed=9827s ETA=10182s | errors=0 | resume: --resume_seg 13900
+  [14,000/28,302] 49.5% | elapsed=9876s ETA=10089s | errors=0 | resume: --resume_seg 14000
+  [14,100/28,302] 49.8% | elapsed=9920s ETA=9992s | errors=0 | resume: --resume_seg 14100
+  [14,200/28,302] 50.2% | elapsed=9979s ETA=9910s | errors=0 | resume: --resume_seg 14200
+  [14,300/28,302] 50.5% | elapsed=10013s ETA=9804s | errors=0 | resume: --resume_seg 14300
+  [14,400/28,302] 50.9% | elapsed=10056s ETA=9708s | errors=0 | resume: --resume_seg 14400
+  [14,500/28,302] 51.2% | elapsed=10107s ETA=9620s | errors=0 | resume: --resume_seg 14500
+  [14,600/28,302] 51.6% | elapsed=10150s ETA=9526s | errors=0 | resume: --resume_seg 14600
+  [14,700/28,302] 51.9% | elapsed=10197s ETA=9435s | errors=0 | resume: --resume_seg 14700
+  [14,800/28,302] 52.3% | elapsed=10259s ETA=9359s | errors=0 | resume: --resume_seg 14800
+  [14,900/28,302] 52.6% | elapsed=10308s ETA=9272s | errors=0 | resume: --resume_seg 14900
+  [15,000/28,302] 53.0% | elapsed=10360s ETA=9187s | errors=0 | resume: --resume_seg 15000
+  [15,100/28,302] 53.4% | elapsed=10405s ETA=9097s | errors=0 | resume: --resume_seg 15100
+  [15,200/28,302] 53.7% | elapsed=10448s ETA=9006s | errors=0 | resume: --resume_seg 15200
+  [15,300/28,302] 54.1% | elapsed=10502s ETA=8925s | errors=0 | resume: --resume_seg 15300
+  [15,400/28,302] 54.4% | elapsed=10543s ETA=8833s | errors=0 | resume: --resume_seg 15400
+  [15,500/28,302] 54.8% | elapsed=10587s ETA=8744s | errors=0 | resume: --resume_seg 15500
+  [15,600/28,302] 55.1% | elapsed=10631s ETA=8656s | errors=0 | resume: --resume_seg 15600
+  [15,700/28,302] 55.5% | elapsed=10676s ETA=8569s | errors=0 | resume: --resume_seg 15700
+  [15,800/28,302] 55.8% | elapsed=10726s ETA=8487s | errors=0 | resume: --resume_seg 15800
+  [15,900/28,302] 56.2% | elapsed=10766s ETA=8397s | errors=0 | resume: --resume_seg 15900
+  [16,000/28,302] 56.5% | elapsed=10826s ETA=8324s | errors=0 | resume: --resume_seg 16000
+  [16,100/28,302] 56.9% | elapsed=10885s ETA=8250s | errors=0 | resume: --resume_seg 16100
+  [16,200/28,302] 57.2% | elapsed=10933s ETA=8167s | errors=0 | resume: --resume_seg 16200
+  [16,300/28,302] 57.6% | elapsed=10991s ETA=8093s | errors=0 | resume: --resume_seg 16300
+  [16,400/28,302] 57.9% | elapsed=11084s ETA=8044s | errors=0 | resume: --resume_seg 16400
+  [16,500/28,302] 58.3% | elapsed=11199s ETA=8010s | errors=0 | resume: --resume_seg 16500
+  [16,600/28,302] 58.7% | elapsed=11280s ETA=7952s | errors=0 | resume: --resume_seg 16600
+  [16,700/28,302] 59.0% | elapsed=11336s ETA=7875s | errors=0 | resume: --resume_seg 16700
+  [16,800/28,302] 59.4% | elapsed=11409s ETA=7811s | errors=0 | resume: --resume_seg 16800
+  [16,900/28,302] 59.7% | elapsed=11475s ETA=7742s | errors=0 | resume: --resume_seg 16900
+  [17,000/28,302] 60.1% | elapsed=11544s ETA=7675s | errors=0 | resume: --resume_seg 17000
+  [17,100/28,302] 60.4% | elapsed=11602s ETA=7600s | errors=0 | resume: --resume_seg 17100
+  [17,200/28,302] 60.8% | elapsed=11662s ETA=7527s | errors=0 | resume: --resume_seg 17200
+  [17,300/28,302] 61.1% | elapsed=11708s ETA=7446s | errors=0 | resume: --resume_seg 17300
+  [17,400/28,302] 61.5% | elapsed=11766s ETA=7372s | errors=0 | resume: --resume_seg 17400
+  [17,500/28,302] 61.8% | elapsed=11819s ETA=7295s | errors=0 | resume: --resume_seg 17500
+  [17,600/28,302] 62.2% | elapsed=11866s ETA=7215s | errors=0 | resume: --resume_seg 17600
+  [17,700/28,302] 62.5% | elapsed=11948s ETA=7157s | errors=0 | resume: --resume_seg 17700
+  [17,800/28,302] 62.9% | elapsed=12006s ETA=7084s | errors=0 | resume: --resume_seg 17800
+  [17,900/28,302] 63.2% | elapsed=12065s ETA=7011s | errors=0 | resume: --resume_seg 17900
+  [18,000/28,302] 63.6% | elapsed=12110s ETA=6931s | errors=0 | resume: --resume_seg 18000
+  [18,100/28,302] 64.0% | elapsed=12145s ETA=6845s | errors=0 | resume: --resume_seg 18100
+  [18,200/28,302] 64.3% | elapsed=12218s ETA=6782s | errors=0 | resume: --resume_seg 18200
+  [18,300/28,302] 64.7% | elapsed=12268s ETA=6705s | errors=0 | resume: --resume_seg 18300
+  [18,400/28,302] 65.0% | elapsed=12303s ETA=6621s | errors=0 | resume: --resume_seg 18400
+  [18,500/28,302] 65.4% | elapsed=12358s ETA=6548s | errors=0 | resume: --resume_seg 18500
+  [18,600/28,302] 65.7% | elapsed=12403s ETA=6470s | errors=0 | resume: --resume_seg 18600
+  [18,700/28,302] 66.1% | elapsed=12446s ETA=6391s | errors=0 | resume: --resume_seg 18700
+  [18,800/28,302] 66.4% | elapsed=12491s ETA=6313s | errors=0 | resume: --resume_seg 18800
+  [18,900/28,302] 66.8% | elapsed=12540s ETA=6238s | errors=0 | resume: --resume_seg 18900
+  [19,000/28,302] 67.1% | elapsed=12579s ETA=6158s | errors=0 | resume: --resume_seg 19000
+  [19,100/28,302] 67.5% | elapsed=12633s ETA=6086s | errors=0 | resume: --resume_seg 19100
+  [19,200/28,302] 67.8% | elapsed=12669s ETA=6006s | errors=0 | resume: --resume_seg 19200
+  [19,300/28,302] 68.2% | elapsed=12715s ETA=5931s | errors=0 | resume: --resume_seg 19300
+  [19,400/28,302] 68.5% | elapsed=12757s ETA=5854s | errors=0 | resume: --resume_seg 19400
+  [19,500/28,302] 68.9% | elapsed=12805s ETA=5780s | errors=0 | resume: --resume_seg 19500
+  [19,600/28,302] 69.3% | elapsed=12848s ETA=5704s | errors=0 | resume: --resume_seg 19600
+  [19,700/28,302] 69.6% | elapsed=12901s ETA=5633s | errors=0 | resume: --resume_seg 19700
+  [19,800/28,302] 70.0% | elapsed=12961s ETA=5565s | errors=0 | resume: --resume_seg 19800
+  [19,900/28,302] 70.3% | elapsed=13015s ETA=5495s | errors=0 | resume: --resume_seg 19900
+  [20,000/28,302] 70.7% | elapsed=13066s ETA=5424s | errors=0 | resume: --resume_seg 20000
+  [20,100/28,302] 71.0% | elapsed=13115s ETA=5352s | errors=0 | resume: --resume_seg 20100
+  [20,200/28,302] 71.4% | elapsed=13158s ETA=5278s | errors=0 | resume: --resume_seg 20200
+  [20,300/28,302] 71.7% | elapsed=13200s ETA=5203s | errors=0 | resume: --resume_seg 20300
+  [20,400/28,302] 72.1% | elapsed=13241s ETA=5129s | errors=0 | resume: --resume_seg 20400
+  [20,500/28,302] 72.4% | elapsed=13291s ETA=5058s | errors=0 | resume: --resume_seg 20500
+  [20,600/28,302] 72.8% | elapsed=13324s ETA=4982s | errors=0 | resume: --resume_seg 20600
+  [20,700/28,302] 73.1% | elapsed=13381s ETA=4914s | errors=0 | resume: --resume_seg 20700
+  [20,800/28,302] 73.5% | elapsed=13419s ETA=4840s | errors=0 | resume: --resume_seg 20800
+  [20,900/28,302] 73.8% | elapsed=13459s ETA=4767s | errors=0 | resume: --resume_seg 20900
+  [21,000/28,302] 74.2% | elapsed=13508s ETA=4697s | errors=0 | resume: --resume_seg 21000
+  [21,100/28,302] 74.6% | elapsed=13549s ETA=4625s | errors=0 | resume: --resume_seg 21100
+  [21,200/28,302] 74.9% | elapsed=13603s ETA=4557s | errors=0 | resume: --resume_seg 21200
+  [21,300/28,302] 75.3% | elapsed=13652s ETA=4488s | errors=0 | resume: --resume_seg 21300
+  [21,400/28,302] 75.6% | elapsed=13689s ETA=4415s | errors=0 | resume: --resume_seg 21400
+  [21,500/28,302] 76.0% | elapsed=13730s ETA=4344s | errors=0 | resume: --resume_seg 21500
+  [21,600/28,302] 76.3% | elapsed=13785s ETA=4277s | errors=0 | resume: --resume_seg 21600
+  [21,700/28,302] 76.7% | elapsed=13818s ETA=4204s | errors=0 | resume: --resume_seg 21700
+  [21,800/28,302] 77.0% | elapsed=13859s ETA=4134s | errors=0 | resume: --resume_seg 21800
+  [21,900/28,302] 77.4% | elapsed=13907s ETA=4065s | errors=0 | resume: --resume_seg 21900
+  [22,000/28,302] 77.7% | elapsed=13962s ETA=3999s | errors=0 | resume: --resume_seg 22000
+  [22,100/28,302] 78.1% | elapsed=14017s ETA=3934s | errors=0 | resume: --resume_seg 22100
+  [22,200/28,302] 78.4% | elapsed=14083s ETA=3871s | errors=0 | resume: --resume_seg 22200
+  [22,300/28,302] 78.8% | elapsed=14134s ETA=3804s | errors=0 | resume: --resume_seg 22300
+  [22,400/28,302] 79.1% | elapsed=14183s ETA=3737s | errors=0 | resume: --resume_seg 22400
+  [22,500/28,302] 79.5% | elapsed=14235s ETA=3671s | errors=0 | resume: --resume_seg 22500
+  [22,600/28,302] 79.9% | elapsed=14286s ETA=3604s | errors=0 | resume: --resume_seg 22600
+  [22,700/28,302] 80.2% | elapsed=14331s ETA=3537s | errors=0 | resume: --resume_seg 22700
+  [22,800/28,302] 80.6% | elapsed=14412s ETA=3478s | errors=0 | resume: --resume_seg 22800
+  [22,900/28,302] 80.9% | elapsed=14481s ETA=3416s | errors=0 | resume: --resume_seg 22900
+  [23,000/28,302] 81.3% | elapsed=14570s ETA=3359s | errors=0 | resume: --resume_seg 23000
+  [23,100/28,302] 81.6% | elapsed=14651s ETA=3299s | errors=0 | resume: --resume_seg 23100
+  [23,200/28,302] 82.0% | elapsed=14735s ETA=3240s | errors=0 | resume: --resume_seg 23200
+  [23,300/28,302] 82.3% | elapsed=14793s ETA=3176s | errors=0 | resume: --resume_seg 23300
+  [23,400/28,302] 82.7% | elapsed=14850s ETA=3111s | errors=0 | resume: --resume_seg 23400
+  [23,500/28,302] 83.0% | elapsed=14900s ETA=3045s | errors=0 | resume: --resume_seg 23500
+  [23,600/28,302] 83.4% | elapsed=14948s ETA=2978s | errors=0 | resume: --resume_seg 23600
+  [23,700/28,302] 83.7% | elapsed=14984s ETA=2910s | errors=0 | resume: --resume_seg 23700
+  [23,800/28,302] 84.1% | elapsed=15029s ETA=2843s | errors=0 | resume: --resume_seg 23800
+  [23,900/28,302] 84.4% | elapsed=15080s ETA=2777s | errors=0 | resume: --resume_seg 23900
+  [24,000/28,302] 84.8% | elapsed=15118s ETA=2710s | errors=0 | resume: --resume_seg 24000
+  [24,100/28,302] 85.2% | elapsed=15166s ETA=2644s | errors=0 | resume: --resume_seg 24100
+  [24,200/28,302] 85.5% | elapsed=15214s ETA=2579s | errors=0 | resume: --resume_seg 24200
+  [24,300/28,302] 85.9% | elapsed=15269s ETA=2515s | errors=0 | resume: --resume_seg 24300
+  [24,400/28,302] 86.2% | elapsed=15318s ETA=2450s | errors=0 | resume: --resume_seg 24400
+  [24,500/28,302] 86.6% | elapsed=15371s ETA=2385s | errors=0 | resume: --resume_seg 24500
+  [24,600/28,302] 86.9% | elapsed=15394s ETA=2317s | errors=0 | resume: --resume_seg 24600
+  [24,700/28,302] 87.3% | elapsed=15432s ETA=2250s | errors=0 | resume: --resume_seg 24700
+  [24,800/28,302] 87.6% | elapsed=15471s ETA=2185s | errors=0 | resume: --resume_seg 24800
+  [24,900/28,302] 88.0% | elapsed=15521s ETA=2121s | errors=0 | resume: --resume_seg 24900
+  [25,000/28,302] 88.3% | elapsed=15571s ETA=2057s | errors=0 | resume: --resume_seg 25000
+  [25,100/28,302] 88.7% | elapsed=15614s ETA=1992s | errors=0 | resume: --resume_seg 25100
+  [25,200/28,302] 89.0% | elapsed=15668s ETA=1929s | errors=0 | resume: --resume_seg 25200
+  [25,300/28,302] 89.4% | elapsed=15716s ETA=1865s | errors=0 | resume: --resume_seg 25300
+  [25,400/28,302] 89.7% | elapsed=15754s ETA=1800s | errors=0 | resume: --resume_seg 25400
+  [25,500/28,302] 90.1% | elapsed=15800s ETA=1736s | errors=0 | resume: --resume_seg 25500
+  [25,600/28,302] 90.5% | elapsed=15841s ETA=1672s | errors=0 | resume: --resume_seg 25600
+  [25,700/28,302] 90.8% | elapsed=15882s ETA=1608s | errors=0 | resume: --resume_seg 25700
+  [25,800/28,302] 91.2% | elapsed=15931s ETA=1545s | errors=0 | resume: --resume_seg 25800
+  [25,900/28,302] 91.5% | elapsed=15989s ETA=1483s | errors=0 | resume: --resume_seg 25900
+  [26,000/28,302] 91.9% | elapsed=16029s ETA=1419s | errors=0 | resume: --resume_seg 26000
+  [26,100/28,302] 92.2% | elapsed=16079s ETA=1357s | errors=0 | resume: --resume_seg 26100
+  [26,200/28,302] 92.6% | elapsed=16111s ETA=1293s | errors=0 | resume: --resume_seg 26200
+  [26,300/28,302] 92.9% | elapsed=16148s ETA=1229s | errors=0 | resume: --resume_seg 26300
+  [26,400/28,302] 93.3% | elapsed=16173s ETA=1165s | errors=0 | resume: --resume_seg 26400
+  [26,500/28,302] 93.6% | elapsed=16225s ETA=1103s | errors=0 | resume: --resume_seg 26500
+  [26,600/28,302] 94.0% | elapsed=16271s ETA=1041s | errors=0 | resume: --resume_seg 26600
+  [26,700/28,302] 94.3% | elapsed=16330s ETA=980s | errors=0 | resume: --resume_seg 26700
+  [26,800/28,302] 94.7% | elapsed=16373s ETA=918s | errors=0 | resume: --resume_seg 26800
+  [26,900/28,302] 95.0% | elapsed=16417s ETA=856s | errors=0 | resume: --resume_seg 26900
+  [27,000/28,302] 95.4% | elapsed=16462s ETA=794s | errors=0 | resume: --resume_seg 27000
+  [27,100/28,302] 95.8% | elapsed=16507s ETA=732s | errors=0 | resume: --resume_seg 27100
+  [27,200/28,302] 96.1% | elapsed=16563s ETA=671s | errors=0 | resume: --resume_seg 27200
+  [27,300/28,302] 96.5% | elapsed=16604s ETA=609s | errors=0 | resume: --resume_seg 27300
+  [27,400/28,302] 96.8% | elapsed=16652s ETA=548s | errors=0 | resume: --resume_seg 27400
+  [27,500/28,302] 97.2% | elapsed=16694s ETA=487s | errors=0 | resume: --resume_seg 27500
+  [27,600/28,302] 97.5% | elapsed=16737s ETA=426s | errors=0 | resume: --resume_seg 27600
+  [27,700/28,302] 97.9% | elapsed=16771s ETA=364s | errors=0 | resume: --resume_seg 27700
+  [27,800/28,302] 98.2% | elapsed=16812s ETA=304s | errors=0 | resume: --resume_seg 27800
+  [27,900/28,302] 98.6% | elapsed=16851s ETA=243s | errors=0 | resume: --resume_seg 27900
+  [28,000/28,302] 98.9% | elapsed=16886s ETA=182s | errors=0 | resume: --resume_seg 28000
+  [28,100/28,302] 99.3% | elapsed=16931s ETA=122s | errors=0 | resume: --resume_seg 28100
+  [28,200/28,302] 99.6% | elapsed=16973s ETA=61s | errors=0 | resume: --resume_seg 28200
+  [28,300/28,302] 100.0% | elapsed=17024s ETA=1s | errors=0 | resume: --resume_seg 28300
+
+============================================================
+  PHASE C COMPLETE
+============================================================
+  Words processed : 614,351
+  Segs processed  : 28,302
+  Errors          : 0
+  Columns         : 4
+  Size            : 27.6 MB
+  Time            : 17025.3s (4.7h)
+  Output          : /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/results/features_C_surprisal.csv
+============================================================

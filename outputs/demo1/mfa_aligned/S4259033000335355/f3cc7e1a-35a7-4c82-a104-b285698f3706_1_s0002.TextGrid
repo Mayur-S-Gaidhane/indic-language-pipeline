@@ -1,0 +1,156 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 4.865 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 4.865 
+        intervals: size = 17 
+        intervals [1]:
+            xmin = 0.0 
+            xmax = 0.01 
+            text = "जी" 
+        intervals [2]:
+            xmin = 0.01 
+            xmax = 0.09 
+            text = "" 
+        intervals [3]:
+            xmin = 0.09 
+            xmax = 0.71 
+            text = "मैम" 
+        intervals [4]:
+            xmin = 0.71 
+            xmax = 0.81 
+            text = "" 
+        intervals [5]:
+            xmin = 0.81 
+            xmax = 0.97 
+            text = "आपको" 
+        intervals [6]:
+            xmin = 0.97 
+            xmax = 1.79 
+            text = "जूलॉजी" 
+        intervals [7]:
+            xmin = 1.79 
+            xmax = 1.9 
+            text = "" 
+        intervals [8]:
+            xmin = 1.9 
+            xmax = 2.25 
+            text = "म्यूजियम" 
+        intervals [9]:
+            xmin = 2.25 
+            xmax = 2.81 
+            text = "के" 
+        intervals [10]:
+            xmin = 2.81 
+            xmax = 3.0 
+            text = "लिए" 
+        intervals [11]:
+            xmin = 3.0 
+            xmax = 3.07 
+            text = "" 
+        intervals [12]:
+            xmin = 3.07 
+            xmax = 3.74 
+            text = "बुकिंग" 
+        intervals [13]:
+            xmin = 3.74 
+            xmax = 3.75 
+            text = "हो" 
+        intervals [14]:
+            xmin = 3.75 
+            xmax = 4.17 
+            text = "" 
+        intervals [15]:
+            xmin = 4.17 
+            xmax = 4.31 
+            text = "जाएगी" 
+        intervals [16]:
+            xmin = 4.31 
+            xmax = 4.6 
+            text = "बताइए" 
+        intervals [17]:
+            xmin = 4.6 
+            xmax = 4.865 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 4.865 
+        intervals: size = 17 
+        intervals [1]:
+            xmin = 0.0 
+            xmax = 0.01 
+            text = "जी" 
+        intervals [2]:
+            xmin = 0.01 
+            xmax = 0.09 
+            text = "" 
+        intervals [3]:
+            xmin = 0.09 
+            xmax = 0.71 
+            text = "spn" 
+        intervals [4]:
+            xmin = 0.71 
+            xmax = 0.81 
+            text = "" 
+        intervals [5]:
+            xmin = 0.81 
+            xmax = 0.97 
+            text = "spn" 
+        intervals [6]:
+            xmin = 0.97 
+            xmax = 1.79 
+            text = "spn" 
+        intervals [7]:
+            xmin = 1.79 
+            xmax = 1.9 
+            text = "" 
+        intervals [8]:
+            xmin = 1.9 
+            xmax = 2.25 
+            text = "spn" 
+        intervals [9]:
+            xmin = 2.25 
+            xmax = 2.81 
+            text = "के" 
+        intervals [10]:
+            xmin = 2.81 
+            xmax = 3.0 
+            text = "spn" 
+        intervals [11]:
+            xmin = 3.0 
+            xmax = 3.07 
+            text = "" 
+        intervals [12]:
+            xmin = 3.07 
+            xmax = 3.74 
+            text = "spn" 
+        intervals [13]:
+            xmin = 3.74 
+            xmax = 3.75 
+            text = "हो" 
+        intervals [14]:
+            xmin = 3.75 
+            xmax = 4.17 
+            text = "" 
+        intervals [15]:
+            xmin = 4.17 
+            xmax = 4.31 
+            text = "spn" 
+        intervals [16]:
+            xmin = 4.31 
+            xmax = 4.6 
+            text = "spn" 
+        intervals [17]:
+            xmin = 4.6 
+            xmax = 4.865 
+            text = "" 

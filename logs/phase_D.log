@@ -1,0 +1,57 @@
+nohup: ignoring input
+============================================================
+  PHASE D: Acoustic Features (Parselmouth)
+  Method: MTP-2 approach — load WAV once per segment
+  f0, rms, jitter, shimmer, hnr, pauses, speech_rate
+============================================================
+
+  Indexing WAV files ...
+  WAV files indexed: 29,231
+  Loading TextGrid pauses ...
+  TextGrid files   : 28,302
+
+  Loading word_features_v4.csv ...
+  Words loaded     : 614,351
+  Segments         : 28,302
+  [1,000/28,302] 3.5% | ok=15194 short=1586 no_wav=0 err=3133 | elapsed=6359s ETA=173613s | resume: --resume 1000
+  [2,000/28,302] 7.1% | ok=33131 short=3234 no_wav=0 err=7003 | elapsed=8725s ETA=114742s | resume: --resume 2000
+  [3,000/28,302] 10.6% | ok=49483 short=4642 no_wav=0 err=10648 | elapsed=10356s ETA=87343s | resume: --resume 3000
+  [4,000/28,302] 14.1% | ok=66052 short=6114 no_wav=0 err=15813 | elapsed=12128s ETA=73684s | resume: --resume 4000
+  [5,000/28,302] 17.7% | ok=84517 short=7699 no_wav=0 err=18766 | elapsed=13310s ETA=62030s | resume: --resume 5000
+  [6,000/28,302] 21.2% | ok=100013 short=9224 no_wav=0 err=22692 | elapsed=13644s ETA=50715s | resume: --resume 6000
+  [7,000/28,302] 24.7% | ok=117685 short=10666 no_wav=0 err=25381 | elapsed=14096s ETA=42896s | resume: --resume 7000
+  [8,000/28,302] 28.3% | ok=136364 short=12318 no_wav=0 err=28977 | elapsed=15133s ETA=38404s | resume: --resume 8000
+  [9,000/28,302] 31.8% | ok=156000 short=14255 no_wav=0 err=31478 | elapsed=16119s ETA=34570s | resume: --resume 9000
+  [10,000/28,302] 35.3% | ok=172589 short=15672 no_wav=0 err=34239 | elapsed=24476s ETA=44796s | resume: --resume 10000
+  [11,000/28,302] 38.9% | ok=186577 short=16984 no_wav=0 err=36852 | elapsed=24803s ETA=39013s | resume: --resume 11000
+  [12,000/28,302] 42.4% | ok=202902 short=18625 no_wav=0 err=40249 | elapsed=25133s ETA=34143s | resume: --resume 12000
+  [13,000/28,302] 45.9% | ok=220133 short=20586 no_wav=0 err=44373 | elapsed=25517s ETA=30035s | resume: --resume 13000
+  [14,000/28,302] 49.5% | ok=233524 short=21925 no_wav=0 err=47662 | elapsed=25841s ETA=26398s | resume: --resume 14000
+  [15,000/28,302] 53.0% | ok=250549 short=23440 no_wav=0 err=51190 | elapsed=26164s ETA=23202s | resume: --resume 15000
+  [16,000/28,302] 56.5% | ok=266623 short=24943 no_wav=0 err=53555 | elapsed=26446s ETA=20334s | resume: --resume 16000
+  [17,000/28,302] 60.1% | ok=281861 short=26396 no_wav=0 err=56903 | elapsed=26762s ETA=17792s | resume: --resume 17000
+  [18,000/28,302] 63.6% | ok=300979 short=27803 no_wav=0 err=59976 | elapsed=27123s ETA=15523s | resume: --resume 18000
+  [19,000/28,302] 67.1% | ok=317182 short=29509 no_wav=0 err=63643 | elapsed=27528s ETA=13477s | resume: --resume 19000
+  [20,000/28,302] 70.7% | ok=335900 short=31121 no_wav=0 err=66337 | elapsed=27914s ETA=11587s | resume: --resume 20000
+  [21,000/28,302] 74.2% | ok=352883 short=32442 no_wav=0 err=69814 | elapsed=28285s ETA=9835s | resume: --resume 21000
+  [22,000/28,302] 77.7% | ok=368070 short=33870 no_wav=0 err=73685 | elapsed=28598s ETA=8192s | resume: --resume 22000
+  [23,000/28,302] 81.3% | ok=386451 short=35352 no_wav=0 err=77642 | elapsed=28977s ETA=6680s | resume: --resume 23000
+  [24,000/28,302] 84.8% | ok=402143 short=36805 no_wav=0 err=81921 | elapsed=29302s ETA=5252s | resume: --resume 24000
+  [25,000/28,302] 88.3% | ok=419441 short=38441 no_wav=0 err=84650 | elapsed=29693s ETA=3922s | resume: --resume 25000
+  [26,000/28,302] 91.9% | ok=436831 short=39962 no_wav=0 err=87933 | elapsed=30043s ETA=2660s | resume: --resume 26000
+  [27,000/28,302] 95.4% | ok=453418 short=41317 no_wav=0 err=92067 | elapsed=30418s ETA=1467s | resume: --resume 27000
+  [28,000/28,302] 98.9% | ok=469507 short=42552 no_wav=0 err=95076 | elapsed=30687s ETA=331s | resume: --resume 28000
+
+============================================================
+  PHASE D COMPLETE
+============================================================
+  Words processed  : 614,351
+  Acoustic ok      : 474,918
+  Too short        : 43,161
+  No WAV           : 0
+  Errors           : 96,272
+  Columns          : 17
+  Size             : 68.5 MB
+  Time             : 30787.1s (8.6h)
+  Output           : /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/results/features_D_acoustic.csv
+============================================================

@@ -1,0 +1,208 @@
+nohup: ignoring input
+=================================================================
+  LMM ANALYSIS V6 — MTP-3 (Prof's Sept 23 feedback applied)
+  Acoustic-Linguistic Modelling of Hindi Speech
+  Student : Mayur Shriram Gaidhane (M22AIE248)
+  Lab     : SAIDE Lab, IIT Jodhpur
+=================================================================
+
+  KEY CHANGES IN V6 (per Prof Ranjan's review):
+    1. Random effects: (1|speaker) + (1|word) + (1|modality)
+    2. scenario_extempore/read REMOVED from fixed effects
+       (modality is now a random effect)
+    3. IC/SC recomputed with correct definitions
+       IC = sum of distances of completed deps (backward)
+       SC = count of incomplete deps (forward)
+
+  Loading /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/results/word_features_full.csv ...
+  Rows loaded: 614,351
+
+=================================================================
+  DATA EXCLUSION CRITERIA
+=================================================================
+  Total words (raw)          : 614,351
+  After tier >= 2 filter     : 429,791
+  After duration 20-2000ms   : 406,354
+  After ±2.5 SD outlier trim : 406,164
+  Unique speakers            : 289
+  Unique words               : 19890
+  Modalities (scenario)      : 3
+
+  Scenario/modality distribution:
+    Extempore     : 262,974 (64.7%)
+    Conversation  : 122,023 (30.0%)
+    Read          :  21,167 (5.2%)
+
+── Z-scoring continuous predictors ──────────────────────
+  IC                     → IC_z  (M=2.294, SD=5.759)
+  SC                     → SC_z  (M=2.890, SD=1.777)
+  dep_distance           → dep_dist_z  (M=2.966, SD=3.753)
+  forward_surprisal      → fwd_surp_z  (M=12.408, SD=8.796)
+  backward_surprisal     → bwd_surp_z  (M=8.675, SD=8.585)
+  word_length_chars      → wlen_z  (M=3.685, SD=1.666)
+  log_word_freq          → log_freq_z  (M=2.771, SD=1.088)
+  f0_mean_hz             → f0_z  (M=179.186, SD=63.955)
+  rms_energy             → rms_z  (M=0.093, SD=0.064)
+  speech_rate            → sr_z  (M=2.966, SD=0.710)
+  pause_before_ms        → pause_z  (M=134.162, SD=251.833)
+
+=================================================================
+  DESCRIPTIVE STATISTICS
+=================================================================
+  N words    : 406,164
+  N speakers : 289
+  N unique word forms : 19890
+
+  Variable                           Mean         SD        Min        Max
+  ────────────────────────────────────────────────────────────────────
+  Duration (ms)                   221.518    208.836     20.000   1750.000
+  IC                                2.294      5.759      1.000    529.000
+  SC                                2.890      1.777      1.000     35.000
+  Dep. Distance                     2.966      3.753      0.000     73.000
+  Fwd Surprisal                    12.408      8.796      0.000    113.336
+  Bwd Surprisal                     8.675      8.585      0.000    107.126
+  Word Length                       3.685      1.666      1.000     17.000
+  log Word Freq                     2.771      1.088      0.000      4.462
+  F0 mean (Hz)                    179.186     63.955      0.000    499.990
+  RMS Energy                        0.093      0.064      0.000      0.716
+  Speech Rate                       2.966      0.710      0.392      7.395
+  Pause Before (ms)               134.162    251.833      0.000   9140.000
+
+=================================================================
+  COLLINEARITY DIAGNOSTICS
+=================================================================
+
+── Variance Inflation Factor (VIF) ──────────────────────
+  Predictor                         VIF  Status
+  ───────────────────────────────────────────────────────
+  IC (z)                           1.10  OK
+  SC (z)                           1.06  OK
+  Dep.Dist (z)                     1.06  OK
+  Fwd.Surp (z)                     1.51  OK
+  Bwd.Surp (z)                     1.49  OK
+  WordLen (z)                      1.85  OK
+  log.Freq (z)                     1.86  OK
+
+── Predictor Correlation Matrix ─────────────────────────
+                   IC (z)   SC (z) Dep.Dist Fwd.Surp Bwd.Surp WordLen  log.Freq
+          IC (z)   1.000   -0.175    0.218    0.063   -0.059    0.036   -0.080 
+          SC (z)  -0.175    1.000   -0.109    0.015    0.117    0.057   -0.087 
+    Dep.Dist (z)   0.218   -0.109    1.000   -0.022   -0.041    0.028   -0.044 
+    Fwd.Surp (z)   0.063    0.015   -0.022    1.000    0.549*   0.275   -0.270 
+    Bwd.Surp (z)  -0.059    0.117   -0.041    0.549*   1.000    0.243   -0.243 
+     WordLen (z)   0.036    0.057    0.028    0.275    0.243    1.000   -0.669*
+    log.Freq (z)  -0.080   -0.087   -0.044   -0.270   -0.243   -0.669*   1.000 
+
+── Zero-order correlations with log_duration ────────────
+  Predictor                           r  Direction
+  ──────────────────────────────────────────────────
+  IC (z)                         0.0291  +
+  SC (z)                         0.0558  +
+  Dep.Dist (z)                   0.0409  +
+  Fwd.Surp (z)                   0.0476  +
+  Bwd.Surp (z)                   0.0242  +
+  WordLen (z)                    0.2385  +
+  log.Freq (z)                  -0.2288  -
+  F0 (z)                         0.0958  +
+  RMS (z)                        0.1999  +
+  Speech Rate (z)               -0.2605  -
+  Pause (z)                      0.0093  +
+
+  Linguistic dataset: 406,164 rows
+  Acoustic dataset : 329,450 rows
+  Full dataset     : 329,450 rows
+
+  NOTE: scenario_extempore/scenario_read REMOVED from all
+  fixed effects. Modality is now a RANDOM effect (1|modality).
+  This follows Prof Ranjan's specification:
+    (1|word) + (1|speaker) + (1|modality)
+
+=================================================================
+  M0: NULL MODEL
+=================================================================
+
+  ─────────────────────────────────────────────────────────────────
+  M0: Null
+  Formula: log_duration ~ 1
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 406,164 | speakers = 289
+  unique words = 19,890
+  modalities = 3
+  ─────────────────────────────────────────────────────────────────
+
+  Predictor                           β       SE       t              95%CI         p   sig
+  ─────────────────────────────────────────────────────────────────────────────────────
+
+  Log-likelihood (ML)  : -478,417.281
+  AIC                  : 956,840.562
+  BIC                  : 956,873.306
+  RE variance error: index 0 is out of bounds for axis 0 with size 0
+  Optimizer : lbfgs | Converged: True
+
+=================================================================
+  M1: CONTROLS ONLY
+=================================================================
+
+  ─────────────────────────────────────────────────────────────────
+  M1: Controls
+  Formula: log_duration ~ wlen_z + log_freq_z + word_is_resolved + has_dysfluency_seg
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 406,164 | speakers = 289
+  unique words = 19,890
+  modalities = 3
+  ─────────────────────────────────────────────────────────────────
+
+  Predictor                           β       SE       t              95%CI         p   sig
+  ─────────────────────────────────────────────────────────────────────────────────────
+  wlen_z                         0.0876   0.0021  42.602   [0.0836, 0.0916]    0.0000   ***
+  log_freq_z                    -0.0950   0.0023 -41.496 [-0.0995, -0.0905]    0.0000   ***
+  word_is_resolved              -0.1030   0.1462  -0.705  [-0.3896, 0.1836]    0.4811    ns
+  has_dysfluency_seg             0.0345   0.0036   9.599   [0.0274, 0.0415]    0.0000   ***
+
+  Log-likelihood (ML)  : -474,474.769
+  AIC                  : 948,963.537
+  BIC                  : 949,039.939
+  RE variance error: index 0 is out of bounds for axis 0 with size 0
+  Optimizer : lbfgs | Converged: True
+
+=================================================================
+  M2: DLT ONLY — IC + SC + dep_distance (Gibson 2000)
+=================================================================
+
+  ─────────────────────────────────────────────────────────────────
+  M2: DLT only
+  Formula: log_duration ~ IC_z + SC_z + dep_dist_z + wlen_z + log_freq_z + word_is_resolved + has_dysfluency_seg
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 406,164 | speakers = 289
+  unique words = 19,890
+  modalities = 3
+  ─────────────────────────────────────────────────────────────────
+
+  Predictor                           β       SE       t              95%CI         p   sig
+  ─────────────────────────────────────────────────────────────────────────────────────
+  IC_z                           0.0031   0.0013   2.382   [0.0005, 0.0056]    0.0172     *
+  SC_z                          -0.0020   0.0014  -1.496  [-0.0047, 0.0006]    0.1346    ns
+  dep_dist_z                    -0.0006   0.0013  -0.435  [-0.0031, 0.0020]    0.6635    ns
+  wlen_z                         0.0877   0.0021  42.655   [0.0837, 0.0918]    0.0000   ***
+  log_freq_z                    -0.0949   0.0023 -41.398 [-0.0994, -0.0904]    0.0000   ***
+  word_is_resolved              -0.1032   0.1462  -0.706  [-0.3898, 0.1834]    0.4803    ns
+  has_dysfluency_seg             0.0345   0.0036   9.605   [0.0275, 0.0416]    0.0000   ***
+
+  Log-likelihood (ML)  : -474,470.061
+  AIC                  : 948,960.122
+  BIC                  : 949,069.267
+  RE variance error: index 0 is out of bounds for axis 0 with size 0
+  Optimizer : lbfgs | Converged: True
+
+=================================================================
+  M3: SURPRISAL ONLY (Hale 2001; Ranjan SCiL 2022)
+=================================================================
+
+  ─────────────────────────────────────────────────────────────────
+  M3: Surprisal only
+  Formula: log_duration ~ fwd_surp_z + bwd_surp_z + wlen_z + log_freq_z + word_is_resolved + has_dysfluency_seg
+  Random: (1|speaker) + (1|word) + (1|modality)
+  n = 406,164 | speakers = 289
+  unique words = 19,890
+  modalities = 3
+  ─────────────────────────────────────────────────────────────────

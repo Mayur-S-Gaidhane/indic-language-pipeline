@@ -1,0 +1,298 @@
+{
+    "language": "Hindi",
+    "audio_raw_duration": 293.0,
+    "scenario": "Conversation",
+    "task_name": "Conversation",
+    "gender": "Male",
+    "age_group": "60+",
+    "job_type": "Blue Collar",
+    "qualification": "No Schooling",
+    "area": "Rural",
+    "district": "Sonbhadra",
+    "state": "Uttar Pradesh",
+    "occupation": "carpenter",
+    "verbatim": [
+        {
+            "end": 4.253,
+            "text": "जी सर बोलिए सर",
+            "start": 3.133,
+            "speaker_id": 0
+        },
+        {
+            "end": 13.47,
+            "text": "हाँ सर बताइए हम आपकी क्या [unintelligible]",
+            "start": 11.867,
+            "speaker_id": 0
+        },
+        {
+            "end": 25.373,
+            "text": "जी सर आपकी बात [unintelligible] सर आपकी क्या सेवा की जाए [unintelligible]",
+            "start": 18.492,
+            "speaker_id": 0
+        },
+        {
+            "end": 41.405,
+            "text": "यस सर यह अभी सर [unintelligible]",
+            "start": 37.213,
+            "speaker_id": 0
+        },
+        {
+            "end": 51.006,
+            "text": "बहौत ही अच्छा फ़ोन है सर और उसमें बहौत से नए नए फ़ीचर्स भी आए हैं सर अगर आप",
+            "start": 46.142,
+            "speaker_id": 0
+        },
+        {
+            "end": 56.862,
+            "text": "आपका बजट बता दें तो हम उस के हिसाब से फ़ाइव जी या फ़ोर जी निकालें सर ",
+            "start": 52.381,
+            "speaker_id": 0
+        },
+        {
+            "end": 71.358,
+            "text": "जी सर हम बता पाएंगे अगर आप हमें बताएं तो ",
+            "start": 68.894,
+            "speaker_id": 0
+        },
+        {
+            "end": 91.805,
+            "text": "जी सर वो फ़ोन अभी फ़िलहाल ही में लॉन्च हुआ है ज्यादा नहीं पंद्रा या दस दिन हुए हैं लॉन्च हुए और वो हमारी दुकान पे है इस समय अगर आप",
+            "start": 82.525,
+            "speaker_id": 0
+        },
+        {
+            "end": 105.533,
+            "text": "फ़ीचर्स उसके जानना चाहते हैं सर उसके बहौत ही अच्छे फ़ीचर्स हैं और वो फ़ाइव जी फ़ोन भी है [inhaling] सर उसकी इंटर्नल स्टोरेज सर दो सौ छप्पन है और आठ जी बी रेम है और सर मतलब ",
+            "start": 92.99000000000001,
+            "speaker_id": 0
+        },
+        {
+            "end": 117.438,
+            "text": "और सर एक्सटर्नल मेमोरी भी है उसका फ़ुल एच डी है और डिस्प्ले साइज सर बहुत ही अच्छा डिस्प्ले साइज़ है मतलब आपको ये फ़ील होगा कि आप सर एक टैब मोबाइल में देख रहे हैं",
+            "start": 106.718,
+            "speaker_id": 0
+        },
+        {
+            "end": 136.925,
+            "text": "जी सर हमारे पास बस यह तीन ऑप्सन हैं [unintelligible] जी सर एक ब्लैक में है व्हाइट है और इस्काई ब्लू है सर",
+            "start": 127.932,
+            "speaker_id": 0
+        },
+        {
+            "end": 140.86,
+            "text": "[unintelligible]",
+            "start": 140.50900000000001,
+            "speaker_id": 0
+        },
+        {
+            "end": 150.556,
+            "text": "येस सर हमारे पास ब्लैक में भी दो कलर हैं एक मतलब लाइट ब्लैक डार्क ब्लैक है सर आपको मतलब दोनों ब्लैक में से कौनसा ब्लैक चाहिए सर  ",
+            "start": 142.716,
+            "speaker_id": 0
+        },
+        {
+            "end": 154.877,
+            "text": "[unintelligible]",
+            "start": 153.662,
+            "speaker_id": 0
+        },
+        {
+            "end": 159.966,
+            "text": "ओके सर वो फ़ोन है हमारे पास सर बताइए तब ",
+            "start": 157.211,
+            "speaker_id": 0
+        },
+        {
+            "end": 167.454,
+            "text": "हम कहाँ पर डिलीवर कर दें अगर आप डिलीवरी लेना चाहते हैं कि शॉप पे आकर डायरेक्ट लेना चाहते हैं सर  ",
+            "start": 161.723,
+            "speaker_id": 0
+        },
+        {
+            "end": 172.542,
+            "text": "[unintelligible]",
+            "start": 172.187,
+            "speaker_id": 0
+        },
+        {
+            "end": 188.286,
+            "text": "सर हमारे यहाँ ई एम आई पे भी मिलता है सर आप मतलब कितने समय का ई एम आई लेना चाहते हैं मतलब ये अभी लेना चाहते हैं कि पाँच छे महीने का ई एम आई लेना चाहते हें सर  ",
+            "start": 178.812,
+            "speaker_id": 0
+        },
+        {
+            "end": 204.126,
+            "text": "सर फ़ीचर के हिसाब से सर इसका रेंज तो आप जानते ही होंगे अगर ऑनलाइन देखोगे तब भी हम आपको बता दे रहे हैं कि यह सौलह सतरह हजार की है सतरह हजार की है सर",
+            "start": 194.27,
+            "speaker_id": 0
+        },
+        {
+            "end": 232.062,
+            "text": "सर आप बताए नहीं कि मतलब कितने समय तक आप दे सकते हैं मतलब पाँच हमारे पास बहौत तरह के ऑप्सन हैं ना मतलब आप पूरे साल ई एम आई दे दें एक साल के लिए या तीन चार",
+            "start": 221.53300000000002,
+            "speaker_id": 0
+        },
+        {
+            "end": 292.031,
+            "text": "अच्छा दो-दो हज़ार के हिसाब से सर आपका मतलब दे दीजिए सर मतलब आप सात-आठ महीने में दे सकते हैं सर सर हमारे यहाँ ई एम आई पे जीरो पॉइंट फ़ाइव पर्सेंट इंटरेस्ट भी लगता है सर आपको बताना भूल गया था सर ओके सर आप आइए कल आप सर कितने बजे आ जाएंगे तो हम उसी समय अपनी दुकान में रहेंगे ओके सर शाम को तो हम रहेंगे ही आप आइये  [unintelligible] ओके सर धन्यवाद ",
+            "start": 234.3,
+            "speaker_id": 0
+        }
+    ],
+    "normalized": [
+        {
+            "end": 4.253,
+            "text": "जी सर [Sir] बोलिए सर [Sir] ",
+            "start": 3.133,
+            "speaker_id": 0
+        },
+        {
+            "end": 13.47,
+            "text": "हाँ सर [Sir] बताइए हम आपकी क्या [unintelligible]",
+            "start": 11.867,
+            "speaker_id": 0
+        },
+        {
+            "end": 25.373,
+            "text": "जी सर [Sir] आपकी बात [unintelligible] सर [Sir] आपकी क्या सेवा की जाए [unintelligible]",
+            "start": 18.492,
+            "speaker_id": 0
+        },
+        {
+            "end": 41.405,
+            "text": "यस [Yes] सर [Sir] यह अभी सर [Sir]  [unintelligible]",
+            "start": 37.213,
+            "speaker_id": 0
+        },
+        {
+            "end": 51.006,
+            "text": "बहुत ही अच्छा फ़ोन [Phone] है सर [Sir] और उसमें बहुत से नए नए फ़ीचर्स [Features] भी आए हैं सर [Sir] अगर आप",
+            "start": 46.142,
+            "speaker_id": 0
+        },
+        {
+            "end": 56.862,
+            "text": "आपका बजट [Budget] बता दें तो हम उस के हिसाब से फ़ाइव [Five] जी [G] या फ़ोर [Four] जी [G] निकालें सर [Sir]",
+            "start": 52.381,
+            "speaker_id": 0
+        },
+        {
+            "end": 71.358,
+            "text": "जी सर [Sir] हम बता पाएंगे अगर आप हमें बताएं तो ",
+            "start": 68.894,
+            "speaker_id": 0
+        },
+        {
+            "end": 91.805,
+            "text": "जी सर [Sir] वो फ़ोन [Phone] अभी फ़िलहाल ही में लॉन्च [Launch] हुआ है ज़्यादा नहीं पंद्रह या दस दिन हुए हैं लॉन्च [Launch] हुए और वो हमारी दुकान पे है इस समय अगर आप",
+            "start": 82.525,
+            "speaker_id": 0
+        },
+        {
+            "end": 105.533,
+            "text": "फ़ीचर्स [Features] उसके जानना चाहते हैं सर [Sir] उसके बहुत ही अच्छे फ़ीचर्स [Features] हैं और वो फ़ाइव [Five] जी [G] फ़ोन [Phone] भी है [inhaling] सर [Sir] उसकी इंटर्नल [Internal] स्टोरेज [Storage] सर [Sir] दो सौ छप्पन है और आठ जी बी [GB] रेम [RAM] है और सर [Sir] मतलब ",
+            "start": 92.99000000000001,
+            "speaker_id": 0
+        },
+        {
+            "end": 117.438,
+            "text": "और सर [Sir] एक्सटर्नल [External] मेमोरी [Memory] भी है उसका फ़ुल [Full] एच डी [HD] है और डिस्प्ले [Display] साइज़ [Size] सर [Sir] बहुत ही अच्छा डिस्प्ले [Display] साइज़ [Size] है मतलब आपको ये फ़ील [Feel] होगा कि आप सर [Sir] एक टैब [Tab] मोबाइल [Mobile] में देख रहे हैं",
+            "start": 106.718,
+            "speaker_id": 0
+        },
+        {
+            "end": 136.925,
+            "text": "जी सर [Sir] हमारे पास बस यह तीन ऑप्शन [Option] हैं [unintelligible] जी सर [Sir] एक ब्लैक [Black] में है व्हाइट [White] है और स्काए [Sky] ब्लू [Blue] है सर [Sir]",
+            "start": 127.932,
+            "speaker_id": 0
+        },
+        {
+            "end": 140.86,
+            "text": "[unintelligible]",
+            "start": 140.50900000000001,
+            "speaker_id": 0
+        },
+        {
+            "end": 150.556,
+            "text": "येस [Yes] सर [Sir] हमारे पास ब्लैक [Black] में भी दो कलर [Color] हैं एक मतलब लाइट [Light] ब्लैक [Black] डार्क [Dark] ब्लैक [Black] है सर [Sir] आपको मतलब दोनों ब्लैक [Black] में से कौनसा ब्लैक [Black] चाहिए सर [Sir] ",
+            "start": 142.716,
+            "speaker_id": 0
+        },
+        {
+            "end": 154.877,
+            "text": "[unintelligible]",
+            "start": 153.662,
+            "speaker_id": 0
+        },
+        {
+            "end": 159.966,
+            "text": "ओके सर [Sir] वो फ़ोन [Phone] है हमारे पास सर [Sir] बताइए तब ",
+            "start": 157.211,
+            "speaker_id": 0
+        },
+        {
+            "end": 167.454,
+            "text": "हम कहाँ पर डिलीवर [Deliver] कर दें अगर आप डिलीवरी [Delivery] लेना चाहते हैं कि शॉप [Shop] पे आकर डायरेक्ट [Direct] लेना चाहते हैं सर [Sir]",
+            "start": 161.723,
+            "speaker_id": 0
+        },
+        {
+            "end": 172.542,
+            "text": "[unintelligible]",
+            "start": 172.187,
+            "speaker_id": 0
+        },
+        {
+            "end": 188.286,
+            "text": "सर [Sir] हमारे यहाँ ई एम आई [EMI] पे भी मिलता है सर [Sir] आप मतलब कितने समय का ई एम आई [EMI] लेना चाहते हैं मतलब ये अभी लेना चाहते हैं कि पाँच छे महीने का ई एम आई [EMI] लेना चाहते हें सर [Sir]",
+            "start": 178.812,
+            "speaker_id": 0
+        },
+        {
+            "end": 204.126,
+            "text": "सर [Sir] फ़ीचर [Feature] के हिसाब से सर [Sir] इसका रेंज [Range] तो आप जानते ही होंगे अगर ऑनलाइन [Online] देखोगे तब भी हम आपको बता दे रहे हैं कि यह सोलह सत्रह हज़ार की है सत्रह हज़ार की है सर [Sir]",
+            "start": 194.27,
+            "speaker_id": 0
+        },
+        {
+            "end": 232.062,
+            "text": "सर [Sir] आप बताए नहीं कि मतलब कितने समय तक आप दे सकते हैं मतलब पाँच हमारे पास बहुत तरह के ऑप्शन [Option] हैं ना मतलब आप पूरे साल ई एम आई [EMI] दे दें एक साल के लिए या तीन चार",
+            "start": 221.53300000000002,
+            "speaker_id": 0
+        },
+        {
+            "end": 292.031,
+            "text": "अच्छा दो-दो हज़ार के हिसाब से सर [Sir] आपका मतलब दे दीजिए सर [Sir] मतलब आप सात-आठ महीने में दे सकते हैं सर [Sir] सर [Sir] हमारे यहाँ ई एम आई [EMI] पे ज़ीरो [Zero] पॉइंट [Point] फ़ाइव [Five] पर्सेंट [Percent] इंटरेस्ट [Interest] भी लगता है सर [Sir] आपको बताना भूल गया था सर [Sir] ओके [Okay] सर [Sir] आप आइए कल आप सर [Sir] कितने बजे आ जाएंगे तो हम उसी समय अपनी दुकान में रहेंगे ओके [Okay] सर [Sir] शाम को तो हम रहेंगे ही आप आइये  [unintelligible] ओके [Okay] सर [Sir] धन्यवाद ",
+            "start": 234.3,
+            "speaker_id": 0
+        }
+    ],
+    "audio_segmented_duration": 172.97799999999995,
+    "speaker_id": "S4256828000337149",
+    "verification_report": {
+        "decision": "excellent",
+        "low_volume": false,
+        "noise_intermittent": false,
+        "chatter_intermittent": false,
+        "noise_persistent": false,
+        "chatter_persistent": false,
+        "unclear_audio": false,
+        "off_topic": false,
+        "repeating_content": false,
+        "long_pauses": false,
+        "mispronunciation": false,
+        "reading_prompt": false,
+        "book_read": false,
+        "sst": false,
+        "stretching": false,
+        "bad_extempore_quality": false,
+        "comments": "excellent",
+        "objectionable_content": false,
+        "skipping_words": false,
+        "incorrect_text_prompt": false,
+        "factual_inaccuracy": false,
+        "wrong_language": false,
+        "echo_present": false
+    },
+    "prompt": "customer|mobile shop owner|I like to buy Vivo V27 5g, explain the special features of this model, and tell me about EMI"
+}

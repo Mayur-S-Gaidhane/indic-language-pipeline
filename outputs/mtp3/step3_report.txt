@@ -1,0 +1,54 @@
+=================================================================
+  MTP-3 STEP 3: COGNITIVE SCORING + RESPONSE SELECTION
+  Steps 6+7 from Research Proposal
+=================================================================
+
+  Loaded 218 candidates (20 pairs)
+  Reference CCS: mean=0.0016, sd=0.0106
+
+  Loading Stanza Hindi pipeline...
+  Stanza loaded ✓
+  Loading GPT-2 Hindi for surprisal...
+  GPT-2 Hindi loaded ✓ (device: cuda)
+
+  Scoring candidates...
+    Scored 20/218 | 25s
+    Scored 40/218 | 32s
+    Scored 60/218 | 40s
+    Scored 80/218 | 48s
+    Scored 100/218 | 58s
+    Scored 120/218 | 65s
+    Scored 140/218 | 74s
+    Scored 160/218 | 82s
+    Scored 180/218 | 93s
+    Scored 200/218 | 106s
+
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/mtp3/scored_candidates.csv (218 rows)
+
+=================================================================
+  RESPONSE SELECTION (Step 7)
+  Selecting top-ranked candidate per pair
+=================================================================
+
+  Selection Results:
+  Pairs with selection   : 20
+  Avg naturalness (sel)  : 0.3289
+  Avg naturalness (human): 0.2948
+  Human response MRR     : 0.4075
+  Human avg rank         : 5.5
+  Human in top-1         : 6/20 (30.0%)
+
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/mtp3/selected_responses.csv
+
+  Sample selection (first pair):
+    Selected: जी हाँ, मैं स्कूल से ही बात कर रहा हूँ। बताइए क्या काम था?
+    CCS     : 0.0280 (naturalness: 0.2859)
+    Human   : किसके सिर में बच्चे के मेरे
+    H.CCS   : 0.0302 (rank: 5)
+
+  Time: 123s (2.0min)
+
+  Next steps:
+  - Step 8: TTS synthesis (mtp3_step4_tts.py)
+  - Evaluation: mtp3_step5_evaluate.py
+=================================================================

@@ -1,0 +1,196 @@
+=================================================================
+  HDTB PIPELINE: CCS Evaluation on UD Hindi-HDTB
+=================================================================
+  Context window  : 3 sentences
+  Test pairs      : 50
+  Prompt version  : V5
+  Output          : /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/hdtb_eval_v5_ctx3
+
+─────────────────────────────────────────────────────────────────
+  STEP 1: Parse CoNLL-U Files
+─────────────────────────────────────────────────────────────────
+
+  Parsing /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/hdtb_data/hi_hdtb-ud-train.conllu...
+    Train sentences: 13306
+  Parsing /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/hdtb_data/hi_hdtb-ud-test.conllu...
+    Test sentences : 1684
+    Dev sentences  : 1659
+    Total          : 16649
+
+  Sample sentence:
+    ID  : test-s1
+    Text: इसके अतिरिक्त गुग्गुल कुंड, भीम गुफा तथा भीमशिला भी दर्शनीय स्थल हैं ।...
+    Tokens: 14
+
+─────────────────────────────────────────────────────────────────
+  STEP 2: Compute Gold IC/SC from CoNLL-U Dependency Parses
+─────────────────────────────────────────────────────────────────
+
+  Computing gold IC/SC for 13306 train sentences...
+    Processed 2000/13306...
+    Processed 4000/13306...
+    Processed 6000/13306...
+    Processed 8000/13306...
+    Processed 10000/13306...
+    Processed 12000/13306...
+    Done. Computed IC/SC for 13306 sentences.
+
+─────────────────────────────────────────────────────────────────
+  STEP 3: CCS Reference from Train (IC + SC + Surprisal)
+─────────────────────────────────────────────────────────────────
+
+  Using PRECOMPUTED CCS reference (--precomputed_ccs flag):
+    Mean CCS : 0.016379
+    SD CCS   : 0.004857
+    (from HDTB train, 2000 sentences, seed=42, surajp/gpt2-hindi)
+    Skipping GPT-2 loading + surprisal computation — saves ~3-4 min
+
+  Loading GPT-2 Hindi for candidate scoring...
+  GPT-2 Hindi loaded (device: cpu)
+
+─────────────────────────────────────────────────────────────────
+  STEP 4: Extract Test Pairs (3-sentence context)
+─────────────────────────────────────────────────────────────────
+  Total possible test pairs: 1681
+  Selected 1 pairs by ID: hdtb_test_12
+
+  Sample pair (hdtb_test_12):
+    Context (3 sentences):
+      [1] दूसरा मंदिर राधाकृष्ण का है, जिसे कृष्ण भक्तों का नूतन प्रयास समझा जाना ही उत्तम...
+      [2] मंदिर के गर्भगृह में नारायण भगवान की सुंदर मूर्ति है ।...
+      [3] अन्य मूर्तियों में भू - देवी तथा लक्ष्मी की मूर्तियाँ उल्लेखनीय हैं ।...
+    Target : यहाँ अनेक कुंड भी हैं ।...
+    Target tokens: 6
+
+  Pairs dataset already exists: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/hdtb_eval_v5_ctx3/all_test_pairs_dataset_ctx3.csv (skipping)
+
+─────────────────────────────────────────────────────────────────
+  STEP 5: Generate LLM Candidates (V5 Prompt)
+─────────────────────────────────────────────────────────────────
+
+  Loading Stanza Hindi for V5 semantic hints...
+  Stanza Hindi loaded
+  Sarvam AI client loaded
+    ✗ gemini-2.5-flash-lite: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This mode
+    ✗ gemini-2.0-flash: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This mode
+  Gemini client loaded (model: gemini-3.5-flash-lite)
+
+  Generating candidates for 1 pairs...
+    Pair 1/1 (hdtb_test_12): 8S + 4G = 12 unique candidates
+
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/hdtb_eval_v5_ctx3/candidates.csv (13 rows)
+
+─────────────────────────────────────────────────────────────────
+  STEP 6: CCS Scoring + Naturalness Ranking
+─────────────────────────────────────────────────────────────────
+
+  Scoring 13 candidates...
+
+  Response Selection + MRR Computation...
+
+  ┌─ Pair 1: hdtb_test_12 ─────────────────────────────
+  │ CONTEXT (3 sentences):
+  │   [1] दूसरा मंदिर राधाकृष्ण का है, जिसे कृष्ण भक्तों का नूतन प्रयास समझा जाना ही उत्तम होगा ।
+  │   [2] मंदिर के गर्भगृह में नारायण भगवान की सुंदर मूर्ति है ।
+  │   [3] अन्य मूर्तियों में भू - देवी तथा लक्ष्मी की मूर्तियाँ उल्लेखनीय हैं ।
+  │
+  │ GROUND TRUTH (human):
+  │   → यहाँ अनेक कुंड भी हैं ।
+  │   CCS=0.007796  Nat=0.3614  Rank=5/13
+  │
+  │ CCS-SELECTED (rank 1):
+  │   → मंदिर के समीप एक सुंदर कुंड है।
+  │   Source=gemini  CCS=0.009626  Nat=0.4184
+  │
+  │ TOP-3 CANDIDATES:
+  │   1. [gemini]   मंदिर के समीप एक सुंदर कुंड है।
+  │      CCS=0.009626  Nat=0.4184
+  │   2. [gemini]   परिसर में एक सुंदर जल कुंड है।
+  │      CCS=0.009116  Nat=0.4007
+  │   3. [gemini]   मंदिर परिसर में सुंदर जल कुंड है।
+  │      CCS=0.008028  Nat=0.3677
+  └────────────────────────────────────────────────────
+
+  MRR                  : 0.2000
+  Avg human rank       : 5.0
+  Human in top-1       : 0/1 (0.0%)
+  Human in top-3       : 0/1 (0.0%)
+  Avg naturalness (sel): 0.4184
+  Avg naturalness (hum): 0.3614
+
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/hdtb_eval_v5_ctx3/scored_candidates.csv
+
+─────────────────────────────────────────────────────────────────
+  STEP 7: Text-Overlap Metrics (ENHANCED)
+─────────────────────────────────────────────────────────────────
+
+  Computing BERTScore F1 for all candidates...
+    Raw BERTScore F1 avg: 0.8602
+  Using PRECOMPUTED HDTB BERTScore baseline: 0.6640
+    (from HDTB train, 500 random pairs, bert-base-multilingual-cased)
+    Scaled BERTScore F1 avg: 0.5838
+
+  ── Embedding Cosine Similarity ──
+  Embedding model loaded: xlm-roberta-base
+  Computing embedding similarities for all 13 candidates...
+    Avg embedding cosine similarity: 0.9975
+
+  Computing BLEU/ROUGE for all candidates...
+
+  Updated: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/hdtb_eval_v5_ctx3/scored_candidates.csv
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/hdtb_eval_v5_ctx3/selected_responses.csv
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/hdtb_eval_v5_ctx3/pair_detail_report.txt (detailed per-pair analysis)
+
+─────────────────────────────────────────────────────────────────
+  STEP 9: TTS (Text-to-Speech)
+─────────────────────────────────────────────────────────────────
+
+  Loading TTS model: facebook/mms-tts-hin...
+  TTS model loaded
+
+  TTS: 1 audio files generated in /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/hdtb_eval_v5_ctx3/audio
+
+=================================================================
+  HDTB EVALUATION RESULTS (V5, ctx=3)
+=================================================================
+
+  Data source            : UD Hindi-HDTB (news/written text)
+  Total test pairs       : 1
+  Prompt version         : V5
+  Context window         : 3 sentences
+  CCS mode               : Linguistic-only (IC, SC, fwd/bwd surprisal)
+  CCS Reference (train)  : mean=0.016379, sd=0.004857
+
+  Selection Results:
+    Pairs evaluated      : 1
+    Avg naturalness (sel): 0.4184
+    Avg naturalness (hum): 0.3614
+
+  *** MRR (Mean Reciprocal Rank) ***
+    MRR                  : 0.2000
+    Avg human rank       : 5.0
+    Human in top-1       : 0/1 (0.0%)
+    Human in top-3       : 0/1 (0.0%)
+
+  *** Text-Overlap Metrics (selected vs human) ***
+    Avg BLEU                    : 0.0330
+    Avg ROUGE-1 (F1)            : 0.1538
+    Avg ROUGE-L (F1)            : 0.1538
+    Avg BERTScore F1 (raw)      : 0.8182
+    Avg BERTScore F1 (SCALED)   : 0.4590
+    Avg Embedding Cosine Sim    : 0.9960
+
+  All Candidates vs Human:
+    Avg BERTScore F1 (raw)      : 0.8602
+    Avg BERTScore F1 (SCALED)   : 0.5838
+    Avg Embedding Cosine Sim    : 0.9975
+
+  Total time: 85s (1.4min)
+
+  Outputs:
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/hdtb_eval_v5_ctx3/candidates.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/hdtb_eval_v5_ctx3/scored_candidates.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/hdtb_eval_v5_ctx3/selected_responses.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/hdtb_eval_v5_ctx3/pair_detail_report.txt
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/hdtb_eval_v5_ctx3/hdtb_eval_report.txt
+=================================================================

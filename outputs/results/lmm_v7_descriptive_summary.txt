@@ -1,0 +1,49 @@
+Words after V7 filters (tier >= 2, 20-2000 ms): 406,354
+Columns used: length=word_length_chars, fwd=forward_surprisal, bwd=backward_surprisal, pos=pos_tag, gender=gender
+
+Word length (characters): mean / median duration, n
+   1  mean 515 ms  median 340 ms  n=1,674
+   2  mean 143 ms  median 90 ms  n=121,052
+   3  mean 245 ms  median 190 ms  n=84,543
+   4  mean 250 ms  median 200 ms  n=95,212
+   5  mean 255 ms  median 200 ms  n=53,324
+   6  mean 269 ms  median 210 ms  n=24,390
+   7  mean 279 ms  median 220 ms  n=13,679
+   8  mean 287 ms  median 220 ms  n=6,446
+   9  mean 289 ms  median 230 ms  n=3,364
+  10  mean 283 ms  median 230 ms  n=1,611
+  11  mean 300 ms  median 230 ms  n=595
+  12  mean 268 ms  median 200 ms  n=261
+  13  mean 297 ms  median 230 ms  n=109
+  14  mean 293 ms  median 220 ms  n=61
+  15  mean 239 ms  median 195 ms  n=28
+saved /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/figures/lmm_v7_word_length_vs_duration.png
+
+Mean duration by the ten most frequent POS tags
+  PROPN  mean 292 ms  n=18,618
+  NOUN   mean 250 ms  n=82,358
+  ADJ    mean 248 ms  n=20,955
+  NUM    mean 237 ms  n=14,179
+  VERB   mean 229 ms  n=50,767
+  DET    mean 223 ms  n=16,969
+  PRON   mean 216 ms  n=61,892
+  AUX    mean 190 ms  n=42,755
+  ADP    mean 189 ms  n=45,635
+  PART   mean 154 ms  n=17,721
+saved /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/figures/lmm_v7_duration_by_pos.png
+
+Backward surprisal: mean 8.67, median 6.85 bits, n=406,354; share in 0-1 bits 9.9% (40,076 words); above 50 bits 1.05%
+
+Forward surprisal: mean 12.41, median 11.02 bits, n=406,354; share in 0-1 bits 5.6% (22,714 words); above 50 bits 1.17%
+saved /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/figures/lmm_v7_surprisal_distributions.png
+
+Duration by gender
+  female   mean 231 ms  median 170 ms  n=168,847
+  male     mean 217 ms  median 160 ms  n=235,232
+  other    mean 196 ms  median 160 ms  n=2,275
+  words with no gender label: 0
+saved /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/figures/lmm_v7_duration_by_gender.png
+saved /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/figures/lmm_v7_log_duration_hist.png
+Words with duration 20-30 ms: 20,234 (5.0%)
+Words with duration 30-40 ms: 37,119 (9.1%)
+Words with duration 40-50 ms: 13,238 (3.3%)

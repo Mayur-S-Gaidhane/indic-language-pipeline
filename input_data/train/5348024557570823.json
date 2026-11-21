@@ -1,0 +1,58 @@
+{
+    "language": "Hindi",
+    "audio_raw_duration": 17.981,
+    "scenario": "Read",
+    "task_name": "Umang Commands",
+    "gender": "Male",
+    "age_group": "45-60",
+    "job_type": "Blue Collar",
+    "qualification": "Upto 12th",
+    "area": "Rural",
+    "district": "Sonbhadra",
+    "state": "Uttar Pradesh",
+    "occupation": "Farmer",
+    "verbatim": [
+        {
+            "end": 17.845,
+            "text": "मोबाइल नंबर [noise] छौ ज़ीरो छौ पाँच एक नौ एक तीन नौ ज़ीरो तीन के लिए एनएसपी पर सबमिट किए गए ताजा छात्रवृत्ति आवेदनों की सूची बनाएँ",
+            "start": 0.856,
+            "speaker_id": 0
+        }
+    ],
+    "normalized": [
+        {
+            "end": 17.845,
+            "text": "मोबाइल [Mobile] नंबर [Number] [noise] छः ज़ीरो [Zero] छः पाँच एक नौ एक तीन नौ ज़ीरो [Zero] तीन के लिए एन एस पी [NSP] पर सबमिट [Submit] किए गए ताज़ा छात्रवृत्ति आवेदनों की सूची बनाएँ",
+            "start": 0.856,
+            "speaker_id": 0
+        }
+    ],
+    "audio_segmented_duration": 16.988999999999997,
+    "speaker_id": "S4258707300341769",
+    "verification_report": {
+        "sst": false,
+        "comments": "",
+        "decision": "excellent",
+        "book_read": false,
+        "off_topic": false,
+        "low_volume": false,
+        "stretching": false,
+        "long_pauses": false,
+        "echo_present": false,
+        "unclear_audio": false,
+        "reading_prompt": false,
+        "skipping_words": false,
+        "wrong_language": false,
+        "mispronunciation": false,
+        "noise_persistent": true,
+        "repeating_content": false,
+        "chatter_persistent": false,
+        "factual_inaccuracy": false,
+        "noise_intermittent": false,
+        "chatter_intermittent": false,
+        "bad_extempore_quality": false,
+        "incorrect_text_prompt": false,
+        "objectionable_content": false
+    },
+    "prompt": "मोबाइल नंबर 60651913903 के लिए एन.एस.पी. पर सबमिट किए गए ताज़ा [Fresh] छात्रवृत्ति आवेदनों की सूची बनाएँ"
+}

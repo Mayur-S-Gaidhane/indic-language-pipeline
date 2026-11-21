@@ -1,0 +1,89 @@
+nohup: ignoring input
+/home/sahebrao21/miniconda3/envs/indic_pipeline/lib/python3.11/site-packages/torch/cuda/__init__.py:188: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 12080). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at /__w/pytorch/pytorch/c10/cuda/CUDAFunctions.cpp:119.)
+  return torch._C._cuda_getDeviceCount() > 0
+============================================================
+  PHASE B: Stanza Dependency Features
+  word_stanza, lemma, stanza_word_id, stanza_head_id
+  dep_relation, pos_tag, xpos, feats
+  head_word, dep_distance, IC, SC
+============================================================
+
+  Loading segment metadata ...
+  Segments loaded: 32,823
+
+  Loading word_features_v4.csv ...
+  Words loaded : 614,351
+  Segments     : 28,302
+
+  Loading Stanza Hindi pipeline ...
+  Stanza loaded ✅
+
+  Processing 28,302 segments ...
+  [500/28,302] 1.8% | elapsed=283s ETA=15736s | errors=0
+  [1,000/28,302] 3.5% | elapsed=498s ETA=13596s | errors=0
+  [1,500/28,302] 5.3% | elapsed=739s ETA=13204s | errors=0
+  [2,000/28,302] 7.1% | elapsed=991s ETA=13033s | errors=0
+  [2,500/28,302] 8.8% | elapsed=1246s ETA=12860s | errors=0
+  [3,000/28,302] 10.6% | elapsed=1404s ETA=11841s | errors=0
+  [3,500/28,302] 12.4% | elapsed=1580s ETA=11196s | errors=0
+  [4,000/28,302] 14.1% | elapsed=1757s ETA=10675s | errors=0
+  [4,500/28,302] 15.9% | elapsed=1980s ETA=10473s | errors=0
+  [5,000/28,302] 17.7% | elapsed=2199s ETA=10248s | errors=0
+  [5,500/28,302] 19.4% | elapsed=2343s ETA=9714s | errors=0
+  [6,000/28,302] 21.2% | elapsed=2493s ETA=9266s | errors=0
+  [6,500/28,302] 23.0% | elapsed=2644s ETA=8868s | errors=0
+  [7,000/28,302] 24.7% | elapsed=2794s ETA=8503s | errors=0
+  [7,500/28,302] 26.5% | elapsed=2964s ETA=8221s | errors=0
+  [8,000/28,302] 28.3% | elapsed=3146s ETA=7984s | errors=0
+  [8,500/28,302] 30.0% | elapsed=3322s ETA=7739s | errors=0
+  [9,000/28,302] 31.8% | elapsed=3475s ETA=7453s | errors=0
+  [9,500/28,302] 33.6% | elapsed=3620s ETA=7165s | errors=0
+  [10,000/28,302] 35.3% | elapsed=3757s ETA=6876s | errors=0
+  [10,500/28,302] 37.1% | elapsed=3875s ETA=6570s | errors=0
+  [11,000/28,302] 38.9% | elapsed=4011s ETA=6309s | errors=0
+  [11,500/28,302] 40.6% | elapsed=4151s ETA=6065s | errors=0
+  [12,000/28,302] 42.4% | elapsed=4305s ETA=5848s | errors=0
+  [12,500/28,302] 44.2% | elapsed=4463s ETA=5642s | errors=0
+  [13,000/28,302] 45.9% | elapsed=4623s ETA=5442s | errors=0
+  [13,500/28,302] 47.7% | elapsed=4754s ETA=5212s | errors=0
+  [14,000/28,302] 49.5% | elapsed=4880s ETA=4985s | errors=0
+  [14,500/28,302] 51.2% | elapsed=5020s ETA=4778s | errors=0
+  [15,000/28,302] 53.0% | elapsed=5182s ETA=4595s | errors=0
+  [15,500/28,302] 54.8% | elapsed=5324s ETA=4397s | errors=0
+  [16,000/28,302] 56.5% | elapsed=5454s ETA=4193s | errors=0
+  [16,500/28,302] 58.3% | elapsed=5604s ETA=4008s | errors=0
+  [17,000/28,302] 60.1% | elapsed=5737s ETA=3814s | errors=0
+  [17,500/28,302] 61.8% | elapsed=5897s ETA=3640s | errors=0
+  [18,000/28,302] 63.6% | elapsed=6064s ETA=3471s | errors=0
+  [18,500/28,302] 65.4% | elapsed=6208s ETA=3289s | errors=0
+  [19,000/28,302] 67.1% | elapsed=6365s ETA=3116s | errors=0
+  [19,500/28,302] 68.9% | elapsed=6518s ETA=2942s | errors=0
+  [20,000/28,302] 70.7% | elapsed=6735s ETA=2796s | errors=0
+  [20,500/28,302] 72.4% | elapsed=6895s ETA=2624s | errors=0
+  [21,000/28,302] 74.2% | elapsed=7041s ETA=2448s | errors=0
+  [21,500/28,302] 76.0% | elapsed=7168s ETA=2268s | errors=0
+  [22,000/28,302] 77.7% | elapsed=7315s ETA=2095s | errors=0
+  [22,500/28,302] 79.5% | elapsed=7479s ETA=1929s | errors=0
+  [23,000/28,302] 81.3% | elapsed=7639s ETA=1761s | errors=0
+  [23,500/28,302] 83.0% | elapsed=7808s ETA=1595s | errors=0
+  [24,000/28,302] 84.8% | elapsed=7948s ETA=1425s | errors=0
+  [24,500/28,302] 86.6% | elapsed=8104s ETA=1258s | errors=0
+  [25,000/28,302] 88.3% | elapsed=8239s ETA=1088s | errors=0
+  [25,500/28,302] 90.1% | elapsed=8378s ETA=921s | errors=0
+  [26,000/28,302] 91.9% | elapsed=8552s ETA=757s | errors=0
+  [26,500/28,302] 93.6% | elapsed=8699s ETA=592s | errors=0
+  [27,000/28,302] 95.4% | elapsed=8860s ETA=427s | errors=0
+  [27,500/28,302] 97.2% | elapsed=9016s ETA=263s | errors=0
+  [28,000/28,302] 98.9% | elapsed=9152s ETA=99s | errors=0
+
+============================================================
+  PHASE B COMPLETE
+============================================================
+  Words processed: 614,351
+  Segs processed : 28,302
+  Errors         : 0
+  Columns        : 14
+  Size           : 75.4 MB
+  Time           : 9245.8s (2.6h)
+  Output         : /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/results/features_B_stanza.csv
+============================================================

@@ -1,0 +1,58 @@
+{
+    "language": "Hindi",
+    "audio_raw_duration": 3.731,
+    "scenario": "Read",
+    "task_name": "Alexa Commands",
+    "gender": "Male",
+    "age_group": "30-45",
+    "job_type": "Unemployed",
+    "qualification": "Upto 12th",
+    "area": "Rural",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "occupation": "Unempoloyed",
+    "verbatim": [
+        {
+            "end": 3.486,
+            "text": "फेसबुक पर मेरी कितनी अधीसूचनाऐं  है",
+            "start": 0.368,
+            "speaker_id": 0
+        }
+    ],
+    "normalized": [
+        {
+            "end": 3.486,
+            "text": "फेसबुक [Facebook] पर मेरी कितनी अधीसूचनाएँ  हैं",
+            "start": 0.368,
+            "speaker_id": 0
+        }
+    ],
+    "audio_segmented_duration": 3.1180000000000003,
+    "speaker_id": "S4257764100396161",
+    "verification_report": {
+        "sst": false,
+        "comments": "",
+        "decision": "excellent",
+        "book_read": false,
+        "off_topic": false,
+        "low_volume": false,
+        "stretching": false,
+        "long_pauses": false,
+        "echo_present": false,
+        "unclear_audio": false,
+        "reading_prompt": false,
+        "skipping_words": false,
+        "wrong_language": false,
+        "mispronunciation": false,
+        "noise_persistent": true,
+        "repeating_content": false,
+        "chatter_persistent": false,
+        "factual_inaccuracy": false,
+        "noise_intermittent": false,
+        "chatter_intermittent": false,
+        "bad_extempore_quality": false,
+        "incorrect_text_prompt": false,
+        "objectionable_content": false
+    },
+    "prompt": "फेसबुक पर मेरी कितनी अधिसूचनाएँ हैं"
+}

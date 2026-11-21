@@ -1,0 +1,18 @@
+﻿pair_id,candidate_id,candidate_text,candidate_words,is_human,source_model,temperature
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_c00,देश का प्रदूषण कम करने के लिए हमें 20% पेट्रोल में इथेनॉल डालने का काम तुरंत करना होता है।,19,0,sarvam,0.3
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_c01,देश का प्रदूषण कम करने के लिए हमें 20% पेट्रोल में इथेनॉल डालने का काम करना होता है।,18,0,sarvam,0.4
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_c02,"हम देश का प्रदूषण कम करना चाहते हैं, इसलिए पेट्रोल में 20% इथेनॉल डालने का लक्ष्य पूरा करना होता है।",20,0,sarvam,0.5
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_c03,"देश का प्रदूषण कम करना हमारा लक्ष्य है, इसलिए पेट्रोल में 20% इथेनॉल डालने से जो होता है वो ठीक है।",21,0,sarvam,0.6
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_c04,देश का प्रदूषण कम करने के लिए हमें 20% इथेनॉल डालने का काम अभी नहीं करना होता है।,18,0,sarvam,0.7
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_c05,"देश का प्रदूषण कम करना हमारा काम है, इसलिए हमने पेट्रोल में 20% इथेनॉल डालने का लक्ष्य तय किया है।",20,0,sarvam,0.8
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_c06,"देश का प्रदूषण कम करना मेरा लक्ष्य है, इसलिए हम पेट्रोल में 20% इथेनॉल डालने पर जोर देते हैं जिससे यह होता है।",23,0,sarvam,0.9
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_c07,"देश का प्रदूषण कम करना जरूरी है, इसलिए पेट्रोल में 20% इथेनॉल डालने से ऐसा होता है।",17,0,sarvam,1.0
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_c08,"देश का प्रदूषण कम करना हमारा मुद्दा है, इसलिए 20% डालने पर जो होता है वो हम देख रहे हैं।",20,0,sarvam,1.1
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_c09,"नहीं, देश का प्रदूषण कम करने के लिए अभी 20% ईंधन में इथेनॉल डालना शुरू ही होता है।",18,0,sarvam,1.2
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_c10,देश का प्रदूषण कम करना है और पेट्रोल में बीस प्रतिशत इथेनॉल डालना बहुत आवश्यक होता है।,17,0,gemini,0.4
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_c11,देश का प्रदूषण कम करना है तो पेट्रोल में बीस प्रतिशत इथेनॉल डालना ही होता है।,16,0,gemini,0.4889
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_c12,देश का प्रदूषण कम करना है और पेट्रोल में बीस प्रतिशत इथेनॉल डालना होता है।,15,0,gemini,0.5778
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_c13,देश में प्रदूषण कम करना है तो पेट्रोल में बीस प्रतिशत इथेनॉल डालना ही होता है।,16,0,gemini,0.8444
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_c14,"अरे भाई, देश का प्रदूषण कम करना है तो पेट्रोल में बीस प्रतिशत इथेनॉल डालना ही होता है।",18,0,gemini,0.9333
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_c15,"अरे भाई, देश में प्रदूषण कम करने के लिए ही तो पेट्रोल में बीस प्रतिशत इथेनॉल डालने का काम तेजी से हो रहा है।",24,0,gemini,1.2
+Nitin Gadkari Interv_153,Nitin Gadkari Interv_153_human,देश का प्रदूषण कम नहीं करना चाहिए 20% डालने से प्रदूषण कम होता है वो नहीं करना चाहिए,18,1,human,

@@ -1,0 +1,154 @@
+=================================================================
+  MTP-3 YOUTUBE EVALUATION
+  CCS-Based Response Selection on YouTube Ground-Truth Data
+  Linguistic-Only CCS (no acoustic features)
+=================================================================
+
+  Loaded 38 pairs from test split
+  Source: Gadkari-Megha Prasad ABP Interview
+  Context window: 5 turns (was 3)
+  Prompt version: V2
+  Avg ground truth response: 30 words
+  Avg words (Gadkari)      : 30
+  Avg words (Interviewer)  : 29
+  Topic: E20 ब्लेंडेड पेट्रोल को लेकर जनता की शिकायतें — माइलेज कम हो रही है, पुरानी गाड़...
+
+=================================================================
+  PHASE 1: CCS Reference Statistics (from human responses)
+=================================================================
+
+  Loading Stanza Hindi pipeline...
+  Stanza loaded
+  Loading GPT-2 Hindi for surprisal...
+  GPT-2 Hindi loaded (device: cpu)
+
+  Computing CCS for human responses...
+    20/38 responses scored | 19s
+
+  CCS Reference Statistics:
+    Mean CCS     : -0.001883
+    SD CCS       : 0.001315
+    Min CCS      : -0.004342
+    Max CCS      : 0.001892
+    Avg IC       : 1.985
+    Avg SC       : 2.070
+    Avg fwd surp : 3.540
+    Avg bwd surp : 4.835
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/ccs_reference.csv
+
+=================================================================
+  PHASE 2: Candidate Generation (model: sarvam)
+=================================================================
+
+  Sarvam AI client loaded (model: sarvam-105b-conversations)
+
+  Generating candidates...
+
+  [DEBUG] First context (1592 chars):
+    साक्षात्कारकर्ता: ज्यादा शिकार होते हुए दिखाई दे रहे हैं और उसकी वजह है E20 ब्लेंडेड पेट्रोल और उसके इस्तेमाल से हो रही दिक्कतें। आज मैं भारत के सड़कों पर अपनी कार और बाइक चलाने वाले नाराज हर वो भारती...
+    [V2] Next speaker: SPEAKER_01
+    [V2] Avg words: 29
+    [V2] System prompt: आप मेघा प्रसाद हैं — एबीपी न्यूज़ की पत्रकार। आप नितिन गडकरी जी का साक्षात्कार ले रही हैं।
+
+विषय: E2...
+    5/38 pairs | 50 candidates (avg 10.0/pair) | 49s
+    10/38 pairs | 100 candidates (avg 10.0/pair) | 70s
+    15/38 pairs | 150 candidates (avg 10.0/pair) | 105s
+    20/38 pairs | 200 candidates (avg 10.0/pair) | 140s
+    25/38 pairs | 250 candidates (avg 10.0/pair) | 171s
+    30/38 pairs | 300 candidates (avg 10.0/pair) | 202s
+    35/38 pairs | 350 candidates (avg 10.0/pair) | 233s
+
+  Generation Summary:
+    Pairs processed    : 38
+    Empty pairs        : 0
+    LLM candidates     : 380
+    Human responses    : 38
+    Total rows         : 418
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v2/candidates.csv
+
+=================================================================
+  PHASE 3: CCS Scoring + Response Selection + MRR
+=================================================================
+
+  Scoring all candidates with linguistic-only CCS...
+    Scored 50/418 | 273s
+    Scored 100/418 | 303s
+    Scored 150/418 | 327s
+    Scored 200/418 | 355s
+    Scored 250/418 | 382s
+    Scored 300/418 | 411s
+    Scored 350/418 | 435s
+    Scored 400/418 | 461s
+
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v2/scored_candidates.csv (418 rows)
+
+  Response Selection + MRR Computation...
+
+=================================================================
+  PHASE 4: Text-Overlap Metrics
+=================================================================
+  Computing BERTScore (this may take a minute)...
+
+  Text-Overlap Metrics (selected vs human):
+    Avg BLEU           : 0.0118
+    Avg ROUGE-1 (F1)   : 0.1080
+    Avg ROUGE-L (F1)   : 0.0812
+    Avg BERTScore (F1) : 0.6705
+
+=================================================================
+  YOUTUBE EVALUATION RESULTS
+=================================================================
+
+  Data source            : YouTube (Gadkari interview)
+  Total pairs            : 38
+  CCS mode               : Linguistic-only (no acoustic)
+  Features               : IC, SC, forward_surprisal, backward_surprisal
+  Generation model       : sarvam
+
+  CCS Reference (human)  : mean=-0.001883, sd=0.001315
+
+  Selection Results:
+    Pairs evaluated      : 38
+    Avg naturalness (sel): 0.9274
+    Avg naturalness (hum): 0.6273
+
+  *** MRR (Mean Reciprocal Rank) ***
+    MRR                  : 0.2358
+    Avg human rank       : 6.7
+    Human in top-1       : 3/38 (7.9%)
+    Human in top-3       : 6/38 (15.8%)
+
+  *** Text-Overlap Metrics (selected vs human) ***
+    Avg BLEU           : 0.0118
+    Avg ROUGE-1 (F1)   : 0.1080
+    Avg ROUGE-L (F1)   : 0.0812
+    Avg BERTScore (F1) : 0.6705
+
+  Rank distribution:
+    Rank  1:   3 pairs (7.9%)
+    Rank  2:   2 pairs (5.3%)
+    Rank  3:   1 pairs (2.6%)
+    Rank  4:   4 pairs (10.5%)
+    Rank  5:   2 pairs (5.3%)
+    Rank  6:   5 pairs (13.2%)
+    Rank  7:   5 pairs (13.2%)
+    Rank  8:   4 pairs (10.5%)
+    Rank  9:   3 pairs (7.9%)
+    Rank 10:   3 pairs (7.9%)
+
+  Sample (first pair):
+    Selected : देखिए, आंकड़े क्या हैं वो बाद में देख लेंगे। असली मुद्दा ये है कि जनता की गाड़ियो...
+    CCS      : -0.0020 (nat: 0.9451)
+    Human    : तो ये आंकड़े गलत है। 100% गलत है। ओके। ओके। दूसरी बात मैं सेबी में कंपनी रजिस्टर...
+    H.CCS    : -0.0028 (rank: 9)
+
+  Total time: 513s (8.5min)
+
+  Outputs:
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/ccs_reference.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v2/candidates.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v2/scored_candidates.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v2/selected_responses.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/sarvam_v2/youtube_eval_report.txt
+=================================================================

@@ -1,0 +1,16 @@
+{
+  "base_model": "surajp/gpt2-hindi",
+  "epochs": 5,
+  "lr": 0.0002,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "context_window": 5,
+  "train_pairs": 110,
+  "dev_pairs": 36,
+  "test_pairs": 38,
+  "adapter_path": "/mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/finetuned/surajp_gpt2-hindi_lora/final_adapter",
+  "training_time_s": 986.4,
+  "dev_gt_ccs_mean": -0.001738,
+  "dev_gen_ccs_mean": -0.001304,
+  "dev_mean_ccs_error": 0.002346
+}

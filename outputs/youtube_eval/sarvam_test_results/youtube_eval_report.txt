@@ -1,0 +1,128 @@
+=================================================================
+  MTP-3 YOUTUBE EVALUATION
+  CCS-Based Response Selection on YouTube Ground-Truth Data
+  Linguistic-Only CCS (no acoustic features)
+=================================================================
+
+  Loaded 38 pairs from test split
+  Source: Gadkari-Megha Prasad ABP Interview
+  Context window: 5 turns (was 3)
+  Avg ground truth response: 30 words
+
+=================================================================
+  PHASE 1: CCS Reference Statistics (from human responses)
+=================================================================
+
+  Loading Stanza Hindi pipeline...
+  Stanza loaded
+  Loading GPT-2 Hindi for surprisal...
+  GPT-2 Hindi loaded (device: cpu)
+
+  Computing CCS for human responses...
+    20/38 responses scored | 20s
+
+  CCS Reference Statistics:
+    Mean CCS     : -0.001883
+    SD CCS       : 0.001315
+    Min CCS      : -0.004342
+    Max CCS      : 0.001892
+    Avg IC       : 1.985
+    Avg SC       : 2.070
+    Avg fwd surp : 3.540
+    Avg bwd surp : 4.835
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/ccs_reference.csv
+
+=================================================================
+  PHASE 2: Candidate Generation (model: sarvam)
+=================================================================
+
+  Sarvam AI client loaded (model: sarvam-105b-conversations)
+
+  Generating candidates...
+
+  [DEBUG] First context (631 chars):
+    SPEAKER_01: ज्यादा शिकार होते हुए दिखाई दे रहे हैं और उसकी वजह है E20 ब्लेंडेड पेट्रोल और उसके इस्तेमाल से हो रही दिक्कतें। आज मैं भारत के सड़कों पर अपनी कार और बाइक चलाने वाले नाराज हर वो भारतीय के स...
+    5/38 pairs | 50 candidates (avg 10.0/pair) | 50s
+    10/38 pairs | 100 candidates (avg 10.0/pair) | 71s
+    15/38 pairs | 148 candidates (avg 9.9/pair) | 116s
+    20/38 pairs | 198 candidates (avg 9.9/pair) | 147s
+    25/38 pairs | 248 candidates (avg 9.9/pair) | 178s
+    30/38 pairs | 298 candidates (avg 9.9/pair) | 205s
+    35/38 pairs | 348 candidates (avg 9.9/pair) | 236s
+
+  Generation Summary:
+    Pairs processed    : 38
+    Empty pairs        : 0
+    LLM candidates     : 378
+    Human responses    : 38
+    Total rows         : 416
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/candidates.csv
+
+=================================================================
+  PHASE 3: CCS Scoring + Response Selection + MRR
+=================================================================
+
+  Scoring all candidates with linguistic-only CCS...
+    Scored 50/416 | 278s
+    Scored 100/416 | 307s
+    Scored 150/416 | 336s
+    Scored 200/416 | 360s
+    Scored 250/416 | 383s
+    Scored 300/416 | 417s
+    Scored 350/416 | 445s
+    Scored 400/416 | 472s
+
+  Saved: /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/scored_candidates.csv (416 rows)
+
+  Response Selection + MRR Computation...
+
+=================================================================
+  YOUTUBE EVALUATION RESULTS
+=================================================================
+
+  Data source            : YouTube (Gadkari interview)
+  Total pairs            : 38
+  CCS mode               : Linguistic-only (no acoustic)
+  Features               : IC, SC, forward_surprisal, backward_surprisal
+  Generation model       : sarvam
+
+  CCS Reference (human)  : mean=-0.001883, sd=0.001315
+
+  Selection Results:
+    Pairs evaluated      : 38
+    Avg naturalness (sel): 0.8834
+    Avg naturalness (hum): 0.6273
+
+  *** MRR (Mean Reciprocal Rank) ***
+    MRR                  : 0.2928
+    Avg human rank       : 5.9
+    Human in top-1       : 4/38 (10.5%)
+    Human in top-3       : 11/38 (28.9%)
+
+  Rank distribution:
+    Rank  1:   4 pairs (10.5%)
+    Rank  2:   5 pairs (13.2%)
+    Rank  3:   2 pairs (5.3%)
+    Rank  4:   3 pairs (7.9%)
+    Rank  5:   2 pairs (5.3%)
+    Rank  6:   5 pairs (13.2%)
+    Rank  7:   5 pairs (13.2%)
+    Rank  8:   3 pairs (7.9%)
+    Rank  9:   2 pairs (5.3%)
+    Rank 10:   3 pairs (7.9%)
+
+  Sample (first pair):
+    Selected : तो फिर ये आंकड़े कहाँ से आ गए? मुझे तो ये बिल्कुल गलत लग रहे हैं, इनका दोबारा से...
+    CCS      : -0.0015 (nat: 0.7947)
+    Human    : तो ये आंकड़े गलत है। 100% गलत है। ओके। ओके। दूसरी बात मैं सेबी में कंपनी रजिस्टर...
+    H.CCS    : -0.0028 (rank: 7)
+
+  Total time: 480s (8.0min)
+
+  Outputs:
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/ccs_reference.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/candidates.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/scored_candidates.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/selected_responses.csv
+    /mnt/c/Users/MayurGaidhane/Downloads/indic_pipeline_full_dataset/indic_language_pipeline/outputs/youtube_eval/youtube_eval_report.txt
+=================================================================

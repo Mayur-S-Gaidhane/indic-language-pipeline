@@ -1,0 +1,85 @@
+══ SHORT-WORD SENSITIVITY (M4 formula) ══
+Words after filters: 406,164
+Words < 50 ms: 70,591 (17.4%)
+Share of words < 50 ms by register:
+  Conversation     37.7%  (n = 122,023, median duration 70 ms)
+  Extempore         8.8%  (n = 262,974, median duration 200 ms)
+  Read              7.4%  (n = 21,167, median duration 250 ms)
+
+-----------------------------------------------------------------
+A: M4, words >= 50 ms (all registers)  (n = 335,573)
+  singular: FALSE | optimizer code: 0
+  Predictor                  beta       SE       t         p
+  IC_z                     0.0003   0.0012    0.25    0.8038
+  SC_z                    -0.0098   0.0013   -7.59    0.0000
+  fwd_surp_z              -0.0044   0.0015   -2.96    0.0031
+  bwd_surp_z               0.0013   0.0015    0.85    0.3936
+  wlen_z                   0.0203   0.0025    8.24    0.0000
+  log_freq_z              -0.0364   0.0037   -9.73    0.0000
+  word_is_resolved        -0.1542   0.2144   -0.72    0.4721
+  has_dysfluency_seg       0.0395   0.0033   12.12    0.0000
+
+-----------------------------------------------------------------
+B: M4, words < 50 ms (all registers)  (n = 70,591)
+  singular: FALSE | optimizer code: 0
+  Predictor                  beta       SE       t         p
+  IC_z                    -0.0007   0.0009   -0.77    0.4386
+  SC_z                     0.0022   0.0009    2.35    0.0187
+  fwd_surp_z               0.0026   0.0010    2.62    0.0087
+  bwd_surp_z               0.0001   0.0010    0.09    0.9302
+  wlen_z                   0.0213   0.0019   11.04    0.0000
+  log_freq_z              -0.0034   0.0025   -1.36    0.1747
+  word_is_resolved         0.0221   0.0453    0.49    0.6258
+  has_dysfluency_seg      -0.0026   0.0021   -1.21    0.2280
+
+-----------------------------------------------------------------
+C: M4, Conversation, words >= 50 ms  (n = 76,007)
+  singular: FALSE | optimizer code: 0
+  Predictor                  beta       SE       t         p
+  IC_z                     0.0034   0.0032    1.04    0.2974
+  SC_z                    -0.0150   0.0032   -4.68    0.0000
+  fwd_surp_z              -0.0024   0.0030   -0.82    0.4140
+  bwd_surp_z              -0.0018   0.0030   -0.59    0.5561
+  wlen_z                  -0.0030   0.0048   -0.61    0.5393
+  log_freq_z              -0.0304   0.0060   -5.09    0.0000
+  word_is_resolved        -0.1353   0.2579   -0.52    0.6000
+  has_dysfluency_seg       0.0665   0.0071    9.40    0.0000
+
+-----------------------------------------------------------------
+C: M4, Extempore, words >= 50 ms  (n = 239,963)
+  singular: FALSE | optimizer code: 0
+  Predictor                  beta       SE       t         p
+  IC_z                    -0.0014   0.0013   -1.07    0.2852
+  SC_z                    -0.0117   0.0015   -7.92    0.0000
+  fwd_surp_z              -0.0042   0.0017   -2.41    0.0161
+  bwd_surp_z               0.0045   0.0018    2.54    0.0111
+  wlen_z                   0.0252   0.0029    8.72    0.0000
+  log_freq_z              -0.0395   0.0043   -9.25    0.0000
+  word_is_resolved         0.1503   0.3649    0.41    0.6805
+  has_dysfluency_seg       0.0311   0.0037    8.51    0.0000
+
+-----------------------------------------------------------------
+C: M4, Read, words >= 50 ms  (n = 19,603)
+  singular: FALSE | optimizer code: 0
+  Predictor                  beta       SE       t         p
+  IC_z                     0.0102   0.0046    2.20    0.0279
+  SC_z                    -0.0138   0.0048   -2.89    0.0038
+  fwd_surp_z              -0.0127   0.0055   -2.33    0.0198
+  bwd_surp_z               0.0019   0.0056    0.35    0.7283
+  wlen_z                   0.0314   0.0070    4.49    0.0000
+  log_freq_z              -0.0385   0.0097   -3.99    0.0001
+  has_dysfluency_seg       0.0321   0.0600    0.54    0.5922
+
+-----------------------------------------------------------------
+D: M4 on all words + short_word indicator  (n = 406,164)
+  singular: FALSE | optimizer code: 0
+  Predictor                  beta       SE       t         p
+  IC_z                     0.0002   0.0010    0.20    0.8427
+  SC_z                    -0.0077   0.0011   -6.95    0.0000
+  fwd_surp_z              -0.0024   0.0013   -1.92    0.0543
+  bwd_surp_z               0.0002   0.0013    0.13    0.8965
+  wlen_z                   0.0219   0.0023    9.55    0.0000
+  log_freq_z              -0.0329   0.0036   -9.21    0.0000
+  word_is_resolved        -0.0863   0.1149   -0.75    0.4523
+  has_dysfluency_seg       0.0313   0.0027   11.40    0.0000
+  short_word              -1.5474   0.0030 -516.07    0.0000

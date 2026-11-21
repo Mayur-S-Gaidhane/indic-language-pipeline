@@ -1,0 +1,49 @@
+"Model","n","Predictor","beta","SE","t","p"
+"A: M4, words >= 50 ms (all registers)",335573,"IC_z",3e-04,0.0012,0.248,0.8038
+"A: M4, words >= 50 ms (all registers)",335573,"SC_z",-0.0098,0.0013,-7.586,0
+"A: M4, words >= 50 ms (all registers)",335573,"fwd_surp_z",-0.0044,0.0015,-2.957,0.0031
+"A: M4, words >= 50 ms (all registers)",335573,"bwd_surp_z",0.0013,0.0015,0.853,0.3936
+"A: M4, words >= 50 ms (all registers)",335573,"wlen_z",0.0203,0.0025,8.238,0
+"A: M4, words >= 50 ms (all registers)",335573,"log_freq_z",-0.0364,0.0037,-9.728,0
+"A: M4, words >= 50 ms (all registers)",335573,"word_is_resolved",-0.1542,0.2144,-0.719,0.4721
+"A: M4, words >= 50 ms (all registers)",335573,"has_dysfluency_seg",0.0395,0.0033,12.116,0
+"B: M4, words < 50 ms (all registers)",70591,"IC_z",-7e-04,9e-04,-0.775,0.4386
+"B: M4, words < 50 ms (all registers)",70591,"SC_z",0.0022,9e-04,2.352,0.0187
+"B: M4, words < 50 ms (all registers)",70591,"fwd_surp_z",0.0026,0.001,2.624,0.0087
+"B: M4, words < 50 ms (all registers)",70591,"bwd_surp_z",1e-04,0.001,0.088,0.9302
+"B: M4, words < 50 ms (all registers)",70591,"wlen_z",0.0213,0.0019,11.035,0
+"B: M4, words < 50 ms (all registers)",70591,"log_freq_z",-0.0034,0.0025,-1.357,0.1747
+"B: M4, words < 50 ms (all registers)",70591,"word_is_resolved",0.0221,0.0453,0.488,0.6258
+"B: M4, words < 50 ms (all registers)",70591,"has_dysfluency_seg",-0.0026,0.0021,-1.205,0.228
+"C: M4, Conversation, words >= 50 ms",76007,"IC_z",0.0034,0.0032,1.042,0.2974
+"C: M4, Conversation, words >= 50 ms",76007,"SC_z",-0.015,0.0032,-4.684,0
+"C: M4, Conversation, words >= 50 ms",76007,"fwd_surp_z",-0.0024,0.003,-0.817,0.414
+"C: M4, Conversation, words >= 50 ms",76007,"bwd_surp_z",-0.0018,0.003,-0.589,0.5561
+"C: M4, Conversation, words >= 50 ms",76007,"wlen_z",-0.003,0.0048,-0.614,0.5393
+"C: M4, Conversation, words >= 50 ms",76007,"log_freq_z",-0.0304,0.006,-5.091,0
+"C: M4, Conversation, words >= 50 ms",76007,"word_is_resolved",-0.1353,0.2579,-0.524,0.6
+"C: M4, Conversation, words >= 50 ms",76007,"has_dysfluency_seg",0.0665,0.0071,9.397,0
+"C: M4, Extempore, words >= 50 ms",239963,"IC_z",-0.0014,0.0013,-1.069,0.2852
+"C: M4, Extempore, words >= 50 ms",239963,"SC_z",-0.0117,0.0015,-7.92,0
+"C: M4, Extempore, words >= 50 ms",239963,"fwd_surp_z",-0.0042,0.0017,-2.406,0.0161
+"C: M4, Extempore, words >= 50 ms",239963,"bwd_surp_z",0.0045,0.0018,2.538,0.0111
+"C: M4, Extempore, words >= 50 ms",239963,"wlen_z",0.0252,0.0029,8.724,0
+"C: M4, Extempore, words >= 50 ms",239963,"log_freq_z",-0.0395,0.0043,-9.25,0
+"C: M4, Extempore, words >= 50 ms",239963,"word_is_resolved",0.1503,0.3649,0.412,0.6805
+"C: M4, Extempore, words >= 50 ms",239963,"has_dysfluency_seg",0.0311,0.0037,8.515,0
+"C: M4, Read, words >= 50 ms",19603,"IC_z",0.0102,0.0046,2.198,0.0279
+"C: M4, Read, words >= 50 ms",19603,"SC_z",-0.0138,0.0048,-2.891,0.0038
+"C: M4, Read, words >= 50 ms",19603,"fwd_surp_z",-0.0127,0.0055,-2.33,0.0198
+"C: M4, Read, words >= 50 ms",19603,"bwd_surp_z",0.0019,0.0056,0.347,0.7283
+"C: M4, Read, words >= 50 ms",19603,"wlen_z",0.0314,0.007,4.486,0
+"C: M4, Read, words >= 50 ms",19603,"log_freq_z",-0.0385,0.0097,-3.993,1e-04
+"C: M4, Read, words >= 50 ms",19603,"has_dysfluency_seg",0.0321,0.06,0.536,0.5922
+"D: M4 on all words + short_word indicator",406164,"IC_z",2e-04,0.001,0.198,0.8427
+"D: M4 on all words + short_word indicator",406164,"SC_z",-0.0077,0.0011,-6.945,0
+"D: M4 on all words + short_word indicator",406164,"fwd_surp_z",-0.0024,0.0013,-1.924,0.0543
+"D: M4 on all words + short_word indicator",406164,"bwd_surp_z",2e-04,0.0013,0.13,0.8965
+"D: M4 on all words + short_word indicator",406164,"wlen_z",0.0219,0.0023,9.554,0
+"D: M4 on all words + short_word indicator",406164,"log_freq_z",-0.0329,0.0036,-9.213,0
+"D: M4 on all words + short_word indicator",406164,"word_is_resolved",-0.0863,0.1149,-0.752,0.4523
+"D: M4 on all words + short_word indicator",406164,"has_dysfluency_seg",0.0313,0.0027,11.397,0
+"D: M4 on all words + short_word indicator",406164,"short_word",-1.5474,0.003,-516.074,0

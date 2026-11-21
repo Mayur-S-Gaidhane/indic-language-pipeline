@@ -1,0 +1,236 @@
+{
+    "language": "Hindi",
+    "audio_raw_duration": 119.0,
+    "scenario": "Conversation",
+    "task_name": "Conversation",
+    "gender": "Female",
+    "age_group": "18-30",
+    "job_type": "Student",
+    "qualification": "Undergrad and Grad.",
+    "area": "Urban",
+    "district": "Jabalpur",
+    "state": "Madhya Pradesh",
+    "occupation": "Study",
+    "verbatim": [
+        {
+            "end": 6.587,
+            "text": "हैलो",
+            "start": 6.18,
+            "speaker_id": 0
+        },
+        {
+            "end": 11.564,
+            "text": "जी हाँ दीदी",
+            "start": 10.421,
+            "speaker_id": 0
+        },
+        {
+            "end": 26.005,
+            "text": "हाँ हाँ बहौत सारी सब्ज़ियाँ हैं आपको कौनसी चाहिए दीदी ",
+            "start": 18.022,
+            "speaker_id": 0
+        },
+        {
+            "end": 41.507,
+            "text": "[noise] [uhh] अपने पास गोभी है मटर है साग है पालक की साग है मेथी की साग है [inhaling] काफ़ी है तो आपको कौन-कौन सी चाहिए",
+            "start": 29.903,
+            "speaker_id": 0
+        },
+        {
+            "end": 44.794,
+            "text": "हाँ",
+            "start": 44.219,
+            "speaker_id": 0
+        },
+        {
+            "end": 47.838,
+            "text": "हाँ बिल[unintelligible]",
+            "start": 46.98,
+            "speaker_id": 0
+        },
+        {
+            "end": 53.063,
+            "text": "[umm] इस बार पंद्रा हज़ार लगेगा",
+            "start": 49.336,
+            "speaker_id": 0
+        },
+        {
+            "end": 61.149,
+            "text": "हाँ तो दीदी इस बार बाज़ार भी तो महंगी हो गई है",
+            "start": 56.919,
+            "speaker_id": 0
+        },
+        {
+            "end": 71.292,
+            "text": "हाँ तो इस बार [uhh] अगर से हम कम कर देंगे तो फिर हम कमाएँगे क्या ",
+            "start": 65.838,
+            "speaker_id": 0
+        },
+        {
+            "end": 79.958,
+            "text": "[inhaling] [unintelligible] दीदी कुछ तो सोचिए",
+            "start": 75.792,
+            "speaker_id": 0
+        },
+        {
+            "end": 83.117,
+            "text": "अप ",
+            "start": 82.6,
+            "speaker_id": 0
+        },
+        {
+            "end": 91.339,
+            "text": "तो ठीक है इस बार कम कर दे रहे हैं अगली बार हम कम नहीं पाएँगे तो उसके लिए माफ़ करिएगा",
+            "start": 84.62,
+            "speaker_id": 0
+        },
+        {
+            "end": 96.414,
+            "text": "हाँ",
+            "start": 95.89699999999999,
+            "speaker_id": 0
+        },
+        {
+            "end": 104.957,
+            "text": "[uhh] हम भिजवा देंगे आप [uhh] बता दीजिएगा एड्रेस ",
+            "start": 100.76599999999999,
+            "speaker_id": 0
+        },
+        {
+            "end": 113.223,
+            "text": "ठीक है हाँ तो हम बस बारह हज़ार क करेंगे तीन हज़ार ही सिर्फ़ कम करेंगे ",
+            "start": 106.941,
+            "speaker_id": 0
+        },
+        {
+            "end": 118.41499999999999,
+            "text": "ठीक है [noise] हाँ ठीक चलिए [noise] ओके ",
+            "start": 115.07,
+            "speaker_id": 0
+        }
+    ],
+    "normalized": [
+        {
+            "end": 6.587,
+            "text": "हेलो [Hello]",
+            "start": 6.18,
+            "speaker_id": 0
+        },
+        {
+            "end": 11.564,
+            "text": "जी हाँ दीदी",
+            "start": 10.421,
+            "speaker_id": 0
+        },
+        {
+            "end": 26.005,
+            "text": "हाँ हाँ बहुत सारी सब्ज़ियाँ हैं आपको कौनसी चाहिए दीदी ",
+            "start": 18.022,
+            "speaker_id": 0
+        },
+        {
+            "end": 41.507,
+            "text": "[noise] [uhh] अपने पास गोभी है मटर है साग है पालक की साग है मेथी की साग है [inhaling] काफ़ी है तो आपको कौन-कौन सी चाहिए",
+            "start": 29.903,
+            "speaker_id": 0
+        },
+        {
+            "end": 44.794,
+            "text": "हाँ",
+            "start": 44.219,
+            "speaker_id": 0
+        },
+        {
+            "end": 47.838,
+            "text": "हाँ बिल[unintelligible]",
+            "start": 46.98,
+            "speaker_id": 0
+        },
+        {
+            "end": 53.063,
+            "text": "[umm] इस बार पंद्रह हज़ार लगेगा",
+            "start": 49.336,
+            "speaker_id": 0
+        },
+        {
+            "end": 61.149,
+            "text": "हाँ तो दीदी इस बार बाज़ार भी तो महंगी हो गई है",
+            "start": 56.919,
+            "speaker_id": 0
+        },
+        {
+            "end": 71.292,
+            "text": "हाँ तो इस बार [uhh] अगर से हम कम कर देंगे तो फिर हम कमाएँगे क्या ",
+            "start": 65.838,
+            "speaker_id": 0
+        },
+        {
+            "end": 79.958,
+            "text": "[inhaling] [unintelligible] दीदी कुछ तो सोचिए",
+            "start": 75.792,
+            "speaker_id": 0
+        },
+        {
+            "end": 83.117,
+            "text": "अप ",
+            "start": 82.6,
+            "speaker_id": 0
+        },
+        {
+            "end": 91.339,
+            "text": "तो ठीक है इस बार कम कर दे रहे हैं अगली बार हम कम नहीं पाएँगे तो उसके लिए माफ़ करिएगा",
+            "start": 84.62,
+            "speaker_id": 0
+        },
+        {
+            "end": 96.414,
+            "text": "हाँ",
+            "start": 95.89699999999999,
+            "speaker_id": 0
+        },
+        {
+            "end": 104.957,
+            "text": "[uhh] हम भिजवा देंगे आप [uhh] बता दीजिएगा एड्रेस [Address]",
+            "start": 100.76599999999999,
+            "speaker_id": 0
+        },
+        {
+            "end": 113.223,
+            "text": "ठीक है हाँ तो हम बस बारह हज़ार क करेंगे तीन हज़ार ही सिर्फ़ कम करेंगे ",
+            "start": 106.941,
+            "speaker_id": 0
+        },
+        {
+            "end": 118.41499999999999,
+            "text": "ठीक है [noise] हाँ ठीक चलिए [noise] ओके [Okay] ",
+            "start": 115.07,
+            "speaker_id": 0
+        }
+    ],
+    "audio_segmented_duration": 61.718000000000025,
+    "speaker_id": "S4256035000336645",
+    "verification_report": {
+        "sst": false,
+        "comments": "one speaker volume is low, and more details could have been given ",
+        "decision": "excellent",
+        "book_read": false,
+        "off_topic": false,
+        "low_volume": true,
+        "stretching": false,
+        "long_pauses": false,
+        "unclear_audio": false,
+        "reading_prompt": false,
+        "skipping_words": false,
+        "mispronunciation": false,
+        "noise_persistent": false,
+        "repeating_content": false,
+        "chatter_persistent": false,
+        "factual_inaccuracy": false,
+        "noise_intermittent": false,
+        "chatter_intermittent": false,
+        "bad_extempore_quality": false,
+        "incorrect_text_prompt": false,
+        "objectionable_content": false
+    },
+    "prompt": "Customer|Vegetable shop salesperson|Ordering a huge amount of vegetables for a wedding"
+}
